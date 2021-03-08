@@ -1,0 +1,43 @@
+.THIS .apd .logo {
+    padding: 28px 0 28px 15px;
+}
+.THIS .apd .sgap-footer {
+    padding: 28px 0;
+}
+.THIS .profileMenuRegion {
+    text-align: right;
+}
+
+.THIS .profile-image {
+    border-radius: 50%;
+    border: 2px solid #f0f0f0;
+    width: 44px;
+}
+
+.THIS .profileMenuRegion a.header-nav-item {
+    margin-left: 20px;
+    color: #32363f;
+}
+
+.THIS .profileMenuRegion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.THIS .sgap-header .profileMenuRegion .change-language .slds-dropdown-trigger {
+    margin: 0;
+}
+
+.THIS .logo {
+    padding-left: 10px;
+}
+
+.THIS .tracker .sgap-content{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*.THIS .sgap-header .profileMenuRegion .change-language .slds-dropdown-trigger .slds-button {
+	border: 0;
+}*/

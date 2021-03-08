@@ -1,0 +1,75 @@
+/** SASS Customer Self Service styles **/
+
+/* All tracker pages (tracker, form, case) */
+.THIS h2{
+    color: #7b7b7b;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.THIS .header{
+    color:#fff;
+    background: #009adb;
+}
+
+.THIS .header h1, 
+.THIS .header p,
+.THIS .header a{
+    margin:0 !important;
+}
+
+.THIS .header h1{
+    font-size: 3em;
+}
+
+.THIS .stats{
+    color:#7b7b7b;
+    background: #eaeaea;
+}
+
+.THIS .slds-cell-fixed {
+    background: #32363f;
+}
+
+.THIS .slds-th__action {
+    color: #fff !important;
+}
+
+.THIS .slds-th__action:hover,
+.THIS .slds-th__action:focus,
+.THIS .slds-th__action:active,
+.THIS .slds-cell-fixed:hover,
+.THIS .slds-cell-fixed:focus,
+.THIS .slds-cell-fixed:active {
+   background: #32363f !important;
+}
+
+.THIS .slds-cell-edit {
+    background: #fff !important;
+}
+
+.THIS .slds-cell-edit:hover,
+.THIS .slds-cell-edit:focus,
+.THIS .slds-cell-edit:active{
+    outline: 0 !important;
+}
+
+/* Page Specific */
+.THIS .tracker-wrap .header .comm-layout-column{
+	padding: 50px 0 !important;
+}
+
+.THIS .tracker-wrap .content-top .comm-layout-column,
+.THIS .tracker-wrap .content .comm-layout-column,
+.THIS .tracker-wrap .content-bottom .comm-layout-column{
+    padding: 0 !important;
+}
+
+.THIS .tracker-wrap .slds-main-content {
+    background: none;
+}
+
+.THIS .tracker-wrap .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
+    background: #ffffff;
+    padding: 20px;
+}
