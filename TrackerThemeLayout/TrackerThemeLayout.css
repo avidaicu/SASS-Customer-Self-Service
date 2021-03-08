@@ -1,75 +1,132 @@
 /** SASS Customer Self Service styles **/
 
-/* All tracker pages (tracker, form, case) */
-.THIS h2{
-    color: #7b7b7b;
-    font-size: 2em;
-    font-weight: normal;
-}
-
-.THIS .header{
-    color:#fff;
-    background: #009adb;
-}
-
-.THIS .header h1, 
-.THIS .header p,
-.THIS .header a{
-    margin:0 !important;
-}
-
-.THIS .header h1{
-    font-size: 3em;
-}
-
-.THIS .stats{
-    color:#7b7b7b;
-    background: #eaeaea;
-}
-
-.THIS .slds-cell-fixed {
-    background: #32363f;
-}
-
-.THIS .slds-th__action {
-    color: #fff !important;
-}
-
-.THIS .slds-th__action:hover,
-.THIS .slds-th__action:focus,
-.THIS .slds-th__action:active,
-.THIS .slds-cell-fixed:hover,
-.THIS .slds-cell-fixed:focus,
-.THIS .slds-cell-fixed:active {
-   background: #32363f !important;
-}
-
-.THIS .slds-cell-edit {
-    background: #fff !important;
-}
-
-.THIS .slds-cell-edit:hover,
-.THIS .slds-cell-edit:focus,
-.THIS .slds-cell-edit:active{
-    outline: 0 !important;
-}
-
 /* Page Specific */
-.THIS .tracker-wrap .header .comm-layout-column{
+.THIS .tracker-list .header .comm-layout-column{
 	padding: 50px 0 !important;
 }
 
-.THIS .tracker-wrap .content-top .comm-layout-column,
-.THIS .tracker-wrap .content .comm-layout-column,
-.THIS .tracker-wrap .content-bottom .comm-layout-column{
+.THIS .tracker-list .add_new {
+    border: 4px solid #fff;
+    padding: 14px 34px;
+    border-radius: 40px;
+    font-size: 1.3em;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    margin-top: 5px;
+}
+
+.THIS .tracker-list .content-top .comm-layout-column,
+.THIS .tracker-list .content .comm-layout-column,
+.THIS .tracker-list .content-bottom .comm-layout-column{
     padding: 0 !important;
 }
 
-.THIS .tracker-wrap .slds-main-content {
+.THIS .tracker-list .slds-main-content {
     background: none;
 }
 
-.THIS .tracker-wrap .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
+.THIS .tracker-list .slds-main-content .slds-page-header_bleed{
+	padding-top: 0;
+}
+
+.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
+    float: right;
+    margin-left: 10px;
+}
+
+.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
+    margin:0;
+}
+
+.THIS .tracker-list .slds-main-content .slds-page-header .slds-m-right_small{
+    display:none;
+}
+
+.THIS .tracker-list .slds-main-content .slds-page-header__title{
+	margin: 0 !important;
+}
+
+.THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
+	line-height: 32px;
+}
+
+.THIS .tracker-list .slds-main-content .downIcon{
+	line-height: 32px;
+    display: block;
+    margin: 0;
+}
+
+.THIS .tracker-list .slds-main-content .keyboardMode--trigger{
+	display:none;
+}
+
+.THIS .tracker-list .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
     background: #ffffff;
     padding: 20px;
+}
+
+.THIS .tracker-list .test-listViewManager .slds-shrink,
+.THIS .tracker-list .test-listViewSettingsMenu,
+.THIS .tracker-list .forceRefreshButton{
+    display:none
+}
+
+.THIS .tracker-list .listViewContent {
+    background: #32363f;
+    height:initial;
+}
+
+.THIS .tracker-list .listDisplays {
+    min-height: auto !important;
+    height:initial;
+}
+
+.THIS .tracker-list .scroller-wrapper {
+    background: #fff;
+}
+
+.THIS .tracker-list .slds-table--header-fixed {
+    width: 100% !important;
+    table-layout: auto;
+    height: 100px;
+}
+
+.THIS .tracker-list .slds-resizable__divider::after {
+    opacity: inherit;
+    background-color: #d4d4d4;
+}
+
+.THIS .tracker-list th.errorColumnHeader,
+.THIS .tracker-list th.actionColumnHeader,
+.THIS .tracker-list .slds-table tbody tr td:first-child,
+.THIS .tracker-list .slds-table tbody tr td:last-child{
+    display: none;
+}
+
+.THIS .tracker-list .slds-table tbody tr:nth-child(even) {
+    background: #f4f5f5 !important;
+}
+
+.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
+.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus) {
+    box-shadow: none;
+    background: none;
+}
+
+
+.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:hover, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus:hover, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-no-cell-focus .slds-has-focus.slds-is-resizable:hover 
+.THIS .tracker-list .slds-th__action, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:hover, 
+.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus:hover {
+	background: #32363f;
 }

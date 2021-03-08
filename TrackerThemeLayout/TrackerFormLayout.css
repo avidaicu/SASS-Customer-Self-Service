@@ -1,64 +1,9 @@
 /** SASS Customer Self Service styles **/
 
-/* All tracker pages (tracker, form, case) */
-.THIS h2{
-    color: #7b7b7b;
-    font-size: 2em;
-    font-weight: normal;
-}
-
-.THIS .header{
-    color:#fff;
-    background: #009adb;
-}
-
-.THIS .header h1, 
-.THIS .header p,
-.THIS .header a{
-    margin:0 !important;
-}
-
-.THIS .header h1{
-    font-size: 3em;
-}
-
-.THIS .stats{
-    color:#7b7b7b;
-    background: #eaeaea;
-}
-
-.THIS .slds-cell-fixed {
-    background: #32363f;
-}
-
-.THIS .slds-th__action {
-    color: #fff !important;
-}
-
-.THIS .slds-th__action:hover,
-.THIS .slds-th__action:focus,
-.THIS .slds-th__action:active,
-.THIS .slds-cell-fixed:hover,
-.THIS .slds-cell-fixed:focus,
-.THIS .slds-cell-fixed:active {
-   background: #32363f !important;
-}
-
-.THIS .slds-cell-edit {
-    background: #fff !important;
-}
-
-.THIS .slds-cell-edit:hover,
-.THIS .slds-cell-edit:focus,
-.THIS .slds-cell-edit:active{
-    outline: 0 !important;
-}
-
 /* Page Specific */
 .THIS .tracker-form h1,
 .THIS .tracker-form h2{
-    color: #7b7b7b;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: normal;
     margin: 0 !important;
 }
@@ -79,13 +24,12 @@
 .THIS .tracker-form .slds-truncate {
     text-align: left;
     padding-bottom: 25px;
-    color: #7b7b7b;
     background: #f0f0f0;
 }
 
 .THIS .tracker-form .slds-section {
 	margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom:0;
 }
 
 .THIS .tracker-form .slds-section .container{
@@ -95,9 +39,34 @@
     padding-top: 20px;
 }
 
+.THIS .tracker-form .forcePageBlockSectionRow,
+.THIS .tracker-form .slds-p-horizontal_medium{
+    margin-bottom: 15px;    
+}
+
+.THIS .tracker-form .forcePageBlockSectionRow:last-child {
+    margin-bottom: 0;    
+}
+
+.THIS .tracker-form .inputLabel {
+	width: 100%;
+	display:block;    
+}
+
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a,
+.THIS .tracker-form .uiInput--input .input, 
+.THIS .tracker-form .uiInput--input.input{
+    width: 300px;
+    clear: both;
+}
+
+.THIS .tracker-form .case-description{
+    width: 460px;
+    min-height: 160px;
+}
+
 
 .THIS .tracker-form #submitButton {
 	padding-bottom: 0;
     padding-left: 15px;
 }
-
