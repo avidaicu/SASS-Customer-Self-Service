@@ -1,7 +1,10 @@
 /** SASS Customer Self Service styles **/
 
+.THIS .tracker-form{
+	background: #ffffff;
+}
+
 /* Page Specific */
-.THIS .tracker-form h1,
 .THIS .tracker-form h2{
     font-size: 2.3em;
     font-weight: normal;
@@ -16,20 +19,58 @@
     font-size: 3em;
 }
 
+.THIS .tracker-form .slds-truncate {
+    text-align: left;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/*
 .THIS .tracker-form .forceCommunityContactSupportForm {
     background: #fff;
     padding-bottom: 20px;
+    border-radius: 6px;
 }
 
 .THIS .tracker-form .slds-truncate {
     text-align: left;
-    padding-bottom: 25px;
-    background: #f0f0f0;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    padding-top: 102px;
 }
+
+.THIS .tracker-form .slds-truncate h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+    width: 100%;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.THIS .tracker-form .slds-truncate span {
+	display: block;
+    padding: 20px;
+    background-color: #fafaf9;
+    color: #333;
+    border: 2px solid #eaeaea;
+}
+*/
 
 .THIS .tracker-form .slds-section {
 	margin-top: 0;
     margin-bottom:0;
+}
+
+.THIS .tracker-form .slds-section .mdp {
+    padding:0
+}
+
+.THIS .tracker-form .slds-section .slds-hint-parent {
+    padding:0
 }
 
 .THIS .tracker-form .slds-section .container{
@@ -37,11 +78,13 @@
     width: 100%;
     background: #fff;
     padding-top: 20px;
+    border-radius: 6px;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow,
 .THIS .tracker-form .slds-p-horizontal_medium{
-    margin-bottom: 15px;    
+    margin-bottom: 25px;
+    padding:0;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
@@ -50,23 +93,87 @@
 
 .THIS .tracker-form .inputLabel {
 	width: 100%;
-	display:block;    
+	display:block;
+	font-size: 18px;
+    line-height: 24px;
+    color: #00597c;    
+    float: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.THIS .tracker-form .inputLabel span:first-child{
+	float:left;
+}
+
+.THIS .tracker-form .inputLabel span.required{
+    margin-left:5px;
+    color: red;
 }
 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a,
 .THIS .tracker-form .uiInput--input .input, 
 .THIS .tracker-form .uiInput--input.input{
-    width: 300px;
+    font-size: 16px;
+    width: 400px;
     clear: both;
+    border: none;
+    border-radius: 0;
+    border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorderInput,#D4D4D4);
+    color: #32363f;
+    padding: 10px;
+    padding-left: 0;
+    height: initial !important;
 }
+            
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a:focus,
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a:active,
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a:visited,
+.THIS .tracker-form .uiInput--input .input:focus, 
+.THIS .tracker-form .uiInput--input .input:active, 
+.THIS .tracker-form .uiInput--input .input:visited,
+.THIS .tracker-form .uiInput--input.input:focus,
+.THIS .tracker-form .uiInput--input.input:active,
+.THIS .tracker-form .uiInput--input.input:visited{
+    box-shadow: none;
+}
+            
+.THIS .tracker-form .uiInput--select.select[disabled], 
+.THIS .tracker-form .uiInput--select .select[disabled], 
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
+    padding-left: 10px;
+    background-color: #fafaf9 !important;
+}
+
+/*
+.THIS .tracker-form .uiInputSelect>.uiMenu, 
+.THIS .tracker-form .uiInputSelect.uiMenu,
+.THIS .tracker-form .uiInput--input .input{
+    margin-top:10px;
+}
+            
+.THIS .tracker-form .uiInputSelect .disabled{
+    margin-top:20px;
+}
+*/
 
 .THIS .tracker-form .case-description{
-    width: 460px;
+    width: 540px;
     min-height: 160px;
+    margin-top:10px;
 }
-
-
+    
+/*
 .THIS .tracker-form #submitButton {
 	padding-bottom: 0;
     padding-left: 15px;
+}
+*/
+            
+.THIS .tracker-form #submitButton button{
+	border-radius: 40px;
+    font-size: 1.3em;
+    font-family: "HelveticaNeueW01-Thin"!important;
 }

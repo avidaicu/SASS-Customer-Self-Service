@@ -1,16 +1,24 @@
 /** SASS Customer Self Service styles **/
 
 /* Page Specific */
+.THIS .tracker-list{
+	background: #ffffff;
+}
+
 .THIS .tracker-list .header .comm-layout-column{
 	padding: 50px 0 !important;
 }
 
-.THIS .tracker-list .add_new {
-    border: 4px solid #fff;
+.THIS .tracker-list .btn_tracker_lg {
     padding: 14px 34px;
     border-radius: 40px;
     font-size: 1.3em;
     font-family: "HelveticaNeueW01-Thin" !important;
+}
+
+.THIS .tracker-list .btn_tracker_lg.add_new {
+    background: #00597c;
+	border: 2px solid #00597c;
     margin-top: 5px;
 }
 
@@ -43,6 +51,7 @@
 
 .THIS .tracker-list .slds-main-content .slds-page-header__title{
 	margin: 0 !important;
+    font-size: initial !important;
 }
 
 .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
@@ -59,10 +68,13 @@
 	display:none;
 }
 
+/*
 .THIS .tracker-list .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
     background: #ffffff;
     padding: 20px;
+    border-radius: 6px;
 }
+*/
 
 .THIS .tracker-list .test-listViewManager .slds-shrink,
 .THIS .tracker-list .test-listViewSettingsMenu,
@@ -86,7 +98,6 @@
 
 .THIS .tracker-list .slds-table--header-fixed {
     width: 100% !important;
-    table-layout: auto;
     height: 100px;
 }
 
