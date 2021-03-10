@@ -9,17 +9,45 @@
 	padding: 50px 0 !important;
 }
 
+.THIS .tracker-list .stats{
+    color: #7b7b7b;
+    font-family: "HelveticaNeueW01-Thin" !important;
+}
+
+.THIS .tracker-list .stats .slds-col--padded{
+	padding: 20px 0;
+}
+
+.THIS .tracker-list .stats ul{
+	font-size: 2.3em !important;
+    font-weight: normal;
+    line-height: 62px;
+    margin: 0;  
+    padding:0;
+}
+
+.THIS .tracker-list .stats ul li{
+    padding: 0;
+    margin-right: 13px; 
+}
+
+.THIS .tracker-list .stats ul li span{
+    margin-left: 13px;
+}
+
+.THIS .tracker-list .stats ul li:before{
+    display:none;
+}
+
 .THIS .tracker-list .btn_tracker_lg {
     padding: 14px 34px;
     border-radius: 40px;
     font-size: 1.3em;
-    font-family: "HelveticaNeueW01-Thin" !important;
 }
 
 .THIS .tracker-list .btn_tracker_lg.add_new {
     background: #00597c;
 	border: 2px solid #00597c;
-    margin-top: 5px;
 }
 
 .THIS .tracker-list .content-top .comm-layout-column,
@@ -88,7 +116,7 @@
 }
 
 .THIS .tracker-list .listDisplays {
-    min-height: auto !important;
+    min-height: initial !important;
     height:initial;
 }
 
@@ -140,4 +168,8 @@
 .THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:hover, 
 .THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus:hover {
 	background: #32363f;
+}
+
+.THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
+    display:none;
 }
