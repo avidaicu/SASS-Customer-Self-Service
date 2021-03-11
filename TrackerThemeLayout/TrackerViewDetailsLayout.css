@@ -1,0 +1,154 @@
+/** SASS Customer Self Service styles **/
+
+/* Page Specific */
+.THIS .tracker-case .header .comm-layout-column{
+	padding: 35px 0 !important;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid{
+	display: initial;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
+	margin-bottom: 20px !important;
+    margin-right: 0 !important;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element_edit{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9eaec;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element__label{
+    font-size: 1.3em;
+    padding: 0;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .blank-item{
+	display: none;
+}
+
+.THIS .tracker-case .has-tooltip{
+	margin:0 !important;
+}
+
+.THIS .tracker-case .test-id__record-layout-container {
+	position: relative;
+}
+
+.THIS .tracker-case .forcePageBlock {
+	width: 78%;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:first-child {
+	display: none;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection h3 {
+	display: none;
+}
+
+.THIS .tracker-case .slds-section.slds-is-open .slds-section__content {
+	padding:0;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child{
+	position: absolute;
+    top: 0;
+    right: 0;
+    background: #f4f5f5;
+    width: 20%;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .test-id__section-content .forcePageBlockSectionRow:last-child,
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(2) .test-id__section-content .forcePageBlockSectionRow:last-child{
+	display:none;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid{
+	padding: 0;
+    margin:0;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid:last-child{
+    margin-bottom: 0 !important;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly{
+        border-bottom: none;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form {
+	padding: 20px;
+}
+
+/*
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid:last-child{
+	display: none;
+}
+
+
+.THIS .tracker-case .test-id__section-content .forcePageBlockSectionRow:last-child{
+	display:none !important;
+}
+*/
+
+.THIS .tracker-case .slds-page-header {
+    height: auto !important;
+    margin: 0 !important;
+    border: none;
+    padding: 0 !important;
+    padding-top: 25px !important;
+    margin:0 !important;
+}
+
+
+.THIS .tracker-case .slds-page-header .primaryFieldRow {
+	display: none;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form {
+	background: none;
+    padding:0;
+    margin: 0;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.THIS .tracker-case .slds-page-header ul.slds-form li {
+	padding:0;
+    overflow: visible;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li:first-child {
+    display: none;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) {
+	order: 1;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) .slds-form-element__control span {
+	font-size: 1.6em;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element > span{
+	display: none;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element__static {
+    overflow: visible;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li .uiOutputText {
+    font-size: 3em;
+}
+
+.THIS .tracker-case .activity {
+    background: #4c535e;
+}
