@@ -58,7 +58,13 @@
 	margin-top: 0;
     margin-bottom:0;
     background: #fff;
-    border-radius: 6px;
+    border-radius:0;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 	padding: 15px;
     padding-top: 30px;
 }
@@ -93,19 +99,22 @@
     padding:0;
 }
 
+.THIS .tracker-form .slds-p-horizontal_medium{
+	margin-left: 212px;
+    margin-bottom: 0;
+}
+
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
     margin-bottom: 0;    
 }
 
 .THIS .tracker-form .inputLabel {
-	width: 100%;
+	width: 200px;
 	display:block;
 	font-size: 18px;
     line-height: 24px;
     color: #00597c;    
-    float: none;
-    margin: 0;
-    padding: 0;
+    float: left !important;
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -129,10 +138,11 @@
     border-radius: 0;
     border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorderInput,#D4D4D4);
     color: #32363f;
-    padding: 10px;
-        padding-left: 20px;
-    padding-RIGHT: 20px;
+    padding: 10px 0;
     height: initial !important;
+    min-height: initial !important;
+    line-height: initial !important;
+    display: inline-block;
 }
             
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a:focus,
@@ -146,11 +156,16 @@
 .THIS .tracker-form .uiInput--input.input:visited{
     box-shadow: none;
 }
-            
+
+.THIS .tracker-form .uiInput--select.select, 
+.THIS .tracker-form .uiInput--select .select, 
+.THIS .tracker-form .uiInput--select .uiPopupTrigger a {
+    padding-left: 10px;
+}
+
 .THIS .tracker-form .uiInput--select.select[disabled], 
 .THIS .tracker-form .uiInput--select .select[disabled], 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
-    padding-left: 10px;
     background-color: #fafaf9 !important;
 }
 
@@ -167,20 +182,31 @@
 */
 
 .THIS .tracker-form .case-description{
-    width: 540px;
+    width: 400px;
     min-height: 160px;
     margin-top:10px;
 }
     
-/*
+
 .THIS .tracker-form #submitButton {
-	padding-bottom: 0;
-    padding-left: 15px;
+	padding: 40px;
+    padding-left: 0;
+    background: #fff;
+    border-radius:0;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
-*/
+
             
 .THIS .tracker-form #submitButton button{
 	border-radius: 40px;
     font-size: 1.3em;
     font-family: "HelveticaNeueW01-Thin"!important;
+    margin-left: 228px;
+    background: #00597c;
+    border: 2px solid #00597c;
 }

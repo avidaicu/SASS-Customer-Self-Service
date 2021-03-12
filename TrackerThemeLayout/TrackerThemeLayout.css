@@ -72,6 +72,7 @@
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
     float: right;
     margin-left: 10px;
+    display: none;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
@@ -109,21 +110,25 @@
 }
 */
 
-.THIS .tracker-list .test-listViewManager .slds-shrink,
 .THIS .tracker-list .test-listViewSettingsMenu,
 .THIS .tracker-list .forceRefreshButton{
     display:none
 }
 
-.THIS .tracker-list .listViewContent {
-    background: #32363f;
-    height:initial;
+.THIS .tracker-list .search-in-list .slds-input{
+    width: auto;
 }
 
 .THIS .tracker-list .listDisplays {
-    min-height: initial !important;
     height:initial;
+    min-height: auto !important;
 }
+
+/*
+.THIS .tracker-list .forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
+    min-height: auto;
+}
+*/
 
 .THIS .tracker-list .scroller-wrapper {
     background: #fff;
@@ -139,15 +144,25 @@
     background-color: #d4d4d4;
 }
 
+/*
 .THIS .tracker-list th.errorColumnHeader,
 .THIS .tracker-list th.actionColumnHeader,
 .THIS .tracker-list .slds-table tbody tr td:first-child,
 .THIS .tracker-list .slds-table tbody tr td:last-child{
     display: none;
 }
+*/
 
 .THIS .tracker-list .slds-table tbody tr:nth-child(even) {
-    background: #f4f5f5 !important;
+    background: #fafaf9 !important;
+}
+
+.THIS .tracker-list .cellContainer:nth-last-child(4) .outputLookupLink {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+    color: #222222;
+    border-bottom: none;
 }
 
 .THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
@@ -176,5 +191,9 @@
 }
 
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
+    display:none;
+}
+
+.THIS .tracker-list th.sortable a.toggle::after {
     display:none;
 }
