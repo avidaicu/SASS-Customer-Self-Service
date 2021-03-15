@@ -9,6 +9,14 @@
 	display: initial;
 }
 
+.THIS .tracker-case .tooltipIcon {
+    display:none;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(3) .slds-form > .slds-grid {
+	display: flex !important;
+}
+
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
 	margin-bottom: 20px !important;
     margin-right: 0 !important;
@@ -47,8 +55,17 @@
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection h3 {
-	display: none;
+    font-size: 2em;
 }
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection button {
+    pointer-events: none;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection .section-icon {
+    display: none;
+}
+
 
 .THIS .tracker-case .slds-section.slds-is-open .slds-section__content {
 	padding:0;
@@ -60,6 +77,10 @@
     right: 0;
     background: #f4f5f5;
     width: 20%;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child h3{
+	display:none;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .test-id__section-content .forcePageBlockSectionRow:last-child,
@@ -115,7 +136,6 @@
     margin: 0;
     font-family: "HelveticaNeueW01-Thin" !important;
     display: flex;
-    flex-direction: column;
 }
 
 
@@ -131,10 +151,14 @@
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) {
 	order: 1;
+    line-height: 0;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) .slds-form-element__control span {
 	font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element > span{

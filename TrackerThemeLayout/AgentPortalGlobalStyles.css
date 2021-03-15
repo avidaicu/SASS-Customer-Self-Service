@@ -1,0 +1,220 @@
+<link rel="icon" href="/resource/1513364560000/StudyGroupFavicon">
+<link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/ce7f315f-8738-4f0f-a6c1-439e443fbbb2.css" />
+<script src="https://use.fontawesome.com/c82455d3fe.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+<style>
+    
+@media(max-width: 1191px) {
+    .sgap-navigation.sticky + .mainContentArea .news-filters {
+        right: 10px;
+        position: fixed;
+        top: 8px;
+        z-index: 9150;
+    }
+}
+    
+    
+.builder-component-container {
+    background: #fff;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.builder-component-container .fa {
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+    
+/** Modals sit outside component context **/
+.prioritised-modal .modal-body {
+    padding:0;
+}
+    
+.prioritised-modal .closeIcon, 
+.prioritised-modal .closeIcon svg {
+    width: .8em;
+    height: .8em;
+}
+    
+/** Generic button **/
+a.btn-outline {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    border: 2px solid #0099d8;
+    padding: 14px 22px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    color: #32363f;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+    background: #f5f5f5;
+}
+    
+.prioritised-modal .slds-button:focus {
+    box-shadow: none;
+    border: none;
+}
+    
+/* All tracker pages (tracker, form, case) */
+.tracker h2{
+    font-size: 3em !important;
+    font-weight: normal !important;
+}
+
+.tracker .header{
+    color:#fff;
+    background: #009adb;
+}
+
+.tracker .header p,
+.tracker .header a{
+    margin:0 !important;
+}
+
+.tracker .siteforceContentArea h1{
+    font-size: 3em;
+    margin:0 !important;
+}
+
+.tracker .stats{
+    background: #eaeaea;
+}
+
+.tracker .slds-cell-fixed {
+    background: #32363f;
+}
+
+.tracker .listViewContent {
+    padding-top: 50px;
+    background: #32363f;
+    height:auto !important;
+}    
+    
+.tracker .slds-th__action {
+    color: #fff !important;
+    padding:25px 1rem;
+}
+    
+.tracker .slds-table .slds-cell-edit {
+    padding: 0.5rem 1rem;
+}
+    
+.tracker .slds-table .slds-cell-edit.slds-has-focus {
+	box-shadow: none !important;
+    background:none !important;
+}
+    
+.tracker .slds-th__action {
+    color: #fff !important;
+}
+
+.tracker .slds-th__action:hover,
+.tracker .slds-th__action:focus,
+.tracker .slds-th__action:active,
+.tracker .slds-cell-fixed:hover,
+.tracker .slds-cell-fixed:focus,
+.tracker .slds-cell-fixed:active {
+   background: #32363f !important;
+}
+
+.tracker .slds-cell-edit:hover,
+.tracker .slds-cell-edit:focus,
+.tracker .slds-cell-edit:active{
+    outline: 0 !important;
+}
+ 
+    
+.tracker .uiInput--select.select[disabled], 
+.tracker .uiInput--select .select[disabled], 
+.tracker .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
+	background-color: #EAEAEA;          
+}
+            
+.tracker .tooltipIcon {
+    color: #009adb;             
+}
+    
+
+    
+
+ 
+    .navigation ul li:last-child ul > li:last-child span::before{
+            font-family: "Font Awesome 5 Free"; 
+        	font-weight: 900; 
+        	content: "\f05a";
+            float: left;
+            margin-right: 5px;
+            line-height: 16px;
+    }
+    
+    .navigation ul li:last-child ul li li:last-child span::before{
+        	content: "";
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .navigation ul.slds-list_vertical li:nth-last-child(2) span{
+            padding-left:15px;
+        }
+        .navigation ul.slds-list_vertical li:nth-last-child(2) span::before{
+             font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f05a";
+            float: left;
+            line-height: 16px;
+        }
+    }
+    
+
+    @media only screen and (min-width: 1192px) {
+        .navigation ul li.slds-list__item:nth-last-child(2){
+            position: absolute;
+            right: 0;
+        }
+
+        .navigation ul li.slds-list__item:nth-last-child(2) span::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f05a";
+            float: left;
+            margin-right: 5px;
+            line-height: 16px;
+        }
+    }
+    
+
+   
+.tracker .toggle{
+    position: relative;
+}
+    
+.tracker .toggle::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+    
+.tracker .btn_tracker_lg.add_new::before {
+    content: " ";
+	background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/insert_template.svg);
+    display:block;
+    width:24px;
+    height:24px;
+    margin-right: 3px;
+}
+
+</style>
