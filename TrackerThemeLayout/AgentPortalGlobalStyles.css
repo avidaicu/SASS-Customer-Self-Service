@@ -216,5 +216,26 @@ a.btn-outline:active {
     height:24px;
     margin-right: 3px;
 }
+    
+.uiMenuList--left.uiMenuList {
+    width: 400px !important;
+    padding: 0 !important;
+}
+    
+.uiMenuList--default .select-options .uiMenuItem > a {
+    padding: 15px;
+    font-size: 16px;   
+}
+
+.uiMenuList--default .select-options .uiMenuItem > a:hover,
+.uiMenuList--default .select-options .uiMenuItem > a:focus,
+.uiMenuList--default .select-options .uiMenuItem > a:hover
+{
+	background-color: #fafaf9;
+}
+    
+.uiMenuList--default .select-options a b {
+    display:none !important;
+}
 
 </style>
