@@ -51,6 +51,7 @@
     border: 2px solid #eaeaea;
     border-radius: 6px;
     display: block;
+    width: 480px;
 }
 
 
@@ -66,14 +67,15 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 	padding: 15px;
-    padding-top: 30px;
+    width: 480px;
 }
 
+
+
+.THIS .tracker-form .forceQuickActionLayout .forceRecordLayout {
+    padding-top: 20px;
+}
 /*
-.THIS .tracker-form .slds-section .mdp {
-    padding:0;
-}
-
 .THIS .tracker-form .slds-form .mdp {
 	background-color: #fafaf9;
 }
@@ -91,6 +93,7 @@
 
 .THIS .tracker-form .slds-section .container{
     padding: 0;
+    width: 100%;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow,
@@ -100,7 +103,7 @@
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium{
-	margin-left: 212px;
+	margin-left: 10px;
     margin-bottom: 0;
 }
 
@@ -109,15 +112,20 @@
 }
 
 .THIS .tracker-form .inputLabel {
-	width: 200px;
-	display:block;
 	font-size: 18px;
-    float: left !important;
     overflow: hidden;
+    margin-bottom:10px;
+    width:100%;
+    display: block;
 }
+
 
 .THIS .tracker-form .inputLabel span:first-child{
 	float:left;
+}
+
+.THIS .tracker-form .inputLabel span{
+	font-weight: bold;
 }
 
 .THIS .tracker-form .inputLabel span.required{
@@ -129,17 +137,15 @@
 .THIS .tracker-form .uiInput--input .input, 
 .THIS .tracker-form .uiInput--input.input{
     font-size: 16px;
-    width: 400px;
     clear: both;
     border: none;
     border-radius: 0;
     border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorderInput,#D4D4D4);
     color: #32363f;
-    padding: 10px 0;
+    padding: 15px 0;
     height: initial !important;
     min-height: initial !important;
     line-height: initial !important;
-    display: inline-block;
 }
             
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a:focus,
@@ -157,13 +163,18 @@
 .THIS .tracker-form .uiInput--select.select, 
 .THIS .tracker-form .uiInput--select .select, 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .THIS .tracker-form .uiInput--select.select[disabled], 
 .THIS .tracker-form .uiInput--select .select[disabled], 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
-    background-color: #fafaf9 !important;
+    background-color: transparent !important;
+}
+            
+.THIS .tracker-form .uiInputSelect > .uiMenu.disabled {
+    background: #fafaf9;
+    opacity: 0.5;
 }
 
 /*
@@ -179,7 +190,6 @@
 */
 
 .THIS .tracker-form .case-description{
-    width: 400px;
     min-height: 160px;
     margin-top:10px;
 }
@@ -196,6 +206,7 @@
     -moz-border-radius-bottomleft: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+    width: 480px;
 }
 
             
@@ -203,7 +214,35 @@
 	border-radius: 40px;
     font-size: 1.3em;
     font-family: "HelveticaNeueW01-Thin"!important;
-    margin-left: 228px;
+    margin-left: 20px;
     background: #00597c;
     border: 2px solid #00597c;
+}
+            
+.THIS .tracker-form .forceCommunityContactSupportForm .forceCommunityContactSupportConfirmation:last-child {
+    background: #fff;
+    padding: 20px;
+    border: none;          
+}
+            
+.THIS .tracker-form .pageLevelErrors {
+	pointer-events: none;
+}
+
+.THIS .tracker-form .forcePageError {
+	border: 0;
+    padding:0;
+}
+            
+.THIS .tracker-form .forcePageError.desktop .genericNotification {
+	color: rgb(194, 57, 52);
+	background:none;
+    font-weight: bold;
+    padding: 20px 0
+}
+            
+.THIS .tracker-form .forcePageError.desktop ul{
+	padding: 20px;
+    background: rgb(194, 57, 52);
+    color: #fff;
 }

@@ -50,6 +50,15 @@
 	border: 2px solid #00597c;
 }
 
+.THIS .tracker-list .btn_tracker_lg.add_new a{
+    color: inherit;
+}
+
+.THIS .tracker-list .btn_tracker_lg.add_new a:hover{
+    text-decoration: none;
+}
+
+
 .THIS .tracker-list .content-top .comm-layout-column,
 .THIS .tracker-list .content .comm-layout-column,
 .THIS .tracker-list .content-bottom .comm-layout-column{
