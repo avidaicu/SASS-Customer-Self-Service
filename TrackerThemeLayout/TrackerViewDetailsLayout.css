@@ -1,6 +1,10 @@
 /** SASS Customer Self Service styles **/
 
 /* Page Specific */
+.THIS .tracker-case .slds-main-content{
+	position: relative;
+}
+
 .THIS .tracker-case .header .comm-layout-column{
 	padding: 35px 0 !important;
 }
@@ -9,8 +13,75 @@
 	display: initial;
 }
 
+
+
+
+.THIS .tracker-case .container .forceCommunityRecordDetail:last-child .slds-form .slds-grid:last-child {
+}
+
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form > 
+.slds-grid:last-child > .slds-grid:last-child 
+{
+	display:none;
+}
+
+
+
+
 .THIS .tracker-case .tooltipIcon {
     display:none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child{
+	position: absolute;
+    top: 440px;
+    right: 0;
+    width: 20%;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer{
+	padding: 0;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop{
+	border: 0;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header{
+	background: none;
+    border: 0;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2{
+	font-size: 2em !important;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-no-flex,
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-avatar{
+	display: none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-card__footer{
+	margin: 0;
+    border: 0;
+    display: none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .forceContentRelatedListPreviewFileList{
+	border: none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .forceContentVirtualRelatedListStencil{
+	padding: 0;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate{
+	overflow: initial;
+    overflow: initial;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(3) .slds-form > .slds-grid {
@@ -18,8 +89,7 @@
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
-	margin-bottom: 20px !important;
-    margin-right: 0 !important;
+    margin: 0 0 20px 0 !important;
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element_edit{
@@ -56,10 +126,12 @@
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection h3 {
     font-size: 2em;
+    display:none;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection button {
     pointer-events: none;
+    display:none;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection .section-icon {
@@ -83,18 +155,22 @@
 	display:none;
 }
 
+/*
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .test-id__section-content .forcePageBlockSectionRow:last-child,
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(2) .test-id__section-content .forcePageBlockSectionRow:last-child{
 	display:none;
 }
+*/
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid{
 	padding: 0;
     margin:0;
 }
 
-.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid:last-child{
-    margin-bottom: 0 !important;
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .forceOutputOwnerIdLookupWithChangeLink{
+	display: block;
+    width: 100%;
+    padding: 0;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly{
@@ -103,6 +179,7 @@
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form {
 	padding: 20px;
+    padding-bottom:0;
 }
 
 /*

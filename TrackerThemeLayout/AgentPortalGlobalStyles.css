@@ -89,6 +89,10 @@ a.btn-outline:active {
 .tracker .stats{
     background: #eaeaea;
 }
+    
+.tracker .stats .ui-widget{
+    margin:0 !important;
+}
 
 .tracker .slds-cell-fixed {
     background: #32363f;
@@ -144,10 +148,6 @@ a.btn-outline:active {
     color: #009adb;             
 }
     
-
-    
-
- 
     .navigation ul li:last-child ul > li:last-child span::before{
             font-family: "Font Awesome 5 Free"; 
         	font-weight: 900; 

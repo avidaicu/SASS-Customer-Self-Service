@@ -206,3 +206,17 @@
 .THIS .tracker-list th.sortable a.toggle::after {
     display:none;
 }
+
+.THIS .tracker-list .slds-table .slds-cell-edit:first-child,
+.THIS .tracker-list .slds-table .slds-cell-edit:last-child{
+    display:none;
+}
+
+.THIS .tracker-list .slds-table th:first-child,
+.THIS .tracker-list .slds-table th:last-child{
+    display:none;
+}
+
+.THIS .tracker-list .slds-table th:nth-last-child(2) .slds-resizable{
+    display:none;
+}

@@ -105,6 +105,71 @@
 .THIS .tracker-form .slds-p-horizontal_medium{
 	margin-left: 10px;
     margin-bottom: 0;
+    position:relative;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul {
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li{
+	border: none;
+    padding: 0;
+    margin: 0;
+    background: #fafaf9;
+    border-radius: 0;
+    margin-bottom:10px;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li:last-child{
+    margin-bottom:0;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge{
+	padding: 0;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space{
+	display: block;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container{
+	overflow: visible;
+    height: 100%;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container span{
+	width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container span img{
+	width: 80px;
+    height: auto;
+    max-width: 100%;
+    max-height: initial;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container span .slds-icon{
+	width: 80px;
+    height: 80px;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space > .slds-col{
+	display: none;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container .thumbnailContainer{
+	padding: 0;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium > .slds-button{
+    position: absolute;
+    top: 0;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
@@ -197,6 +262,7 @@
 
 .THIS .tracker-form #submitButton {
 	padding: 40px;
+    padding-top: 0;
     padding-left: 0;
     background: #fff;
     border-radius:0;
