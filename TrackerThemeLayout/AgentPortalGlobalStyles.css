@@ -71,6 +71,13 @@ a.btn-outline:active {
     font-weight: normal !important;
 }
 
+
+.tracker .tracker-list,
+.tracker .tracker-form
+{
+    padding-bottom:40px;
+}
+    
 .tracker .header{
     color:#fff;
     background: #009adb;
@@ -238,4 +245,44 @@ a.btn-outline:active {
     display:none !important;
 }
 
+    
+.slds-breadcrumb,
+.slds-breadcrumb li{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    
+.slds-breadcrumb .slds-breadcrumb__item:fist-child{
+    margin-right: 10px !important;
+}
+
+.slds-breadcrumb .slds-breadcrumb__item a:hover{
+	text-decoration: underline !important;
+    color:#fff;
+}
+    
+.slds-breadcrumb .slds-breadcrumb__item:last-child a{
+    pointer-events: none;
+}
+
+.slds-breadcrumb .slds-list__item > a, 
+.slds-breadcrumb .slds-breadcrumb__item > a{
+    color: #fff;
+}
+
+.slds-breadcrumb .slds-list__item::before, 
+.slds-breadcrumb .slds-breadcrumb__item::before{
+    font-size:1.1em;
+    text-align: left !important;
+}
+    
+.slds-breadcrumb .slds-list__item::before, 
+.slds-breadcrumb .slds-breadcrumb__item::before {
+    margin: 0 !important;
+}
+    
+.slds-breadcrumb .slds-list__item:last-child a::before{
+	padding: 0;
+    padding-left: 10px;
+}
 </style>

@@ -1,0 +1,17 @@
+<aura:component controller="AgentPortalCase" implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" access="global" >
+    
+    <!-- Case record ID -->
+    <aura:attribute name="recordId" type="String" />
+    
+    <!-- Case number -->
+    <aura:attribute name="caseNumber" type="String" />
+    
+    <!-- Init hanlder for the component -->
+	<aura:handler name="init" value="{!this}" action="{!c.getCaseNumberId}"/>
+    
+    <lightning:breadcrumbs>
+        <lightning:breadcrumb label="Help and Support" href="/partnerCommunity/s/case/Case/Default"/>
+        <lightning:breadcrumb label="{!v.caseNumber}"/>
+    </lightning:breadcrumbs>
+    
+</aura:component>

@@ -13,9 +13,6 @@
 	display: initial;
 }
 
-
-
-
 .THIS .tracker-case .container .forceCommunityRecordDetail:last-child .slds-form .slds-grid:last-child {
 }
 
@@ -25,9 +22,6 @@
 {
 	display:none;
 }
-
-
-
 
 .THIS .tracker-case .tooltipIcon {
     display:none;
@@ -91,6 +85,11 @@
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
     margin: 0 0 20px 0 !important;
 }
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem .override--slds-form-element{
+    border-bottom: 1px solid rgb(233 234 236);
+}
+
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element_edit{
     padding-bottom: 10px;
@@ -222,13 +221,32 @@
     overflow: visible;
 }
 
+.THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element__static span{
+	font-size: 1.6em;
+    line-height: 1.6em;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    vertical-align: bottom;
+}
+
+.THIS .tracker-case .slds-page-header ul.slds-form li:first-child .slds-form-element__static span{
+	font-size: 3em;
+    line-height: initial;
+    font-weight: normal;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    vertical-align: bottom;
+}
+
+/*
 .THIS .tracker-case .slds-page-header ul.slds-form li:first-child {
     display: none;
 }
 
-.THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) {
-	order: 1;
-    line-height: 0;
+*/
+
+.THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2),
+.THIS .tracker-case .slds-page-header ul.slds-form li:last-child{
+	display:none;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2) .slds-form-element__control span {
@@ -250,5 +268,44 @@
 }
 
 .THIS .tracker-case .activity {
-    background: #4c535e;
+    background: #ffffff;
+}
+
+.THIS .tracker-case .activity .feedActions {
+    display: flow-root;
+    padding: 30px;
+    margin: 0;
+    background: #fafaf9;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger{
+   float: left;
+}
+
+.THIS .tracker-case .activity .feedActions .feeds-sorter label{
+   display: none;
+}
+
+.THIS .tracker-case .activity .feedActions .right-actions{
+    float: right;
+}
+
+.THIS .tracker-case .activity .feedActions .right-actions input{
+    width: auto;
+}
+
+.THIS .tracker-case .activity .feedActions .right-actions .feeds-filter{
+    padding: 0;
+    margin: 0;
+}
+
+.THIS .tracker-case .activity .feedActions .right-actions .cuf-refresh{
+    display: none;
+}
+
+.THIS .tracker-case .activity .cuf-feedItem {
+    background: #fff5e6;
+    padding: 20px;
 }

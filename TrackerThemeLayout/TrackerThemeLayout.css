@@ -40,7 +40,7 @@
 }
 
 .THIS .tracker-list .btn_tracker_lg {
-    padding: 14px 34px;
+    padding: 14px 28px;
     border-radius: 40px;
     font-size: 1.3em;
 }
@@ -71,7 +71,7 @@
 
 .THIS .tracker-list .slds-main-content .ui-widget,
 .THIS .tracker-list .slds-main-content .ui-widget h2{
-    margin-bottom: 5px !important;
+    margin-bottom: 0 !important;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header_bleed{
@@ -124,11 +124,39 @@
     display:none
 }
 
+.THIS .tracker-list .forceListViewManagerHeader{
+	margin-top: -20px;
+}
+
+.THIS .tracker-list .forceListViewManagerHeader .slds-shrink{
+	margin-right: 10px;
+}
+
+.THIS .tracker-list .search-in-list,
+.THIS .tracker-list .slds-align-bottom .slds-m-left_xx-small{
+    margin: 0;
+    padding: 15px;
+    margin: 0;
+    background: #f0f0f0;
+    border-radius: 6px;
+    overflow: visible;
+    width: auto;
+}
+
+.THIS .tracker-list .slds-align-bottom .slds-m-left_xx-small .slds-button-group{
+    margin-left: 0;
+}
+
 .THIS .tracker-list .search-in-list .slds-input{
     width: auto;
 }
 
 .THIS .tracker-list .listDisplays {
+    height:initial;
+    min-height: auto !important;
+}
+
+.THIS .tracker-list .listDisplays .listViewContainer{
     height:initial;
     min-height: auto !important;
 }

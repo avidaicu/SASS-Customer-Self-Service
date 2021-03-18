@@ -257,6 +257,7 @@
 .THIS .tracker-form .case-description{
     min-height: 160px;
     margin-top:10px;
+    font-size: 16px;
 }
     
 
@@ -311,4 +312,16 @@
 	padding: 20px;
     background: rgb(194, 57, 52);
     color: #fff;
+}
+            
+.THIS .tracker-form .forceCommunityContactSupportConfirmation .requestSummaryHeader {
+    font-size: 1.5em !important;
+    padding-bottom: 10px;
+    font-weight: bold !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;           
+}
+            
+.THIS .tracker-form .forceCommunityContactSupportConfirmation .requestSummaryBody {
+    width: 10%;            
+    padding: 0;
 }
