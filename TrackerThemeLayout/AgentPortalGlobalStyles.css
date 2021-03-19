@@ -70,8 +70,7 @@ a.btn-outline:active {
     font-size: 3em !important;
     font-weight: normal !important;
 }
-
-
+    
 .tracker .tracker-list,
 .tracker .tracker-form
 {
@@ -117,7 +116,7 @@ a.btn-outline:active {
 }
     
 .tracker .slds-table .slds-cell-edit {
-    padding: 0.5rem 1rem;
+    padding: 13px 15px;
 }
     
 .tracker .slds-table .slds-cell-edit.slds-has-focus {

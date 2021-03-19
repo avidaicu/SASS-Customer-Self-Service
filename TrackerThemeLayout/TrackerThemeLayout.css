@@ -173,13 +173,26 @@
 
 .THIS .tracker-list .slds-table--header-fixed {
     width: 100% !important;
-    height: 100px;
+    /*height: 100px;*/
 }
 
 .THIS .tracker-list .slds-resizable__divider::after {
     opacity: inherit;
     background-color: #d4d4d4;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 .THIS .tracker-list th.errorColumnHeader,
@@ -227,6 +240,12 @@
 	background: #32363f;
 }
 
+.THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(3),
+.THIS .tracker-list .slds-table tbody tr td:nth-last-child(3)
+{
+    display:none;
+}
+
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
     display:none;
 }
@@ -239,6 +258,16 @@
 .THIS .tracker-list .slds-table .slds-cell-edit:last-child{
     display:none;
 }
+
+/*
+.THIS .tracker-list .slds-table th:nth-child(2) {
+    width:auto !important;
+}
+
+.THIS .tracker-list .slds-table th:nth-child(2) .slds-cell-fixed{
+    min-width:170px;
+}
+*/
 
 .THIS .tracker-list .slds-table th:first-child,
 .THIS .tracker-list .slds-table th:last-child{

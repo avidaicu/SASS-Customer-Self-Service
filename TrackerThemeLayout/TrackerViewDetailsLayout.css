@@ -181,6 +181,12 @@
     padding-bottom:0;
 }
 
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly a.outputLookupLink,
+.THIS .tracker-case .activity .entityLinkHover a.cuf-actorLink,
+.THIS .tracker-case .activity .entityLinkHover a.cuf-entityLink{
+        pointer-events: none;
+}
+
 /*
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid:last-child{
 	display: none;
@@ -221,12 +227,13 @@
     overflow: visible;
 }
 
-.THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element__static span{
-	font-size: 1.6em;
-    line-height: 1.6em;
-    font-weight: bold;
+.THIS .tracker-case .slds-page-header ul.slds-form li:nth-child(2) .slds-form-element__static span{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     vertical-align: bottom;
+    padding: 10px;
+    background: rgb(171 173 176);
+    border-radius: 40px;
+    color: #000;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:first-child .slds-form-element__static span{
@@ -309,3 +316,4 @@
     background: #fff5e6;
     padding: 20px;
 }
+
