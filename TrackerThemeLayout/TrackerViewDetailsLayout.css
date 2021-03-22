@@ -46,12 +46,31 @@
 	background: none;
     border: 0;
     padding: 0 !important;
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2{
 	font-size: 2em !important;
+    font-weight: bold !important;
+    font-size: 1.3em !important;
+    padding: 0;
+    margin: 0 !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a:hover{
+	border:none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-truncate{
+	font-weight: bold;
+    color: #5A5A5A;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-shrink-none{
+	display: none;
+}
+
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-no-flex,
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-avatar{
@@ -70,6 +89,13 @@
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .forceContentVirtualRelatedListStencil{
 	padding: 0;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .filerow{
+	overflow: hidden;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
@@ -183,8 +209,10 @@
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly a.outputLookupLink,
 .THIS .tracker-case .activity .entityLinkHover a.cuf-actorLink,
-.THIS .tracker-case .activity .entityLinkHover a.cuf-entityLink{
+.THIS .tracker-case .activity .entityLinkHover a.cuf-entityLink,
+.cTrackerViewDetailsLayout .tracker-case .activity .cuf-feedItem a.cuf-timestamp{
         pointer-events: none;
+    	text-decoration:none;
 }
 
 /*
@@ -278,17 +306,32 @@
     background: #ffffff;
 }
 
+.THIS .tracker-case .activity .ui-widget:first-child h2{
+    z-index:9999;
+}
+
+.THIS .tracker-case .activity .ui-widget:last-child{
+    margin-top: -80px;
+}
+
 .THIS .tracker-case .activity .feedActions {
     display: flow-root;
-    padding: 30px;
+    padding: 0;
     margin: 0;
-    background: #fafaf9;
     margin-bottom: 20px;
-    border-radius: 6px;
+}
+
+.THIS .tracker-case .activity .feedActions .feeds-sorter{
+    float: right;
 }
 
 .THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger{
-   float: left;
+   	background: #fafaf9;
+    padding: 20px;
+}
+
+.THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger input{
+    cursor: pointer;
 }
 
 .THIS .tracker-case .activity .feedActions .feeds-sorter label{
@@ -296,9 +339,10 @@
 }
 
 .THIS .tracker-case .activity .feedActions .right-actions{
-    float: right;
+   display: none;
 }
 
+/*
 .THIS .tracker-case .activity .feedActions .right-actions input{
     width: auto;
 }
@@ -311,9 +355,42 @@
 .THIS .tracker-case .activity .feedActions .right-actions .cuf-refresh{
     display: none;
 }
+*/
 
 .THIS .tracker-case .activity .cuf-feedItem {
-    background: #fff5e6;
+    color: #fff;
+    background: #009adb;
     padding: 20px;
 }
 
+.THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble{
+	font-size: 1.6em;
+}
+
+.THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble p{
+	margin-bottom:0;
+}
+
+.THIS .tracker-case .activity .cuf-feedItem a,
+.THIS .tracker-case .activity .cuf-feedItem span.uiOutputText {
+    color: #fff;
+    border:none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+.THIS .tracker-case .activity .cuf-feedItem .entityLinkHover{
+    border:none;
+}
+
+
+.THIS .tracker-case .activity .cuf-feedItem .forceChatterFeedAuxBody{
+    margin-bottom:0;
+}
+
+.THIS .tracker-case .activity .cuf-feedItem .cuf-media-right{
+    display:none;
+}
+
+.THIS .tracker-case .activity .cuf-feedItem .slds-post__footer{
+    display:none;
+}

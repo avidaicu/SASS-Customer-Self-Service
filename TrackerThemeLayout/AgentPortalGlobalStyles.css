@@ -244,6 +244,10 @@ a.btn-outline:active {
     display:none !important;
 }
 
+.slds-breadcrumb {
+    font-size: 1.1em;
+    font-family: var(--lwc-fontFamily,Work Sans) !important;
+}
     
 .slds-breadcrumb,
 .slds-breadcrumb li{
@@ -253,6 +257,17 @@ a.btn-outline:active {
     
 .slds-breadcrumb .slds-breadcrumb__item:fist-child{
     margin-right: 10px !important;
+}
+    
+.slds-breadcrumb .slds-list__item:first-child > a, 
+.slds-breadcrumb .slds-breadcrumb__item:first-child > a{
+    margin-right: 23px !important;
+}
+    
+.slds-breadcrumb .slds-list__item::before, 
+.slds-breadcrumb .slds-breadcrumb__item::before
+    {
+    display:none;
 }
 
 .slds-breadcrumb .slds-breadcrumb__item a:hover{
@@ -283,5 +298,21 @@ a.btn-outline:active {
 .slds-breadcrumb .slds-list__item:last-child a::before{
 	padding: 0;
     padding-left: 10px;
+}
+        
+.slds-breadcrumb .slds-breadcrumb__item a::after{
+	content: " ";
+    background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/breadcrumbs.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    position: absolute;
+    top: -1px;
+}   
+
+.slds-breadcrumb .slds-list__item:last-child > a::after, 
+.slds-breadcrumb .slds-breadcrumb__item:last-child > a::after{
+	display:none;
 }
 </style>
