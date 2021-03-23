@@ -172,12 +172,23 @@
     top: 0;
 }
 
+.THIS .tracker-form .slds-p-horizontal_medium > ul::after{
+    content: 'Help text for attachments here.';
+    padding: 20px;
+    background-color: #fafaf9;
+    color: #333;
+    border: 2px solid #eaeaea;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+}
+
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
     margin-bottom: 0;    
 }
 
 .THIS .tracker-form .inputLabel {
-	font-size: 18px;
+	font-size: 1.1em;
     overflow: hidden;
     margin-bottom:10px;
     width:100%;
@@ -201,7 +212,6 @@
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a,
 .THIS .tracker-form .uiInput--input .input, 
 .THIS .tracker-form .uiInput--input.input{
-    font-size: 16px;
     clear: both;
     border: none;
     border-radius: 0;
@@ -257,7 +267,6 @@
 .THIS .tracker-form .case-description{
     min-height: 160px;
     margin-top:10px;
-    font-size: 16px;
 }
     
 
@@ -279,11 +288,12 @@
             
 .THIS .tracker-form #submitButton button{
 	border-radius: 40px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: "HelveticaNeueW01-Thin"!important;
     margin-left: 20px;
     background: #00597c;
     border: 2px solid #00597c;
+    padding: 12px 24px;
 }
             
 .THIS .tracker-form .forceCommunityContactSupportForm .forceCommunityContactSupportConfirmation:last-child {

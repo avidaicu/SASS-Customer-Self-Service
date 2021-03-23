@@ -66,8 +66,12 @@ a.btn-outline:active {
 }
     
 /* All tracker pages (tracker, form, case) */
+.tracker {
+    font-size: 16px;
+}
+  
 .tracker h2{
-    font-size: 3em !important;
+    font-size: 2.9em !important;
     font-weight: normal !important;
 }
     
@@ -88,7 +92,7 @@ a.btn-outline:active {
 }
 
 .tracker .siteforceContentArea h1{
-    font-size: 3em;
+    font-size: 2.6em;
     margin:0 !important;
 }
 
@@ -230,7 +234,6 @@ a.btn-outline:active {
     
 .uiMenuList--default .select-options .uiMenuItem > a {
     padding: 15px;
-    font-size: 16px;   
 }
 
 .uiMenuList--default .select-options .uiMenuItem > a:hover,
@@ -245,7 +248,6 @@ a.btn-outline:active {
 }
 
 .slds-breadcrumb {
-    font-size: 1.1em;
     font-family: var(--lwc-fontFamily,Work Sans) !important;
 }
     
@@ -261,7 +263,7 @@ a.btn-outline:active {
     
 .slds-breadcrumb .slds-list__item:first-child > a, 
 .slds-breadcrumb .slds-breadcrumb__item:first-child > a{
-    margin-right: 23px !important;
+    margin-right: 10px !important;
 }
     
 .slds-breadcrumb .slds-list__item::before, 
@@ -301,14 +303,12 @@ a.btn-outline:active {
 }
         
 .slds-breadcrumb .slds-breadcrumb__item a::after{
-	content: " ";
-    background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/breadcrumbs.svg);
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
+	font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
     position: absolute;
     top: -1px;
+    margin-left: 10px;
 }   
 
 .slds-breadcrumb .slds-list__item:last-child > a::after, 

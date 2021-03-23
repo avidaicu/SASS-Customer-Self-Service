@@ -19,9 +19,9 @@
 }
 
 .THIS .tracker-list .stats ul{
-	font-size: 1.8em !important;
+	font-size: 1.6em !important;
     font-weight: normal;
-    line-height: 62px;
+    line-height: 58px;
     margin: 0;  
     padding:0;
 }
@@ -40,9 +40,9 @@
 }
 
 .THIS .tracker-list .btn_tracker_lg {
-    padding: 14px 28px;
+    padding: 12px 24px;
     border-radius: 40px;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .THIS .tracker-list .btn_tracker_lg.add_new {
@@ -69,7 +69,11 @@
     background: none;
 }
 
-.THIS .tracker-list .slds-main-content .ui-widget,
+.THIS .tracker-list .slds-main-content .ui-widget{
+    font-size: 0.9em;
+    margin-bottom: 0 !important;
+}
+
 .THIS .tracker-list .slds-main-content .ui-widget h2{
     margin-bottom: 0 !important;
 }
@@ -277,3 +281,56 @@
 .THIS .tracker-list .slds-table th:nth-last-child(2) .slds-resizable{
     display:none;
 }
+
+        
+@media (max-width: 767.98px) {
+	.THIS .tracker-list .btn_tracker_lg.add_new {
+        float: none;
+    	width: 100%; 
+	}   
+    
+	.THIS .tracker-list .stats .container > div{
+    	position: relative;
+    	padding-top: 80px;
+	}
+    
+    .THIS .tracker-list .stats .container .ui-widget {
+    	width: 100%;
+	}
+    
+    .THIS .tracker-list .stats .container .ui-widget ul {
+    	font-weight: normal;
+        margin: 0;
+        float: none;
+        justify-content: center;
+        font-size: inherit !important;
+        line-height: initial !important;
+	}
+    
+    .THIS .tracker-list .stats .container .ui-widget ul li {
+        margin-right: 5px;
+	}
+    
+    .THIS .tracker-list .stats .container .ui-widget ul li span {
+        margin-left: 5px;
+	}
+    
+   	.THIS .tracker-list .stats .container .ui-widget:last-child{
+		position: absolute;
+    	top: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
