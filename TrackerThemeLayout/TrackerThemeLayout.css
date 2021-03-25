@@ -245,13 +245,13 @@
 	background: #32363f;
 }
 
-/*
+
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(3),
 .THIS .tracker-list .slds-table tbody tr td:nth-last-child(3)
 {
     display:none;
 }
-*/
+
 
 .THIS .tracker-list .slds-table tbody {
     font-family: Roboto,"Helvetica Neue",sans-serif;
