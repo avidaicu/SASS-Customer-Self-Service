@@ -35,29 +35,34 @@
 
 .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate {
     text-align: left;
-    padding-top:15px;
-    padding-bottom:25px;
+    position: relative;
+    padding: 20px;
+    padding-left: 0;
+    margin-right: 20px;
 }
 
 .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate h1 {
     width: 100%;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
 }
 
 .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate span {
     padding: 20px;
     background-color: #fafaf9;
-    color: #333;
     border: 2px solid #eaeaea;
     border-radius: 6px;
     display: block;
     width: 480px;
+    color: #32363f;
+    font-style: italic;
+    font-weight:normal;
+    margin-left: 20px;
+    width: 35%;
+    margin-top: 20px;
 }
 
 
 .THIS .tracker-form .forceCommunityContactSupportForm > .slds-section {
-	margin-top: 0;
-    margin-bottom:0;
     background: #fff;
     border-radius:0;
     -webkit-border-top-left-radius: 6px;
@@ -66,8 +71,11 @@
     -moz-border-radius-topright: 6px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-	padding: 15px;
-    width: 480px;
+	padding: 15px 20px;
+    position: initial;
+    padding-top: 94px;
+    margin-top: -110px;
+    margin-bottom:0;
 }
 
 
@@ -93,23 +101,28 @@
 
 .THIS .tracker-form .slds-section .container{
     padding: 0;
-    width: 100%;
+    width: 35%;
+    margin:0;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow,
 .THIS .tracker-form .slds-p-horizontal_medium{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding:0;
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium{
-	margin-left: 10px;
+	margin-left: 0;
     margin-bottom: 0;
     position:relative;
 }
 
+.THIS .tracker-form .forcePageBlockSectionRow > .slds-has-flexi-truncate{
+	padding:0;
+}
+
 .THIS .tracker-form .slds-p-horizontal_medium ul {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-right: 10px;
 }
 
@@ -172,25 +185,27 @@
     top: 0;
 }
 
-.THIS .tracker-form .slds-p-horizontal_medium > ul::after{
+.THIS .tracker-form .slds-p-horizontal_medium > ul::before{
     content: 'Help text for attachments here.';
-    padding: 20px;
-    background-color: #fafaf9;
     color: #333;
-    border: 2px solid #eaeaea;
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: block;
+    font-style: italic;
 }
 
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
     margin-bottom: 0;    
 }
 
+.THIS .tracker-form .inputLabel .slds-icon_xx-small{
+    width: 20px;
+    height: 20px;
+}
+
 .THIS .tracker-form .inputLabel {
 	font-size: 1.1em;
-    overflow: hidden;
-    margin-bottom:10px;
+    margin-bottom:6px;
     width:100%;
     display: block;
 }
@@ -201,7 +216,9 @@
 }
 
 .THIS .tracker-form .inputLabel span{
-	font-weight: bold;
+	line-height: 26px;
+    font-size: 24px;
+    color: #00597c;
 }
 
 .THIS .tracker-form .inputLabel span.required{
@@ -218,9 +235,18 @@
     border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorderInput,#D4D4D4);
     color: #32363f;
     padding: 15px 0;
+    padding-top: 25px;
     height: initial !important;
     min-height: initial !important;
-    line-height: initial !important;
+    font-weight: 400;
+    line-height: 1.125  !important;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 20px;
+}
+            
+.THIS .tracker-form .uiInput--input .input, 
+.THIS .tracker-form .uiInput--input.input{
+    padding-top: 15px;
 }
             
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a:focus,
@@ -235,11 +261,13 @@
     box-shadow: none;
 }
 
+            /*
 .THIS .tracker-form .uiInput--select.select, 
 .THIS .tracker-form .uiInput--select .select, 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a {
     padding-left: 15px;
 }
+            */
 
 .THIS .tracker-form .uiInput--select.select[disabled], 
 .THIS .tracker-form .uiInput--select .select[disabled], 
@@ -282,7 +310,6 @@
     -moz-border-radius-bottomleft: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    width: 480px;
 }
 
             
@@ -293,7 +320,7 @@
     margin-left: 20px;
     background: #00597c;
     border: 2px solid #00597c;
-    padding: 12px 24px;
+    padding: 10px 20px;
 }
             
 .THIS .tracker-form .forceCommunityContactSupportForm .forceCommunityContactSupportConfirmation:last-child {
@@ -334,4 +361,13 @@
 .THIS .tracker-form .forceCommunityContactSupportConfirmation .requestSummaryBody {
     width: 10%;            
     padding: 0;
+}
+       
+            
+@media (max-width: 991px) {
+    .THIS .tracker-form .slds-section .container,
+    .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate span
+    {
+    	width: 100%;
+    }   
 }

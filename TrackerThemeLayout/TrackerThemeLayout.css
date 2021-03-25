@@ -70,7 +70,6 @@
 }
 
 .THIS .tracker-list .slds-main-content .ui-widget{
-    font-size: 0.9em;
     margin-bottom: 0 !important;
 }
 
@@ -90,6 +89,7 @@
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
     margin:0;
+    font-size: 14px;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-m-right_small{
@@ -153,6 +153,7 @@
 
 .THIS .tracker-list .search-in-list .slds-input{
     width: auto;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
 }
 
 .THIS .tracker-list .listDisplays {
@@ -244,10 +245,16 @@
 	background: #32363f;
 }
 
+/*
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(3),
 .THIS .tracker-list .slds-table tbody tr td:nth-last-child(3)
 {
     display:none;
+}
+*/
+
+.THIS .tracker-list .slds-table tbody {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
 }
 
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
@@ -280,6 +287,10 @@
 
 .THIS .tracker-list .slds-table th:nth-last-child(2) .slds-resizable{
     display:none;
+}
+
+.THIS .tracker-list .slds-table th span.slds-truncate {
+    font-weight:normal !important;
 }
 
         
@@ -320,17 +331,3 @@
     	top: 0;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

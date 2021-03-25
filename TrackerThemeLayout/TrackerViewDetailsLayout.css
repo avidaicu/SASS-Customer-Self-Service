@@ -5,6 +5,8 @@
 	position: relative;
 }
 
+
+
 .THIS .tracker-case .header .comm-layout-column{
 	padding: 35px 0 !important;
 }
@@ -28,10 +30,8 @@
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child{
-	position: absolute;
-    top: 440px;
-    right: 0;
-    width: 20%;
+    margin-bottom: 20px;
+    width: 50%;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer{
@@ -40,6 +40,8 @@
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop{
 	border: 0;
+    padding: 20px;
+    background: #f4f5f5;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header{
@@ -50,22 +52,28 @@
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2{
-	font-size: 2em !important;
     font-weight: bold !important;
-    font-size: 1.3em !important;
     padding: 0;
     margin: 0 !important;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-family: inherit !important;
+    font-size: 24px !important;
+    color: #00597c !important;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.slds-page-header h2 .baseCard__header-title-container{
+    pointer-events:none;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a:hover{
 	border:none;
 }
 
+/*
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-truncate{
-	font-weight: bold;
     color: #5A5A5A;
 }
+*/
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-shrink-none{
 	display: none;
@@ -91,17 +99,38 @@
 	padding: 0;
     width: 100%;
     padding-right: 20px;
+    background-color: transparent !important;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .forceContentVirtualRelatedListStencil .filerow{
 	overflow: hidden;
+    padding: 10px 0;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate{
 	overflow: initial;
-    overflow: initial;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle{
+	font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .secondaryFields span,
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .secondaryFields span::after{
+	display:none;
+    font-size: 14px;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .secondaryFields span:first-child{
+	display:block;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(3) .slds-form > .slds-grid {
@@ -123,11 +152,29 @@
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element__label{
-    font-size: 1.3em;
     padding: 0;
     padding-bottom: 5px;
-    font-weight: bold;
+    
+    line-height: 26px;
+    font-size: 24px;
+    color: #00597c;
 }
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody{
+	padding: 10px 0;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+/*
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static .uiOutputTextArea{
+    line-height: 1.6em;
+}
+*/
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .blank-item{
 	display: none;
@@ -180,6 +227,26 @@
 	display:none;
 }
 
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form-element__static{
+    font-size: var(--lwc-inputStaticFontSize,0.8125rem);
+}
+        
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form-element__static 
+.outputLookupContainer{
+    float: left;
+    display: block;
+}
+        
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form-element__static 
+.outputLookupContainer .photoContainer{
+	display: none;
+}
+        
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form-element__static 
+span.forceOutputModStampWithPreview{
+	display: initial;
+}
+
 /*
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .test-id__section-content .forcePageBlockSectionRow:last-child,
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(2) .test-id__section-content .forcePageBlockSectionRow:last-child{
@@ -189,7 +256,7 @@
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid{
 	padding: 0;
-    margin:0;
+    margin: 5px 0 !important;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .forceOutputOwnerIdLookupWithChangeLink{
@@ -204,10 +271,14 @@
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form {
 	padding: 20px;
-    padding-bottom:0;
 }
 
-.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly a.outputLookupLink,
+        /*
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly a.outputLookupLink {
+  	pointer-events: none;          
+}
+        */
+        
 .THIS .tracker-case .activity .entityLinkHover a.cuf-actorLink,
 .THIS .tracker-case .activity .entityLinkHover a.cuf-entityLink,
 .cTrackerViewDetailsLayout .tracker-case .activity .cuf-feedItem a.cuf-timestamp{
@@ -232,7 +303,6 @@
     border: none;
     padding: 0 !important;
     padding-top: 25px !important;
-    margin:0 !important;
 }
 
 
@@ -256,12 +326,12 @@
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-child(2) .slds-form-element__static span{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    vertical-align: bottom;
-    padding: 10px;
-    background: rgb(171 173 176);
+	vertical-align: bottom;
+    padding: 10px 14px;
+    background: #009adb;
     border-radius: 40px;
-    color: #000;
+    color: #fff;
+    font-size: 18px;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:first-child .slds-form-element__static span{
@@ -310,9 +380,11 @@
     z-index:9999;
 }
 
+/*
 .THIS .tracker-case .activity .ui-widget:last-child{
     margin-top: -80px;
 }
+*/
 
 .THIS .tracker-case .activity .feedActions {
     display: flow-root;
@@ -323,6 +395,7 @@
 
 .THIS .tracker-case .activity .feedActions .feeds-sorter{
     float: right;
+    font-size: 0.9em;
 }
 
 .THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger{
@@ -362,9 +435,20 @@
     background: #009adb;
     padding: 20px;
 }
+        
+.THIS .tracker-case .activity .cuf-feedItem .cuf-body,
+.THIS .tracker-case .activity .cuf-feedItem .forceChatterFeedAuxBody{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+
+.THIS .tracker-case .activity .forceChatterStyle,
+.THIS .tracker-case .activity .slds-text-body--small{
+   	font-size: initial;  
+}
 
 .THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble{
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 .THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble p{
@@ -375,7 +459,6 @@
 .THIS .tracker-case .activity .cuf-feedItem span.uiOutputText {
     color: #fff;
     border:none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 .THIS .tracker-case .activity .cuf-feedItem .entityLinkHover{
