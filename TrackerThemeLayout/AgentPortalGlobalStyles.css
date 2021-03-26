@@ -233,6 +233,10 @@ a.btn-outline:active {
     padding: 0 !important;
 }
     
+.uiMenuList--default .select-options .uiMenuItem {
+	border-bottom: 1px solid #efefef;
+}
+    
 .uiMenuList--default .select-options .uiMenuItem > a {
     padding: 15px;
     font-family: "Work Sans";
@@ -351,6 +355,54 @@ a.btn-outline:active {
 .tracker .slds-nubbin_top-left-corner::before {
     background-color: #f4f5f5;
 }
+    
+.siteforcePanelsContainer .listViewPickerPanel {
+    margin-left: 10px;    
+}    
+    
+.siteforcePanelsContainer .uiPanel .container {
+  	width: 268px;
+    padding: 0;      
+}
+  
+.siteforcePanelsContainer .uiPanel .container ul li a{
+  	padding: 15px;
+    font-family: Roboto,"Helvetica Neue",sans-serif; 
+}    
+
+.siteforcePanelsContainer .uiPanel .container ul li{
+    border-bottom: 1px solid #efefef;
+}    
+    
+.siteforcePanelsContainer .uiPanel .container ul li:first-child,
+.siteforcePanelsContainer .uiPanel .container ul li:nth-child(2),
+.siteforcePanelsContainer .uiPanel .container ul li:nth-child(3),
+.siteforcePanelsContainer .uiPanel .container ul li:last-child,
+.siteforcePanelsContainer .uiPanel .container ul li:nth-last-child(2) {
+    display:none;   
+}
+    
+.siteforcePanelsContainer .uiPanel .container ul li.highlighted a,
+.siteforcePanelsContainer .uiPanel .container ul li a:hover,
+.siteforcePanelsContainer .uiPanel .container ul li.highlighted a:hover,
+.siteforcePanelsContainer .uiPanel .container ul li a:focus,
+.siteforcePanelsContainer .uiPanel .container ul li.highlighted a:focus
+.siteforcePanelsContainer .uiPanel .container ul li a:visited,
+.siteforcePanelsContainer .uiPanel .container ul li.highlighted a:visited{
+  	background-color: #fafaf9 !important;
+}  
+    
+.siteforcePanelsContainer .uiScroller ul li .slds-icon--selected{
+  	display:none !important;    
+}    
+    
+.forceVirtualAutocompleteMenu.hideInput{
+    width: 100% !important;     
+}
+
+.siteforcePanelsContainer .slds-text-heading--label {
+    display:none;    
+}  
     
 @media (max-width: 991px) {
     .tracker .slds-section .container,

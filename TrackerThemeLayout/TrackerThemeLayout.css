@@ -82,9 +82,12 @@
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
+    display: block;
     float: right;
-    margin-left: 10px;
-    display: none;
+}
+
+.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:last-child{
+    margin-bottom: 10px;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
@@ -96,9 +99,17 @@
     display:none;
 }
 
-.THIS .tracker-list .slds-main-content .slds-page-header__title{
+.THIS .tracker-list .slds-media__body .slds-page-header__title{
 	margin: 0 !important;
     font-size: initial !important;
+    margin: 0;
+}
+
+.THIS .tracker-list .slds-media__body .slds-page-header__title .triggerLink{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 10px 14px;
+    width: 268px;
 }
 
 .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
@@ -106,7 +117,7 @@
 }
 
 .THIS .tracker-list .slds-main-content .downIcon{
-	line-height: 32px;
+	line-height: 54px;
     display: block;
     margin: 0;
 }
@@ -129,19 +140,21 @@
 }
 
 .THIS .tracker-list .forceListViewManagerHeader{
-	margin-top: -20px;
+	margin-top: -10px;
 }
 
 .THIS .tracker-list .forceListViewManagerHeader .slds-shrink{
-	margin-right: 10px;
+	margin-right: 15px;
 }
+
+.THIS .tracker-list .forceListViewManagerHeader .slds-col:last-child{
+	display:none;
+}
+
 
 .THIS .tracker-list .search-in-list,
 .THIS .tracker-list .slds-align-bottom .slds-m-left_xx-small{
     margin: 0;
-    padding: 15px;
-    margin: 0;
-    background: #f0f0f0;
     border-radius: 6px;
     overflow: visible;
     width: auto;
@@ -154,16 +167,24 @@
 .THIS .tracker-list .search-in-list .slds-input{
     width: auto;
     font-family: Roboto,"Helvetica Neue",sans-serif;
+    border-radius: 0;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .THIS .tracker-list .listDisplays {
-    height:initial;
-    min-height: auto !important;
+    /* height:initial; */
+    /* min-height: auto !important; */
 }
 
 .THIS .tracker-list .listDisplays .listViewContainer{
     height:initial;
     min-height: auto !important;
+}
+
+.THIS .tracker-list .listDisplays .listViewContainer .listViewContent{
+    min-height: auto;
 }
 
 /*
@@ -185,18 +206,6 @@
     opacity: inherit;
     background-color: #d4d4d4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -245,13 +254,19 @@
 	background: #32363f;
 }
 
+.THIS .tracker-list .slds-table--header-fixed thead th:nth-child(2),
+.THIS .tracker-list .slds-table--header-fixed thead th:nth-child(2) > .slds-cell-fixed
+{
+    width: 160px !important;
+}
 
+/*
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(3),
 .THIS .tracker-list .slds-table tbody tr td:nth-last-child(3)
 {
     display:none;
 }
-
+*/
 
 .THIS .tracker-list .slds-table tbody {
     font-family: Roboto,"Helvetica Neue",sans-serif;
