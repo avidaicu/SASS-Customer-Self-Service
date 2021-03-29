@@ -5,8 +5,6 @@
 	position: relative;
 }
 
-
-
 .THIS .tracker-case .header .comm-layout-column{
 	padding: 35px 0 !important;
 }
@@ -124,6 +122,11 @@
 	font-family: Roboto,"Helvetica Neue",sans-serif;
     font-size: 18px;
     line-height: 1.6em;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
+.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle:hover{
+	text-decoration: underline;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
@@ -396,10 +399,19 @@ span.forceOutputModStampWithPreview{
 
 .THIS .tracker-case .activity {
     background: #ffffff;
+    padding-bottom:40px;
 }
 
-.THIS .tracker-case .activity .ui-widget:first-child h2{
+.THIS .tracker-case .activity .ui-widget h2{
     z-index:9999;
+}
+        
+.THIS .tracker-case .activity .ui-widget h2 a{
+    pointer-events:none;
+}
+        
+ .THIS .tracker-case .activity .ui-widget h2 .slds-shrink-none{
+    display:none;
 }
 
 /*
@@ -479,8 +491,187 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .activity .cuf-feedItem .slds-post__footer{
     display:none;
 }
-*/
+
         
 .THIS .tracker-case .activity .cuf-feedItem .slds-post__footer{
     display:none;
 }
+*/     
+                
+.THIS .tracker-case .activity .forceRelatedListSingleContainer{
+    padding: 0;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder{
+    border: none;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-card__footer{
+    display:none;
+}
+
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .forceRelatedListCardHeader{
+    background: none;
+    padding-bottom: 20px !important;
+    border:none;
+}
+
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-media__figure{
+	display:none;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-no-flex{
+	display: none;
+}
+
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .listViewContent {
+	padding-top: 10px;
+}
+ 
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead {
+	background: #0099DE;   
+}        
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th {
+	padding: 15px 18px;
+    font-weight:normal;
+    background: none; 
+    color:#fff;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th,
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody th,
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td{
+	border-right: 1px solid #d4d4d4;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th:nth-last-child(2),
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody th:nth-last-child(2),
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td:nth-last-child(2){
+	border-right: none;
+}
+
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th:first-child {
+	/* padding-left: 1rem; */
+}  
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+ 
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody tr:hover,
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody tr:hover th,
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody tr:hover td{
+	background: none;
+}  
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody tr:nth-child(even){
+	background: #fafaf9;
+}
+            
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td {
+	padding: 18px;
+}
+
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th:nth-child(2),
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th.actionColumnHeader,
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td:nth-child(2),
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td:last-child{
+	display:none;
+}
+
+.THIS .tracker-case .activity .inputTextContainer {
+    padding: 0;
+    width: 100%;
+}
+        
+.THIS .tracker-case .activity .inputTextContainer .textarea {
+    max-height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.125 !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 160px;
+}
+        
+.THIS .tracker-case .activity .inputTextContainer .form-element__label {
+	display: none;
+    margin: 0;
+}
+        
+.THIS .tracker-case .activity .attachmentsList,
+.THIS .tracker-case .activity .uploadFileContainer
+        {
+	display: none;
+    margin: 0;
+}
+        
+.THIS .tracker-case .activity .postButtonContainer
+{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.THIS .tracker-case .activity .postButtonContainer button {
+	border-radius: 40px;
+    font-size: 1.1em;
+    font-family: "HelveticaNeueW01-Thin"!important;
+    background: #00597c;
+    border: 2px solid #00597c;
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 30px;
+}
+
+@media (max-width: 991px) {
+    .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child {
+        position: relative;
+        width: 100%;
+	}
+    .THIS .tracker-case .slds-main-content .ui-widget:first-child{
+    	margin: 0;
+    	margin-bottom: 10px;
+    	margin-top: 15px;
+	}
+    .THIS .tracker-case .slds-main-content .ui-widget:first-child .header{
+    	background: none;
+    	padding: 0;
+	}
+    .THIS .tracker-case .slds-main-content .forceHighlightsPanel .profilePicWrapper{
+    	display:none;
+	}
+    .THIS .tracker-case .slds-main-content .ui-widget:first-child .header .fieldWrapper{
+    	padding: 0;
+	}       
+     .THIS .tracker-case .slds-main-content .forceHighlightsPanel .fieldWrapper h1 > div{
+    	display:none;
+	}
+    .THIS .tracker-case .slds-main-content .forceHighlightsPanel .fieldWrapper h2{
+    	margin: 0 !important;
+	}
+    .THIS .tracker-case .slds-main-content .forceHighlightsPanel .fieldWrapper h2 ul li:nth-last-child(2) span{
+    	vertical-align: top;
+    	padding: 10px 14px;
+    	background: #009adb;
+    	border-radius: 40px;
+    	color: #fff;
+    	font-size: 18px;
+    	margin-left: 10px;
+	}
+    .THIS .tracker-case .slds-main-content .forceHighlightsPanel .fieldWrapper h2 ul li:nth-last-child(2)::before{
+    	display:none;
+	}
+    .THIS .tracker-case .slds-main-content .forceHighlightsPanel .fieldWrapper h2 ul li:last-child{
+    	display:none;
+	}
+    .THIS .tracker-case .forcePageBlock,
+    .THIS .tracker-case .slds-main-content .ui-widget:last-child{
+    	width: 100%;
+	}
+    .THIS .tracker-case .slds-main-content .forceCommunityActionsContainerMobile {
+    	display:none;
+	}
+}        
+               

@@ -64,7 +64,7 @@ a.btn-outline:active {
     box-shadow: none;
     border: none;
 }
-    
+
 /* All tracker pages (tracker, form, case) */
 .tracker {
     font-size: 16px;
@@ -121,7 +121,7 @@ a.btn-outline:active {
 }
     
 .tracker .slds-table .slds-cell-edit {
-    padding: 13px 15px;
+    padding:18px 15px;
 }
     
 .tracker .slds-table .slds-cell-edit.slds-has-focus {
@@ -172,37 +172,6 @@ a.btn-outline:active {
         	content: "";
     }
     
-    @media only screen and (max-width: 767px) {
-        .navigation ul.slds-list_vertical li:nth-last-child(2) span{
-            padding-left:15px;
-        }
-        .navigation ul.slds-list_vertical li:nth-last-child(2) span::before{
-             font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
-            content: "\f05a";
-            float: left;
-            line-height: 16px;
-        }
-    }
-    
-
-    @media only screen and (min-width: 1192px) {
-        .navigation ul li.slds-list__item:nth-last-child(2){
-            position: absolute;
-            right: 0;
-        }
-
-        .navigation ul li.slds-list__item:nth-last-child(2) span::before{
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
-            content: "\f05a";
-            float: left;
-            margin-right: 5px;
-            line-height: 16px;
-        }
-    }
-    
-
    
 .tracker .toggle{
     position: relative;
@@ -231,6 +200,7 @@ a.btn-outline:active {
 .uiMenuList--left.uiMenuList {
     width: 35% !important;
     padding: 0 !important;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
 }
     
 .uiMenuList--default .select-options .uiMenuItem {
@@ -239,7 +209,6 @@ a.btn-outline:active {
     
 .uiMenuList--default .select-options .uiMenuItem > a {
     padding: 15px;
-    font-family: "Work Sans";
     font-size: 18px;
 }
 
@@ -249,7 +218,8 @@ a.btn-outline:active {
     
 .uiMenuList--default .select-options .uiMenuItem > a:hover,
 .uiMenuList--default .select-options .uiMenuItem > a:focus,
-.uiMenuList--default .select-options .uiMenuItem > a:hover
+.uiMenuList--default .select-options .uiMenuItem > a:hover,
+.uiMenuList--default .select-options .uiMenuItem > a.selected
 {
 	background-color: #fafaf9;
 }
@@ -340,6 +310,10 @@ a.btn-outline:active {
     border-top: 13px solid #f4f5f5 !important;
 } 
     
+.uiContainerManager {
+	height:auto !important;
+}
+    
 .tracker .slds-popover_tooltip .slds-popover__body, .slds-popover--tooltip .slds-popover__body {
     background-color: #f4f5f5;
     color: #333;
@@ -357,7 +331,7 @@ a.btn-outline:active {
 }
     
 .siteforcePanelsContainer .listViewPickerPanel {
-    margin-left: 10px;    
+    margin-left: 20px;    
 }    
     
 .siteforcePanelsContainer .uiPanel .container {
@@ -383,11 +357,15 @@ a.btn-outline:active {
 }
     
 .siteforcePanelsContainer .uiPanel .container ul li.highlighted a,
+.siteforcePanelsContainer .uiPanel .container ul li.slds-is-selected a,
 .siteforcePanelsContainer .uiPanel .container ul li a:hover,
+.siteforcePanelsContainer .uiPanel .container ul li.slds-is-selected a:hover,
 .siteforcePanelsContainer .uiPanel .container ul li.highlighted a:hover,
 .siteforcePanelsContainer .uiPanel .container ul li a:focus,
+.siteforcePanelsContainer .uiPanel .container ul li.slds-is-selected a:focus,
 .siteforcePanelsContainer .uiPanel .container ul li.highlighted a:focus
 .siteforcePanelsContainer .uiPanel .container ul li a:visited,
+.siteforcePanelsContainer .uiPanel .container ul li.slds-is-selected a:visited,
 .siteforcePanelsContainer .uiPanel .container ul li.highlighted a:visited{
   	background-color: #fafaf9 !important;
 }  
@@ -403,13 +381,49 @@ a.btn-outline:active {
 .siteforcePanelsContainer .slds-text-heading--label {
     display:none;    
 }  
-    
-@media (max-width: 991px) {
-    .tracker .slds-section .container,
-    .tracker .forceCommunityContactSupportForm .slds-truncate span,
-    .uiMenuList--left.uiMenuList
-    {
-    	width: 100%;
+
+  @media only screen and (max-width: 767px) {
+        .navigation ul.slds-list_vertical li:nth-last-child(2) span{
+            padding-left:15px;
+        }
+        .navigation ul.slds-list_vertical li:nth-last-child(2) span::before{
+             font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f05a";
+            float: left;
+            line-height: 16px;
+        }
     }
-}
+    
+    @media (max-width: 991px) {
+        .tracker .slds-section .container,
+        .tracker .forceCommunityContactSupportForm .slds-truncate span,
+        .uiMenuList--left.uiMenuList {
+            width: 100%;
+        }
+        .tracker .tracker-list,
+        .tracker .tracker-form {
+            padding-bottom:0;
+        }
+        .uiMenuList--left.uiMenuList {
+            width: 100% !important;
+        }
+	}
+
+    @media only screen and (min-width: 1192px) {
+        .navigation ul li.slds-list__item:nth-last-child(2){
+            position: absolute;
+            right: 0;
+        }
+
+        .navigation ul li.slds-list__item:nth-last-child(2) span::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f05a";
+            float: left;
+            margin-right: 5px;
+            line-height: 16px;
+        }
+    }
+    
 </style>

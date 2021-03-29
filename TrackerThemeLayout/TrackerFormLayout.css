@@ -371,8 +371,11 @@
             
 @media (max-width: 991px) {
     .THIS .tracker-form .slds-section .container,
-    .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate span
-    {
+    .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate span {
     	width: 100%;
-    }   
+    } 
+    .THIS .tracker-form .case-description{
+    	min-width: 100%;
+        width: 100%;
+	}              
 }
