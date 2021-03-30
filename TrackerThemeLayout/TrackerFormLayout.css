@@ -83,6 +83,7 @@
 .THIS .tracker-form .forceQuickActionLayout .forceRecordLayout {
     padding-top: 20px;
 }
+
 /*
 .THIS .tracker-form .slds-form .mdp {
 	background-color: #fafaf9;
@@ -228,7 +229,8 @@
 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a,
 .THIS .tracker-form .uiInput--input .input, 
-.THIS .tracker-form .uiInput--input.input{
+.THIS .tracker-form .uiInput--input.input,
+.THIS .tracker-form .uiInput--select .select{
     clear: both;
     border: none;
     border-radius: 0;
@@ -242,7 +244,7 @@
     line-height: 1.125  !important;
     font-family: Roboto,"Helvetica Neue",sans-serif;
     font-size: 20px;
-}
+}         
             
 .THIS .tracker-form .uiInput--input .input, 
 .THIS .tracker-form .uiInput--input.input{
@@ -267,13 +269,14 @@
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a {
     padding-left: 15px;
 }
-            */
+  */           
 
 .THIS .tracker-form .uiInput--select.select[disabled], 
 .THIS .tracker-form .uiInput--select .select[disabled], 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
     background-color: transparent !important;
 }
+
             
 .THIS .tracker-form .uiInputSelect > .uiMenu.disabled {
     background: #fafaf9;
@@ -377,5 +380,9 @@
     .THIS .tracker-form .case-description{
     	min-width: 100%;
         width: 100%;
+	}    
+    .THIS .tracker-form .uiInput--select .select.disabled{
+    	background: #fafaf9;
+    	opacity: .5;
 	}              
 }

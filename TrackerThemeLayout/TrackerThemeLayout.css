@@ -308,7 +308,10 @@
 }
 
         
-@media (max-width: 767.98px) {
+@media (max-width: 991px) {
+    .THIS .tracker-list .slds-main-content .ui-widget:first-child {
+    	display:none;
+	}
 	.THIS .tracker-list .btn_tracker_lg.add_new {
         float: none;
     	width: 100%; 
@@ -328,7 +331,6 @@
         margin: 0;
         float: none;
         justify-content: center;
-        font-size: inherit !important;
         line-height: initial !important;
 	}
     
@@ -344,4 +346,45 @@
 		position: absolute;
     	top: 0;
 	}
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceCommunityActionsContainerMobile {
+        display:none; 
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bLeft{
+        display:none; 
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .footer a.link{
+    	display:none; 
+	}
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody h2 {
+    	margin:0 !important;
+        padding:0 !important;
+	}
+    .THIS .tracker-list .forceCommunityRecordListMobile .listContent,
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .uiMenu{
+        font-family: Roboto, "Helvetica Neue", sans-serif
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .listContent ul .uiInfiniteListRow .body {
+        border-bottom: none;
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .listContent h2.itemTitle{
+        margin:0!important;
+        color: #0099D8;
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .listContent .itemRows .outputLookupLink{
+        pointer-events:none;
+        color: inherit;
+        border-bottom:none;
+    }
+    .THIS .tracker-list .forceCommunityRecordListMobile .listContent a.listItem,
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:hover,
+    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:focus{
+        text-decoration: none;
+        
+    }
+    
+    
+    
+    
+    
+    
 }
