@@ -401,9 +401,18 @@
         text-decoration: none;
         
     }
-    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child {
-        float:none;
+    .THIS .tracker-list .slds-main-content .slds-page-header {
+       padding-top: 1rem; 
+    }
+    .THIS .tracker-list .slds-main-content .slds-page-header > .slds-grid{
+        float:none !important;
         display: block;
+    }
+    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child  {
+        float:left;
+    }
+    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:last-child  {
+        margin-bottom: 0;
     }
     .THIS .tracker-list .slds-media__body .slds-page-header__title {
         font-size: 2.6em !important;
@@ -412,15 +421,17 @@
         width: 100%;
         padding:0;
         border:none;
-        font-family:initial;
+        font-family: 'HelveticaNeueW01-Thin';
     }
     .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
         line-height: initial;
     }
     .THIS .tracker-list .forceListViewManagerHeader .slds-shrink {
-        margin: 0;
+        display:block;
+        margin: 15px 0;
     }
     .THIS .tracker-list .search-in-list .slds-input {
         box-sizing: inherit;
+        width: 100%;
     }
 }

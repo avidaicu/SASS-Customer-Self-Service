@@ -332,11 +332,9 @@ a.btn-outline:active {
     border-top: 13px solid #f4f5f5 !important;
 } 
     
-/*
 .uiContainerManager {
 	height:auto !important;
 }
-*/
     
 .siteforcePanelsContainer .listViewPickerPanel {
     margin-left: 20px;    
@@ -381,23 +379,25 @@ a.btn-outline:active {
 .siteforcePanelsContainer .uiScroller ul li .slds-icon--selected{
   	display:none !important;    
 }    
-
-/*
-.siteforcePanelsContainer .forceVirtualAutocompleteMenu.hideInput{
+    
+.forceVirtualAutocompleteMenu.hideInput{
     width: 100% !important;     
 }
-*/
 
 .siteforcePanelsContainer .slds-text-heading--label {
     display:none;    
 }  
 
   @media only screen and (max-width: 767px) {
-        .navigation ul.slds-list_vertical li:nth-last-child(2) span{
+        .navigation .slds-list_vertical > .slds-list__item:nth-last-child(2) span{
             padding-left:15px;
         }
-        .navigation ul.slds-list_vertical li:nth-last-child(2) span::before{
-             font-family: "Font Awesome 5 Free"; 
+      
+      	.navigation .slds-list_vertical .slds-list__item span::before{
+             content: "";
+        }
+        .navigation .slds-list_vertical > .slds-list__item:nth-last-child(2) span::before{
+            font-family: "Font Awesome 5 Free"; 
             font-weight: 900; 
             content: "\f05a";
             float: left;
@@ -421,12 +421,12 @@ a.btn-outline:active {
 	}
 
     @media only screen and (min-width: 1192px) {
-        .navigation ul li.slds-list__item:nth-last-child(2){
+		.navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) {
             position: absolute;
             right: 0;
         }
-
-        .navigation ul li.slds-list__item:nth-last-child(2) span::before{
+        
+        .navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) span::before{
             font-family: "Font Awesome 5 Free"; 
             font-weight: 900; 
             content: "\f05a";
