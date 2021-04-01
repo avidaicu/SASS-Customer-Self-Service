@@ -27,6 +27,10 @@
     display:none;
 }
 
+.THIS .tracker-case .slds-main-content .ui-widget:first-child{
+    margin-bottom: 20px;
+}
+
 .THIS .tracker-case .slds-main-content .ui-widget:last-child{
     margin-bottom: 20px;
     width: 50%;
@@ -502,30 +506,29 @@ span.forceOutputModStampWithPreview{
     padding: 0;
 }
         
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder{
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop{
     border: none;
 }
         
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-card__footer{
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-card__footer{
     display:none;
 }
 
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .forceRelatedListCardHeader{
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .forceRelatedListCardHeader{
     background: none;
-    padding-bottom: 20px !important;
     border:none;
 }
 
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-media__figure{
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-media__figure{
 	display:none;
 }
         
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .slds-no-flex{
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-no-flex{
 	display: none;
 }
 
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .listViewContent {
-	padding-top: 10px;
+	margin-top: 20px;
 }
  
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead {
@@ -703,7 +706,7 @@ span.forceOutputModStampWithPreview{
         margin: 0;
     	padding: 0;        
     }   
-    .THIS .tracker-case .activity .forceRelatedListSingleContainer .headerBottomBorder .forceRelatedListCardHeader {
+    .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .forceRelatedListCardHeader {
         padding-bottom: 0 !important;        
     } 
     .THIS .tracker-case .activity {

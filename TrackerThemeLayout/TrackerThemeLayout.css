@@ -401,10 +401,26 @@
         text-decoration: none;
         
     }
-    
-    
-    
-    
-    
-    
+    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child {
+        float:none;
+        display: block;
+    }
+    .THIS .tracker-list .slds-media__body .slds-page-header__title {
+        font-size: 2.6em !important;
+    }
+    .THIS .tracker-list .slds-media__body .slds-page-header__title .triggerLink {
+        width: 100%;
+        padding:0;
+        border:none;
+        font-family:initial;
+    }
+    .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
+        line-height: initial;
+    }
+    .THIS .tracker-list .forceListViewManagerHeader .slds-shrink {
+        margin: 0;
+    }
+    .THIS .tracker-list .search-in-list .slds-input {
+        box-sizing: inherit;
+    }
 }
