@@ -65,229 +65,27 @@ a.btn-outline:active {
     border: none;
 }
 
-/* All tracker pages (tracker, form, case) */
-.tracker {
-    font-size: 16px;
-    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
-}
-  
-.tracker h2{
-    font-size: 2.6em !important;
-    font-weight: normal !important;
-}
-    
-.tracker .tracker-list,
-.tracker .tracker-form
-{
-    padding-bottom:40px;
-}
-    
-.tracker .header{
-    color:#fff;
-    background: #009adb;
-}
+/* Global tracker/ case view/ case form styles */ 
 
-.tracker .header p,
-.tracker .header a{
-    margin:0 !important;
-}
-
-.tracker .siteforceContentArea h1{
-    font-size: 2.6em;
-    margin:0 !important;
-}
-
-.tracker .stats{
-    background: #eaeaea;
-}
-    
-.tracker .stats .ui-widget{
-    margin:0 !important;
-}
-
-.tracker .slds-cell-fixed {
-    background: #32363f;
-}
-
-.tracker .listViewContent {
-    padding-top: 0;
-    background: #32363f;
-    height:auto !important;
+.uiContainerManager {
+	height:auto !important;
 }    
     
-.tracker .slds-th__action {
-    color: #fff !important;
-    padding:25px 1rem;
-}
-    
-.tracker .slds-table .slds-cell-edit {
-    padding:18px 15px;
-}
-    
-.tracker .slds-table .slds-cell-edit.slds-has-focus {
-	box-shadow: none !important;
-    background:none !important;
-}
-    
-.tracker .slds-th__action {
-    color: #fff !important;
+/* 'Help & Support' menu link */    
+.navigation ul li:last-child ul > li:last-child span::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f05a";
+        float: left;
+        margin-right: 5px;
+        line-height: 16px;
 }
 
-.tracker .slds-th__action:hover,
-.tracker .slds-th__action:focus,
-.tracker .slds-th__action:active,
-.tracker .slds-cell-fixed:hover,
-.tracker .slds-cell-fixed:focus,
-.tracker .slds-cell-fixed:active {
-   background: #32363f !important;
+.navigation ul li:last-child ul li li:last-child span::before{
+        display:none;
 }
 
-.tracker .slds-cell-edit:hover,
-.tracker .slds-cell-edit:focus,
-.tracker .slds-cell-edit:active{
-    outline: 0 !important;
-}
- 
-    
-.tracker .uiInput--select.select[disabled], 
-.tracker .uiInput--select .select[disabled], 
-.tracker .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
-	background-color: #EAEAEA;          
-}
-            
-.tracker .tooltipIcon {
-    color: #009adb;             
-}
-    
-    .navigation ul li:last-child ul > li:last-child span::before{
-            font-family: "Font Awesome 5 Free"; 
-        	font-weight: 900; 
-        	content: "\f05a";
-            float: left;
-            margin-right: 5px;
-            line-height: 16px;
-    }
-    
-    .navigation ul li:last-child ul li li:last-child span::before{
-        	content: "";
-    }
-    
-   
-.tracker .toggle{
-    position: relative;
-}
-    
-.tracker .toggle::before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0dd";
-    float: right;
-    font-size: 20px;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-}
-    
-.tracker .descending .toggle::before{
-    content: "\f0de";
-    top: 18px;
-}
-    
-.tracker .btn_tracker_lg.add_new::before {
-    content: " ";
-	background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/insert_template.svg);
-    display:block;
-    width:24px;
-    height:24px;
-    margin-right: 3px;
-}
-
-.tracker .slds-breadcrumb {
-    font-family: var(--lwc-fontFamily,Work Sans) !important;
-}
-    
-.tracker .slds-breadcrumb,
-.tracker .slds-breadcrumb li{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-    
-.tracker .slds-breadcrumb .slds-breadcrumb__item:fist-child{
-    margin-right: 10px !important;
-}
-    
-.tracker .slds-breadcrumb .slds-list__item:first-child > a, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item:first-child > a{
-    margin-right: 10px !important;
-}
-    
-.tracker .slds-breadcrumb .slds-list__item::before, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item::before
-    {
-    display:none;
-}
-
-.tracker .slds-breadcrumb .slds-breadcrumb__item a:hover{
-	text-decoration: underline !important;
-    color:#fff;
-}
-    
-.tracker .slds-breadcrumb .slds-breadcrumb__item:last-child a{
-    pointer-events: none;
-}
-
-.tracker .slds-breadcrumb .slds-list__item > a, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item > a{
-    color: #fff;
-}
-
-.tracker .slds-breadcrumb .slds-list__item::before, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item::before{
-    font-size:1.1em;
-    text-align: left !important;
-}
-    
-.tracker .slds-breadcrumb .slds-list__item::before, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item::before {
-    margin: 0 !important;
-}
-    
-.tracker .slds-breadcrumb .slds-list__item:last-child a::before{
-	padding: 0;
-    padding-left: 10px;
-}
-        
-.tracker .slds-breadcrumb .slds-breadcrumb__item a::after{
-	font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    position: absolute;
-    top: -1px;
-    margin-left: 10px;
-}   
-
-.tracker .slds-breadcrumb .slds-list__item:last-child > a::after, 
-.tracker .slds-breadcrumb .slds-breadcrumb__item:last-child > a::after{
-	display:none;
-}
-    
-.tracker .slds-popover_tooltip .slds-popover__body, .slds-popover--tooltip .slds-popover__body {
-    background-color: #f4f5f5;
-    color: #333;
-    font-size: initial;
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-    -webkit-box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%);
-    -moz-box-shadow: 0px 9px 12px -5px rgba(122,122,122,0.31);
-    box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%); 
-}
-    
-.tracker .slds-nubbin_top-left::before, 
-.tracker .slds-nubbin--top-left::before, 
-.tracker .slds-nubbin_top-left-corner::before {
-    background-color: #f4f5f5;
-}
-
-       
+/* 'Case form' select lists */   
 .uiMenuList--left.uiMenuList {
     width: 35% !important;
     padding: 0 !important;
@@ -318,7 +116,8 @@ a.btn-outline:active {
 .uiMenuList--default .select-options a b {
     display:none !important;
 }
-    
+
+/* 'Case form' tooltips */
 .uiTooltipAdvanced .tooltip-body {
     background-color: #f4f5f5 !important;
     color: #333 !important;
@@ -332,10 +131,17 @@ a.btn-outline:active {
     border-top: 13px solid #f4f5f5 !important;
 } 
     
-.uiContainerManager {
-	height:auto !important;
+.slds-popover--tooltip .slds-popover__body {
+    background-color: #f4f5f5;
+    color: #333;
+    font-size: initial;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    -webkit-box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%);
+    -moz-box-shadow: 0px 9px 12px -5px rgba(122,122,122,0.31);
+    box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%); 
 }
-    
+
+/* Tracker 'list view' dropdown */   
 .siteforcePanelsContainer .listViewPickerPanel {
     margin-left: 20px;    
 }    
@@ -386,54 +192,52 @@ a.btn-outline:active {
 
 .siteforcePanelsContainer .slds-text-heading--label {
     display:none;    
-}  
-
-  @media only screen and (max-width: 767px) {
-        .navigation .slds-list_vertical > .slds-list__item:nth-last-child(2) span{
-            padding-left:15px;
-        }
-      
-      	.navigation .slds-list_vertical .slds-list__item span::before{
-             content: "";
-        }
-        .navigation .slds-list_vertical > .slds-list__item:nth-last-child(2) span::before{
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
-            content: "\f05a";
-            float: left;
-            line-height: 16px;
-        }
+} 
+    
+@media only screen and (max-width: 767px) {
+    /* 'Help & Support' menu link */ 
+    .slds-is-fixed >.comm-navigation__list.slds-list_vertical .slds-list__item:nth-last-child(2) span{
+        padding-left:15px;
+    }
+    .slds-is-fixed >.comm-navigation__list.slds-list_vertical .slds-list__item:nth-last-child(2) span::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f05a";
+        float: left;
+        line-height: 16px;
     }
     
-    @media (max-width: 991px) {
-        .tracker .slds-section .container,
-        .tracker .forceCommunityContactSupportForm .slds-truncate span,
-        .uiMenuList--left.uiMenuList {
-            width: 100%;
-        }
-        .tracker .tracker-list,
-        .tracker .tracker-form {
-            padding-bottom:0;
-        }
-        .uiMenuList--left.uiMenuList {
-            width: 100% !important;
-        }
-	}
-
-    @media only screen and (min-width: 1192px) {
-		.navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) {
-            position: absolute;
-            right: 0;
-        }
-        
-        .navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) span::before{
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
-            content: "\f05a";
-            float: left;
-            margin-right: 5px;
-            line-height: 16px;
-        }
+    .slds-is-fixed >.comm-navigation__list.slds-list_vertical .slds-list_vertical .slds-list__item:nth-last-child(2) span{
+        padding-left: var(--lwc-fcSpacingLarge,28px);
     }
+    
+    .slds-is-fixed >.comm-navigation__list.slds-list_vertical .slds-list_vertical .slds-list__item:nth-last-child(2) span::before{
+        display:none;
+    }
+}
+
+@media (max-width: 991px) {
+    /* 'Case form' select lists */
+    .uiMenuList--left.uiMenuList {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 1192px) {
+    /* 'Help & Support' menu link */ 
+    .navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) {
+        position: absolute;
+        right: 0;
+    }
+    
+    .navigation .slds-list_horizontal > .slds-list__item:nth-last-child(2) span::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f05a";
+        float: left;
+        margin-right: 5px;
+        line-height: 16px;
+    }
+}
     
 </style>

@@ -79,6 +79,7 @@
 
 .THIS .tracker-list .slds-main-content .slds-page-header_bleed{
 	padding-top: 0;
+    border-bottom:none;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
@@ -329,6 +330,10 @@
 
         
 @media (max-width: 991px) {
+	.THIS .tracker-list {
+     	padding-bottom:0 !important;
+     }
+
     .THIS .tracker-list .slds-main-content .ui-widget:first-child {
     	display:none;
 	}

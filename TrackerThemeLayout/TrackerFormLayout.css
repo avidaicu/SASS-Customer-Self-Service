@@ -373,6 +373,9 @@
        
             
 @media (max-width: 991px) {
+    .THIS .tracker-form {
+    	padding-bottom:0 !important;
+    }
     .THIS .tracker-form .slds-section .container,
     .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate span {
     	width: 100%;

@@ -38,6 +38,216 @@
     margin: 0 !important;
 }
 
-/*.THIS .sgap-header .profileMenuRegion .change-language .slds-dropdown-trigger .slds-button {
-	border: 0;
-}*/
+.THIS .tracker {
+    font-size: 16px;
+    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+}
+  
+.THIS .tracker h2{
+    font-size: 2.6em !important;
+    font-weight: normal !important;
+}
+    
+.THIS .tracker .tracker-list,
+.THIS .tracker .tracker-form
+{
+    padding-bottom:40px;
+}
+    
+.THIS .tracker .header{
+    color:#fff;
+    background: #009adb;
+}
+
+.THIS .tracker .header p,
+.THIS .tracker .header a{
+    margin:0 !important;
+}
+
+.THIS .tracker .siteforceContentArea h1{
+    font-size: 2.6em;
+    margin:0 !important;
+}
+
+.THIS .tracker .stats{
+    background: #eaeaea;
+}
+    
+.THIS .tracker .stats .ui-widget{
+    margin:0 !important;
+}
+
+.THIS .tracker .slds-cell-fixed {
+    background: #32363f;
+}
+
+.THIS .tracker .listViewContent {
+    padding-top: 0;
+    background: #32363f;
+    height:auto !important;
+}    
+    
+.THIS .tracker .slds-th__action {
+    color: #fff !important;
+    padding:25px 1rem;
+}
+    
+.THIS .tracker .slds-table .slds-cell-edit {
+    padding:18px 15px;
+}
+    
+.THIS .tracker .slds-table .slds-cell-edit.slds-has-focus {
+	box-shadow: none !important;
+    background:none !important;
+}
+    
+.THIS .tracker .slds-th__action {
+    color: #fff !important;
+}
+
+.THIS .tracker .slds-th__action:hover,
+.THIS .tracker .slds-th__action:focus,
+.THIS .tracker .slds-th__action:active,
+.THIS .tracker .slds-cell-fixed:hover,
+.THIS .tracker .slds-cell-fixed:focus,
+.THIS .tracker .slds-cell-fixed:active {
+   background: #32363f !important;
+}
+
+.THIS .tracker .slds-cell-edit:hover,
+.THIS .tracker .slds-cell-edit:focus,
+.THIS .tracker .slds-cell-edit:active{
+    outline: 0 !important;
+}
+ 
+    
+.THIS .tracker .uiInput--select.select[disabled], 
+.THIS .tracker .uiInput--select .select[disabled], 
+.THIS .tracker .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
+	background-color: #EAEAEA;          
+}
+            
+.THIS .tracker .tooltipIcon {
+    color: #009adb;             
+}
+
+.THIS .tracker .toggle{
+    position: relative;
+}
+    
+.THIS .tracker .toggle::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+    
+.THIS .tracker .descending .toggle::before{
+    content: "\f0de";
+    top: 18px;
+}
+    
+.THIS .tracker .btn_tracker_lg.add_new::before {
+    content: " ";
+	background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/insert_template.svg);
+    display:block;
+    width:24px;
+    height:24px;
+    margin-right: 3px;
+}
+
+.THIS .tracker .slds-breadcrumb {
+    font-family: var(--lwc-fontFamily,Work Sans) !important;
+}
+    
+.THIS .tracker .slds-breadcrumb,
+.THIS .tracker .slds-breadcrumb li{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:fist-child{
+    margin-right: 10px !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item:first-child > a, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:first-child > a{
+    margin-right: 10px !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before
+    {
+    display:none;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item a:hover{
+	text-decoration: underline !important;
+    color:#fff;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child a{
+    pointer-events: none;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-list__item > a, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item > a{
+    color: #fff;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before{
+    font-size:1.1em;
+    text-align: left !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before {
+    margin: 0 !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item:last-child a::before{
+	padding: 0;
+    padding-left: 10px;
+}
+        
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item a::after{
+	font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    position: absolute;
+    top: -1px;
+    margin-left: 10px;
+}   
+
+.THIS .tracker .slds-breadcrumb .slds-list__item:last-child > a::after, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child > a::after{
+	display:none;
+}
+    
+.THIS .tracker .slds-popover_tooltip .slds-popover__body {
+    background-color: #f4f5f5;
+    color: #333;
+    font-size: initial;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    -webkit-box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%);
+    -moz-box-shadow: 0px 9px 12px -5px rgba(122,122,122,0.31);
+    box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%); 
+}
+    
+.THIS .tracker .slds-nubbin_top-left::before, 
+.THIS .tracker .slds-nubbin--top-left::before, 
+.THIS .tracker .slds-nubbin_top-left-corner::before {
+    background-color: #f4f5f5;
+}
+        
+@media (max-width: 991px) {
+        .THIS .tracker .slds-section .container,
+        .THIS .tracker .forceCommunityContactSupportForm .slds-truncate span {
+            padding-bottom:0;
+        }
+}
