@@ -123,7 +123,7 @@
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium ul {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-right: 10px;
 }
 
@@ -184,6 +184,19 @@
 .THIS .tracker-form .slds-p-horizontal_medium > .slds-button{
     position: absolute;
     top: 0;
+    padding: 14px 22px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 4px;
+    font-weight: lighter;
+    color: #32363f;
+    border: 2px solid #0099d8;
+    background: #fff;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium > .slds-button:hover{
+    background: #f5f5f5;
+    border: 2px solid #0099d8;
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium > ul::before{
@@ -320,15 +333,9 @@
     border-bottom-left-radius: 6px;
 }
 
-            
+          
 .THIS .tracker-form #submitButton button{
-	border-radius: 40px;
-    font-size: 1.1em;
-    font-family: "HelveticaNeueW01-Thin"!important;
-    margin-left: 20px;
-    background: #00597c;
-    border: 2px solid #00597c;
-    padding: 10px 20px;
+    margin-left: 20px!important;
 }
             
 .THIS .tracker-form .forceCommunityContactSupportForm .forceCommunityContactSupportConfirmation:last-child {

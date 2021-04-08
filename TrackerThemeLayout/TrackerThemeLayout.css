@@ -39,16 +39,25 @@
     display:none;
 }
 
+/*
 .THIS .tracker-list .btn_tracker_lg {
     padding: 12px 24px;
     border-radius: 40px;
     font-size: 1.1em;
 }
 
+
 .THIS .tracker-list .btn_tracker_lg.add_new {
     background: #00597c;
 	border: 2px solid #00597c;
 }
+
+
+.THIS .tracker-list .btn_tracker_lg.add_new:hover {
+	background: #003449;
+    border-color: #003449;
+}
+*/
 
 .THIS .tracker-list .btn_tracker_lg.add_new a{
     color: inherit;

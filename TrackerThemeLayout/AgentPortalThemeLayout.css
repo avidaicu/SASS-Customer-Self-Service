@@ -40,12 +40,17 @@
 
 .THIS .tracker {
     font-size: 16px;
+    /* font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif; */
+}
+
+.THIS .tracker .slds-form-element__label,
+.THIS .tracker .form-element__label{
     font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
 }
   
 .THIS .tracker h2{
-    font-size: 2.6em !important;
-    font-weight: normal !important;
+    font-size: 2.6em;
+    font-weight: normal;
 }
     
 .THIS .tracker .tracker-list,
@@ -243,6 +248,140 @@
 .THIS .tracker .slds-nubbin--top-left::before, 
 .THIS .tracker .slds-nubbin_top-left-corner::before {
     background-color: #f4f5f5;
+}
+
+.THIS .tracker button.slds-button {
+    background: #00597c;
+	border: 2px solid #00597c;
+    border-radius: 40px;
+    font-size: 1.1em;
+    font-family: "HelveticaNeueW01-Thin"!important;
+    background: #00597c;
+    border: 2px solid #00597c;
+    padding: 10px 20px;
+    line-height: 30px;
+    color:#fff;
+    height:initial;
+}
+    
+.THIS .tracker button.slds-button:hover {
+	background: #003449;
+    border-color: #003449;
+} 
+.THIS .tracker button.slds-button span{
+	color:#fff;
+}    
+        
+/* Live chat */ 
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton {
+	height: auto;
+    bottom: 0;
+} 
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton {
+	font-weight:normal;
+    padding: 0 24px;
+}  
+.THIS .tracker h2[embeddedService-chatHeader_chatHeader] {
+	font-size: initial; 
+    font-family: inherit !important;
+}
+        
+.THIS .tracker h2[embeddedService-chatHeader_chatHeader] .announcement{
+	background:#009adb;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer,
+.THIS .embeddedServiceSidebar.modalContainer .slds-style-inputtext,
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton,
+.THIS .embeddedServiceSidebar.modalContainer select{
+    font-family: inherit;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse {
+    background: none;
+    border: none;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse span{
+	color: initial;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse span:hover{
+	text-decoration:underline;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer select{
+    height: 44px;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .textarea {
+    font-family:inherit;
+}
+
+.THIS .embeddedServiceSidebar.modalContainer .fieldList{
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField{
+    margin: 0;
+    width: 100%;
+    margin-bottom:8px;
+}
+        
+                
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiInputSelect:after{
+	top: calc(50% + 10px);
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiLabel{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiLabel span:first-child{
+	float: left;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField input,
+.THIS .embeddedServiceSidebar.modalContainer select{
+	margin-top: 8px;
+    border-radius: 0;
+}
+         
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton{
+    background-color: var(--lwc-colorBackgroundButtonBrandHover,#135F90);
+    border: none;
+    padding: 0 24px;
+    font-size: 16px;
+    box-shadow: none;
+    display: flex;
+    font-weight: normal;
+    height: 50px;
+    width: auto;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content{
+	padding: 0;
+    margin: 0;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content .messageContent{
+    margin: 0;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .embeddedServiceIcon{
+    font-size: 1.2em;
+    padding-right: 5px;
+    margin: 0;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .minimizedText{
+	font-size: 16px;
 }
         
 @media (max-width: 991px) {
