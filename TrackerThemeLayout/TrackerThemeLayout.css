@@ -204,6 +204,19 @@
 
 .THIS .tracker-list .scroller-wrapper {
     background: #fff;
+    height: auto !important;
+}
+
+.THIS .tracker-list .listViewContainer .listViewContent .emptyContent {
+    position: relative;
+    background: #fff;
+    left: initial;
+    transform: initial;
+}
+
+.THIS .tracker-list .listViewContainer .listViewContent .emptyContent .emptyContentInner p{
+ 	padding: 20px;
+    margin: 0;
 }
 
 .THIS .tracker-list .slds-table--header-fixed {

@@ -158,7 +158,7 @@
     
 .THIS .tracker .btn_tracker_lg.add_new::before {
     content: " ";
-	background-image: url(/partnerCommunity/resource/1615340521000/SLDSIcons/utility/insert_template.svg);
+	background-image: url(/partnerCommunity/resource/1617928612000/SLDSIcons/utility/insert_template.svg);
     display:block;
     width:24px;
     height:24px;
@@ -276,11 +276,13 @@
 .THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton {
 	height: auto;
     bottom: 0;
+    right: 12px;        
 } 
 .THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton {
 	font-weight:normal;
     padding: 0 24px;
-}  
+} 
+        
 .THIS .tracker h2[embeddedService-chatHeader_chatHeader] {
 	font-size: initial; 
     font-family: inherit !important;
@@ -368,7 +370,10 @@
     margin: 0;
 }
                         
-.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content .messageContent{
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content .messageContent,
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton .embeddedServiceIcon{
+    font-size: 1.2em;
+    padding-right: 5px;
     margin: 0;
 }
                         

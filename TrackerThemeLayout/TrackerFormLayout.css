@@ -76,6 +76,7 @@
     padding-top: 94px;
     margin-top: -110px;
     margin-bottom:0;
+    padding-bottom: 40px;
 }
 
 
@@ -113,8 +114,9 @@
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium{
-	margin-left: 0;
-    margin-bottom: 0;
+	margin: 0;
+    width: 35%;
+    padding: 0;
     position:relative;
 }
 
@@ -124,7 +126,6 @@
 
 .THIS .tracker-form .slds-p-horizontal_medium ul {
     padding-top: 80px;
-    padding-right: 10px;
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium ul li{
@@ -179,6 +180,12 @@
 
 .THIS .tracker-form .slds-p-horizontal_medium ul li .forceChatterSelectedFileBadge .slds-no-space .slds-pill__icon_container .thumbnailContainer{
 	padding: 0;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium ul li .contentPostFileRemove{
+	background: none;
+    border: none;
+    color: #333;
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium > .slds-button{
@@ -369,7 +376,6 @@
 .THIS .tracker-form .forceCommunityContactSupportConfirmation .requestSummaryHeader {
     font-size: 1.5em !important;
     padding-bottom: 10px;
-    font-weight: bold !important;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;           
 }
             
@@ -377,7 +383,6 @@
     width: 10%;            
     padding: 0;
 }
-       
             
 @media (max-width: 991px) {
     .THIS .tracker-form {
