@@ -49,7 +49,7 @@
 }
   
 .THIS .tracker h2{
-    font-size: 2.6em;
+    font-size: 36px;
     font-weight: normal;
 }
     
@@ -70,7 +70,7 @@
 }
 
 .THIS .tracker .siteforceContentArea h1{
-    font-size: 2.6em;
+    font-size: 36px;
     margin:0 !important;
 }
 
@@ -243,31 +243,76 @@
     -moz-box-shadow: 0px 9px 12px -5px rgba(122,122,122,0.31);
     box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%); 
 }
-    
+ 
 .THIS .tracker .slds-nubbin_top-left::before, 
 .THIS .tracker .slds-nubbin--top-left::before, 
 .THIS .tracker .slds-nubbin_top-left-corner::before {
     background-color: #f4f5f5;
 }
+        
+.THIS .tracker .slds-nubbin_top-left::after, 
+.THIS .tracker .slds-nubbin--top-left::after, 
+.THIS .tracker .slds-nubbin_top-left-corner::after {
+    box-shadow: none;
+}
+    
+        
+        
+        
+ /*    
+.THIS .tracker .slds-nubbin_top-left {
+ 	position: relative;
+}   
+        
+.THIS .tracker .slds-nubbin_top-left:after, 
+.THIS .tracker .slds-nubbin_top-left:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.THIS .tracker .slds-nubbin_top-left:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.THIS .tracker .slds-nubbin_top-left:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}     
+*/
+        
+        
+        
 
 .THIS .tracker button.slds-button {
-    background: #00597c;
-	border: 2px solid #00597c;
+    background: #009adb;
+	border: 2px solid #009adb;
     border-radius: 40px;
     font-size: 1.1em;
     font-family: "HelveticaNeueW01-Thin"!important;
-    background: #00597c;
-    border: 2px solid #00597c;
+    border: 2px solid #009adb;
     padding: 10px 20px;
     line-height: 30px;
     color:#fff;
     height:initial;
 }
     
+/*        
 .THIS .tracker button.slds-button:hover {
 	background: #003449;
     border-color: #003449;
 } 
+*/
+        
 .THIS .tracker button.slds-button span{
 	color:#fff;
 }    
@@ -282,7 +327,9 @@
 	font-weight:normal;
     padding: 0 24px;
 } 
-        
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton button[aria-label="Agent Offline"] {
+	cursor: default;
+}      
 .THIS .tracker h2[embeddedService-chatHeader_chatHeader] {
 	font-size: initial; 
     font-family: inherit !important;
@@ -394,4 +441,14 @@
         .THIS .tracker .forceCommunityContactSupportForm .slds-truncate span {
             padding-bottom:0;
         }
+}
+@media (min-width: 992px) {
+        .THIS .cookie-tracker .cookie-bar .slds-col:first-child {
+            float: left;
+    		width: initial;
+        }
+        .THIS .cookie-tracker .cookie-bar .slds-col:last-of-type {
+        	width: initial;
+    		text-align: left; 		              
+        }          
 }
