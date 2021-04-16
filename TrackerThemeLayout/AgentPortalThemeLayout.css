@@ -254,6 +254,7 @@
 .THIS .tracker .slds-nubbin--top-left::after, 
 .THIS .tracker .slds-nubbin_top-left-corner::after {
     box-shadow: none;
+    background-color: #f4f5f5;
 }
     
         

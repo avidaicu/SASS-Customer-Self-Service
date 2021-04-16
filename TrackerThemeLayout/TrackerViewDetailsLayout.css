@@ -621,6 +621,7 @@ span.forceOutputModStampWithPreview{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 160px;
+    box-shadow: none;
 }
         
 .THIS .tracker-case .activity .inputTextContainer .form-element__label {

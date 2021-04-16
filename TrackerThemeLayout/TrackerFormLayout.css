@@ -206,15 +206,6 @@
     border: 2px solid #0099d8;
 }
 
-.THIS .tracker-form .slds-p-horizontal_medium > ul::before{
-    content: 'Help text for attachments here.';
-    color: #333;
-    border-radius: 6px;
-    margin-bottom: 30px;
-    display: block;
-    font-style: italic;
-}
-
 .THIS .tracker-form .forcePageBlockSectionRow:last-child {
     margin-bottom: 0;    
 }
