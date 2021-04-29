@@ -45,7 +45,7 @@
 
 .THIS .tracker .slds-form-element__label,
 .THIS .tracker .form-element__label{
-    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    font-family: "HelveticaNeueW01-Thin";
 }
   
 .THIS .tracker h2{
@@ -93,12 +93,13 @@
 }    
     
 .THIS .tracker .slds-th__action {
-    color: #fff !important;
-    padding:25px 1rem;
+    padding: 0 25px;
+    height: 3rem;
 }
     
 .THIS .tracker .slds-table .slds-cell-edit {
-    padding:18px 15px;
+    padding: 0 25px;
+    height: 3rem;
 }
     
 .THIS .tracker .slds-table .slds-cell-edit.slds-has-focus {

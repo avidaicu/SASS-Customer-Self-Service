@@ -90,24 +90,37 @@ border-color: #007bff transparent transparent transparent;
 .siteforcePanelsContainer .listViewPickerPanel {
     margin-left: 20px;    
 }    
+
+.siteforcePanelsContainer .uiPanel {
+  	border-radius: 0;    
+}    
     
 .siteforcePanelsContainer .uiPanel .container {
   	width: 268px;
     padding: 0;      
 }
-  
+
+/*
 .siteforcePanelsContainer .uiPanel .container ul li a{
   	padding: 15px;
     font-family: Roboto,"Helvetica Neue",sans-serif; 
-}    
+}
+*/
 
 .siteforcePanelsContainer .uiPanel .container ul li{
     border-bottom: 1px solid #efefef;
 }    
-    
+
+/*
 .siteforcePanelsContainer .uiPanel .container ul li:first-child,
 .siteforcePanelsContainer .uiPanel .container ul li:nth-child(2),
 .siteforcePanelsContainer .uiPanel .container ul li:nth-child(3),
+.siteforcePanelsContainer .uiPanel .container ul li:last-child,
+.siteforcePanelsContainer .uiPanel .container ul li:nth-last-child(2) {
+    display:none;   
+}
+*/
+    
 .siteforcePanelsContainer .uiPanel .container ul li:last-child,
 .siteforcePanelsContainer .uiPanel .container ul li:nth-last-child(2) {
     display:none;   
@@ -183,4 +196,147 @@ border-color: #007bff transparent transparent transparent;
         margin-right: 5px;
         line-height: 16px;
     }
+}
+    
+.comm-panels-container .modal-container {
+	font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    	font-size: 16px;
+}
+
+.comm-panels-container .modal-container .modal-header{
+	padding: 0 20px;
+    	border: none;
+}
+
+.comm-panels-container .modal-container .modal-header h2.title{
+	font-weight: normal;
+    	font-size: 28px;
+    	font-family: "HelveticaNeueW01-Thin" !important;
+    	padding: 20px;
+    	padding: 5px 20px 15px 20px;
+    	border-bottom: 1px solid #ececec;
+    	margin-bottom: 0;
+}
+
+/**.comm-panels-container .modal-container .modal-body {
+	padding: 20px;
+}**/  
+    
+.comm-panels-container .modal-container .modal-body .groupDependentFieldEnabled{
+	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .forcePageError{
+	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .forcePageError .errorsList{
+	font-size: initial;
+    	padding: 20px;
+}
+
+.comm-panels-container .modal-container .modal-body h3{
+	margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+        
+.comm-panels-container .modal-container .modal-body h3 span{
+	padding: 0;
+    display:none;
+}
+    
+.comm-panels-container .modal-container .modal-body h3::after{
+	content: 'Please add comment below.';
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content{
+	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow{
+	margin: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow:last-child,
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow:nth-last-child(2){
+	display:none;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit{
+	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element{
+	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element label{
+	font-size: initial;
+    display: block;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element .textarea{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-height: 150px;
+}
+
+.comm-panels-container .modal-container .modal-body .test-id__section-content 
+.forcePageBlockSectionRow .form-element__help{
+	font-size: initial;
+}
+    
+.comm-panels-container .modal-container .modal-body .rightPanel{
+	width: 360px !important;
+}
+
+.comm-panels-container .modal-container .modal-footer {
+	border: none;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.comm-panels-container .modal-container .modal-footer .slds-button{
+	border: 2px solid #0099d8;
+    	margin: 0;
+    	padding: 0;
+}
+
+.comm-panels-container .modal-container .modal-footer .slds-button span{
+	padding: 4px 22px;
+   	border-radius: 5px;
+    	text-decoration: none;
+    	font-size: 16px;
+}
+
+.comm-panels-container .modal-container .modal-footer .uiButton--brand{
+	background: #0099d8;
+    margin-left: 0.5rem;
+    border: none;
+}
+
+.comm-panels-container .modal-container .modal-footer .uiButton--brand span{
+   	color: #fff;
+    background: #0099d8;
+   	border: 2px solid #0099d8;
+}
+
+.branding-actions  li.uiMenuItem:not(:first-child) {
+  display: none;
+}  
+    
+.branding-actions  li.uiMenuItem a:hover,
+.branding-actions  li.uiMenuItem a:focus,
+.branding-actions  li.uiMenuItem a:visited
+{
+  background: #ffffff;
+}
+    
+.branding-actions  li.uiMenuItem a:hover
+{
+  text-decoration: underline;
+}
+    
+.branding-actions  li.uiMenuItem a {
+  font-size: 14px;
 }

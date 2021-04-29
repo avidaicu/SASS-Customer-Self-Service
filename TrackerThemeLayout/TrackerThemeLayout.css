@@ -59,6 +59,34 @@
 }
 */
 
+.THIS .tracker-list .forceCommunityHomeTabs .uiTabBar{
+    display: none;
+}
+
+.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li{
+    height: inherit;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
+	display: block;
+    background: none;
+    position: relative;
+}
+
+.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
+    color: initial;
+    overflow: visible;
+}
+
 .THIS .tracker-list .btn_tracker_lg.add_new a{
     color: inherit;
 }
@@ -87,17 +115,15 @@
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header_bleed{
-	padding-top: 0;
-    border-bottom:none;
+    padding-top: 0;
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 0;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
     display: block;
     float: right;
-}
-
-.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:last-child{
-    margin-bottom: 10px;
 }
 
 .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
@@ -115,10 +141,11 @@
 }
 
 .THIS .tracker-list .slds-media__body .slds-page-header__title .triggerLink{
-    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     border: 1px solid rgb(212, 212, 212);
-    padding: 10px 20px;
+    padding: 0 20px;
     width: 268px;
+    height: 3rem;
 }
 
 .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
@@ -126,7 +153,7 @@
 }
 
 .THIS .tracker-list .slds-main-content .downIcon{
-	line-height: 54px;
+	line-height: 44px;
     display: block;
     margin: 0;
     right: 15px;
@@ -177,11 +204,15 @@
 
 .THIS .tracker-list .search-in-list .slds-input{
     width: auto;
-    font-family: Roboto,"Helvetica Neue",sans-serif;
     border-radius: 0;
-    padding: 10px;
+	padding: 0;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 20px;
+    margin:0;
+    height: 3rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .THIS .tracker-list .search-in-list .slds-input__icon-group{
@@ -315,10 +346,11 @@
     border-right: none;
 }
 
-
+/*
 .THIS .tracker-list .slds-table tbody {
     font-family: Roboto,"Helvetica Neue",sans-serif;
 }
+*/
 
 .THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
     display:none;
@@ -458,9 +490,11 @@
     .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child  {
         float:left;
     }
+    /*
     .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:last-child  {
         margin-bottom: 0;
     }
+    */
     .THIS .tracker-list .slds-media__body .slds-page-header__title {
         font-size: 2.6em !important;
     }

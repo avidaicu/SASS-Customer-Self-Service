@@ -36,6 +36,13 @@
     width: 50%;
 }
 
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .outputLookupLink{
+    color: #222222;
+    border: none;
+    pointer-events: none;
+    cursor: auto;
+}
+
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer{
 	padding: 0;
 }
@@ -50,7 +57,11 @@
 	background: none;
     border: 0;
     padding: 0 !important;
-    /* margin-bottom: 20px !important; */
+    margin-bottom: 20px !important;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-media__figure {
+    display:none;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions{
@@ -59,13 +70,14 @@
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li{
-    background: none;
-    border: none;
-    padding: 0;
+	border: none;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li a{
-    padding: 0;
+    border: 2px solid #0099d8;
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li a:hover{
@@ -73,14 +85,12 @@
     color: #00638c;
 }
 
+
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2{
-    font-weight: bold !important;
     padding: 0;
-    margin: 0 !important;
-    font-family: inherit !important;
-    font-size: 24px !important;
-    color: #00597c !important;
+    font-size: 24px;
 }
+
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .slds-page-header h2 .baseCard__header-title-container{
@@ -107,6 +117,29 @@
 	display: none;
 }
 */
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix thead th:nth-child(2),
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix thead th:nth-child(3),
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody td:nth-child(2),
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody td:nth-child(3)
+{
+    display: none;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix thead th,
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody td{
+    height: 3rem;
+    border-bottom: 1px solid rgb(233 234 236);
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody th{
+    border-bottom: 1px solid rgb(233 234 236);
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody tr:hover th,
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix tbody tr:hover td{
+    background-color:#fff;
+}
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-card__footer{
 	margin: 0;
@@ -141,12 +174,14 @@
 	overflow: initial;
 }
 
+/*
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle{
 	font-family: Roboto,"Helvetica Neue",sans-serif;
     font-size: 18px;
     line-height: 1.6em;
 }
+*/
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle:hover{
@@ -191,10 +226,8 @@
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element__label{
     padding: 0;
-    padding-bottom: 5px;
     line-height: 26px;
     font-size: 24px;
-    color: #00597c;
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody{
@@ -202,9 +235,11 @@
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static {
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-    font-size: 18px;
-    line-height: 1.6em;
+    font-size: 16px;
+}
+
+.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static .uiOutputTextArea{
+	text-transform: capitalize;
 }
 
 /*
@@ -258,6 +293,7 @@
     right: 0;
     background: #f4f5f5;
     width: 20%;
+    margin-top:0;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child h3{
@@ -309,6 +345,13 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form {
 	padding: 20px;
 }
+        
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child a{
+	color: #222222;
+    border: none;
+    pointer-events: none;
+    cursor: auto;
+}
 
         /*
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid .slds-form-element_readonly a.outputLookupLink {
@@ -343,8 +386,7 @@ span.forceOutputModStampWithPreview{
 }
 
 .THIS .tracker-case .slds-page-header ul.branding-actions li{
-    border-radius: 40px;
-    border: 2px solid #0099D8;
+    border: none;
 }
 
 /*
@@ -357,7 +399,6 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .slds-page-header ul.branding-actions li a:hover{
 	background:none;
 }
-
 
 .THIS .tracker-case .slds-page-header .primaryFieldRow {
 	display: none;
@@ -379,12 +420,12 @@ span.forceOutputModStampWithPreview{
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-child(2) .slds-form-element__static span{
-	vertical-align: bottom;
-    padding: 10px 14px;
-    background: #009adb;
-    border-radius: 40px;
+    padding: 4px 8px;
+    border-radius: 5px;
     color: #fff;
-    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    background: #005779;
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:first-child .slds-form-element__static span{
@@ -419,6 +460,7 @@ span.forceOutputModStampWithPreview{
 
 .THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element__static {
     overflow: visible;
+    font-size: 16px;        
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li .uiOutputText {
@@ -432,6 +474,7 @@ span.forceOutputModStampWithPreview{
 
 .THIS .tracker-case .activity .ui-widget h2{
     z-index:9999;
+    margin-bottom: 0 !important;
 }
         
 .THIS .tracker-case .activity .ui-widget h2 a{
@@ -530,6 +573,30 @@ span.forceOutputModStampWithPreview{
     padding: 0;
 }
         
+.THIS .tracker-case .activity .forceRelatedListSingleContainer li a{
+	font-size: 16px;
+    color:#fff;
+    background: #0099d8;
+    border: 2px solid #0099d8;
+    padding: 4px 8px;
+    border-radius: 5px;        
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer li a:hover{
+	text-decoration: underline;  
+    color:#fff;
+    background: #0099d8 !important;
+    border: 2px solid #0099d8;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer li a div[title]{
+    display:none;
+}
+        
+.THIS .tracker-case .activity .forceRelatedListSingleContainer li a::after{
+    content: 'New Comment';
+}
+     
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop{
     border: none;
 }
@@ -546,13 +613,15 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-media__figure{
 	display:none;
 }
-        
+
+/*
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-no-flex{
 	display: none;
 }
+*/
 
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .listViewContent {
-	margin-top: 20px;
+	margin-top: 10px;
 }
  
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead {
@@ -560,7 +629,8 @@ span.forceOutputModStampWithPreview{
 }        
         
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th {
-	padding: 15px 18px;
+	padding: 0 25px;
+    height: 3rem;
     font-weight:normal;
     background: none; 
     color:#fff;
@@ -569,7 +639,7 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th,
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody th,
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td{
-	border-right: 1px solid #d4d4d4;
+	border-right: 1px solid rgb(233 234 236);
 }
         
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th:nth-last-child(2),
@@ -582,8 +652,11 @@ span.forceOutputModStampWithPreview{
 	/* padding-left: 1rem; */
 }  
         
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody {
-	font-family: Roboto, "Helvetica Neue", sans-serif;
+.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody a{
+    color: #222222;
+    border: none;
+    pointer-events: none;
+    cursor: auto;
 }
  
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody tr:hover,
@@ -597,7 +670,7 @@ span.forceOutputModStampWithPreview{
 }
             
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView tbody td {
-	padding: 18px;
+	padding: 13px 25px;
 }
 
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .forceRelatedListPreviewGrid.forceBaseListView thead th:nth-child(2),
