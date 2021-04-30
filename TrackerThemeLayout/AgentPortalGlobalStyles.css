@@ -340,3 +340,7 @@ border-color: #007bff transparent transparent transparent;
 .branding-actions  li.uiMenuItem a {
   font-size: 14px;
 }
+    
+.searchRegion {
+    display:none;
+}

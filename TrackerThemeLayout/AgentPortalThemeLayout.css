@@ -39,29 +39,32 @@
 }
 
 .THIS .tracker {
-    font-size: 16px;
+    font-size: 14px;
     /* font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif; */
 }
 
 .THIS .tracker .slds-form-element__label,
 .THIS .tracker .form-element__label{
-    font-family: "HelveticaNeueW01-Thin";
+    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
 }
   
 .THIS .tracker h2{
     font-size: 36px;
     font-weight: normal;
 }
-    
+
+/*
 .THIS .tracker .tracker-list,
 .THIS .tracker .tracker-form
 {
     padding-bottom:40px;
 }
+*/
     
 .THIS .tracker .header{
     color:#fff;
     background: #009adb;
+    min-height: 92px;
 }
 
 .THIS .tracker .header p,
@@ -75,11 +78,19 @@
 }
 
 .THIS .tracker .stats{
-    background: #eaeaea;
+    background: #f0f0f0;
 }
     
 .THIS .tracker .stats .ui-widget{
     margin:0 !important;
+}
+
+.THIS .tracker .stats .ui-widget:first-child{
+    float:left;
+}
+
+.THIS .tracker .stats .ui-widget:last-child{
+    float:right;
 }
 
 .THIS .tracker .slds-cell-fixed {
@@ -299,7 +310,7 @@
     background: #009adb;
 	border: 2px solid #009adb;
     border-radius: 40px;
-    font-size: 1.1em;
+    font-size: 18px;
     font-family: "HelveticaNeueW01-Thin"!important;
     border: 2px solid #009adb;
     padding: 10px 20px;
@@ -328,6 +339,7 @@
 .THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton {
 	font-weight:normal;
     padding: 0 24px;
+    font-size:18px;
 } 
 .THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton button[aria-label="Agent Offline"] {
 	cursor: default;
@@ -425,6 +437,10 @@
     padding-right: 5px;
     margin: 0;
 }
+                
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel{
+	font-family: "HelveticaNeueW01-Thin";
+}
                         
 .THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
 .messageContent .embeddedServiceIcon{
@@ -432,11 +448,68 @@
     padding-right: 5px;
     margin: 0;
 }
-                        
+                
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .embeddedServiceIcon .helpButtonLabel{
+	font-family: "HelveticaNeueW01-Thin"!important;
+}
+                
 .THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
 .messageContent .minimizedText{
 	font-size: 16px;
 }
+                
+.THIS .tracker .searchRegion {
+    width: 20%;
+    margin: 0 auto;
+    display:block;
+}
+                
+.THIS .tracker .sgap-content > .container {
+    position: relative;
+}
+
+.THIS .tracker .searchRegion .ui-widget{
+    position: absolute;
+    top: 22px;
+    right: 10px;
+}  
+
+.THIS .tracker-home .searchRegion .ui-widget{
+    top: 110px;
+    right: initial;
+} 
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper{
+    border-radius: 0;
+    border:none;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper{
+    background: #fff;
+}
+
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper input{
+    height: 3rem;
+    font-size: 16px;
+}
+    
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list {
+    border-radius:0;
+}
+                
+.THIS .tracker .cta {
+    text-align: center;
+}
+                
+.THIS .tracker .cta button a{
+    color: #fff;
+}
+                
+.THIS .tracker .forceCommunityHomeTabs .uiTabBar{
+    display: none;
+}
+
         
 @media (max-width: 991px) {
         .THIS .tracker .slds-section .container,

@@ -66,7 +66,7 @@
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions{
 	margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li{
@@ -235,7 +235,7 @@
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static .uiOutputTextArea{
@@ -429,7 +429,7 @@ span.forceOutputModStampWithPreview{
 }
 
 .THIS .tracker-case .slds-page-header ul.slds-form li:first-child .slds-form-element__static span{
-	font-size: 3em;
+	font-size: 36px;
     line-height: initial;
     font-weight: normal;
     font-family: "HelveticaNeueW01-Thin" !important;
@@ -460,12 +460,14 @@ span.forceOutputModStampWithPreview{
 
 .THIS .tracker-case .slds-page-header ul.slds-form li .slds-form-element__static {
     overflow: visible;
-    font-size: 16px;        
+    font-size: 14px;        
 }
 
+/*
 .THIS .tracker-case .slds-page-header ul.slds-form li .uiOutputText {
     font-size: 3em;
 }
+*/
 
 .THIS .tracker-case .activity {
     background: #ffffff;
@@ -574,7 +576,7 @@ span.forceOutputModStampWithPreview{
 }
         
 .THIS .tracker-case .activity .forceRelatedListSingleContainer li a{
-	font-size: 16px;
+	font-size: 14px;
     color:#fff;
     background: #0099d8;
     border: 2px solid #0099d8;

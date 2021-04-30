@@ -1,158 +1,228 @@
 /** SASS Customer Self Service styles **/
 
 /* Page Specific */
-.THIS .tracker-list{
+.THIS .help-support{
 	background: #ffffff;
 }
 
-.THIS .tracker-list .header .comm-layout-column{
-	padding: 50px 0 !important;
+.THIS .help-support .header .comm-layout-column{
+	padding: 50px 0;
+    padding-bottom: 100px;
 }
 
-.THIS .tracker-list .stats{
+.THIS .help-support .content-top .comm-layout-column{
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget{
+	overflow: hidden;
+    margin-top:20px;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child{
+	background: #f4f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles h2{
+    font-size: 24px;
+    margin-top: 0 !important;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li{
+	list-style-type: disc;
+    margin: 0 0 5px 0;
+}
+
+/*
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li:last-child{
+    margin: 0;
+}
+*/
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li a{
+	color: #0099D8;
+    border: none;
+    padding: 0;
+}
+
+.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li:hover a{
+	text-decoration: underline;
+}
+
+.THIS .help-support .stats{
     color: #7b7b7b;
     font-family: "HelveticaNeueW01-Thin" !important;
 }
 
-.THIS .tracker-list .stats .slds-col--padded{
-	padding: 20px 0;
+.THIS .help-support .stats h2{
+    padding: 0;
+    margin-bottom: 0 !important;
 }
 
-.THIS .tracker-list .stats ul{
+.THIS .help-support .stats .slds-col--padded{
+	padding: 0;
+}
+
+.THIS .help-support .stats ul{
 	font-size: 1.5em !important;
     font-weight: normal;
-    line-height: 58px;
+    line-height: 76px;
     margin: 0;  
     padding:0;
 }
 
-.THIS .tracker-list .stats ul li{
+.THIS .help-support .stats ul li{
     padding: 0;
     margin-right: 13px; 
 }
 
-.THIS .tracker-list .stats ul li span{
+.THIS .help-support .stats ul li:last-child{
+    margin-right: 0; 
+}
+
+.THIS .help-support .stats ul li span{
     margin-left: 13px;
 }
 
-.THIS .tracker-list .stats ul li:before{
+.THIS .help-support .stats ul li:before{
     display:none;
 }
 
 /*
-.THIS .tracker-list .btn_tracker_lg {
+.THIS .help-support .btn_tracker_lg {
     padding: 12px 24px;
     border-radius: 40px;
     font-size: 1.1em;
 }
 
 
-.THIS .tracker-list .btn_tracker_lg.add_new {
+.THIS .help-support .btn_tracker_lg.add_new {
     background: #00597c;
 	border: 2px solid #00597c;
 }
 
 
-.THIS .tracker-list .btn_tracker_lg.add_new:hover {
+.THIS .help-support .btn_tracker_lg.add_new:hover {
 	background: #003449;
     border-color: #003449;
 }
 */
 
-.THIS .tracker-list .forceCommunityHomeTabs .uiTabBar{
-    display: none;
+.THIS .help-topics {
+	padding-bottom: 50px;
 }
 
-.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li{
+.THIS .help-topics .forceCommunityHomeTabs .uiTab ul.topicList li{
     height: inherit;
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
-    width: 50%;
+    width: 48%;
+    margin-right: 20px;
 }
 
-.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
+.THIS .help-topics .forceCommunityHomeTabs .uiTab ul.topicList li:nth-child(2n){
+    margin-right: 0;
+}
+
+.THIS .help-topics .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
     width: 50px;
     height: 50px;
     float: left;
 }
 
-.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
+.THIS .help-topics .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
 	display: block;
     background: none;
     position: relative;
 }
 
-.THIS .tracker-list .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
+.THIS .help-topics .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
     color: initial;
     overflow: visible;
+    text-align: left;
+    /* padding: 0; */
 }
 
-.THIS .tracker-list .btn_tracker_lg.add_new a{
+.THIS .help-support .btn_tracker_lg.add_new a{
     color: inherit;
 }
 
-.THIS .tracker-list .btn_tracker_lg.add_new a:hover{
+.THIS .help-support .btn_tracker_lg.add_new a:hover{
     text-decoration: none;
 }
 
-
-.THIS .tracker-list .content-top .comm-layout-column,
-.THIS .tracker-list .content .comm-layout-column,
-.THIS .tracker-list .content-bottom .comm-layout-column{
+/*
+.THIS .help-support .content-top .comm-layout-column,
+.THIS .help-support .content .comm-layout-column,
+.THIS .help-support .content-bottom .comm-layout-column{
     padding: 0 !important;
 }
+*/
 
-.THIS .tracker-list .slds-main-content {
+.THIS .help-support .slds-main-content {
     background: none;
 }
 
-.THIS .tracker-list .slds-main-content .ui-widget{
+.THIS .help-support .slds-main-content .ui-widget{
     margin-bottom: 0 !important;
 }
 
-.THIS .tracker-list .slds-main-content .ui-widget h2{
-    margin-bottom: 0 !important;
-}
-
-.THIS .tracker-list .slds-main-content .slds-page-header_bleed{
+.THIS .help-support .slds-main-content .slds-page-header_bleed{
     padding-top: 0;
     border-bottom: none;
     margin-bottom: 20px;
     padding-bottom: 0;
 }
 
-.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child{
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child{
     display: block;
     float: right;
 }
 
-.THIS .tracker-list .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
     margin:0;
     font-size: 14px;
 }
 
-.THIS .tracker-list .slds-main-content .slds-page-header .slds-m-right_small{
+.THIS .help-support .slds-main-content .slds-page-header .slds-m-right_small{
     display:none;
 }
 
-.THIS .tracker-list .slds-media__body .slds-page-header__title{
+.THIS .help-support .slds-media__body .slds-page-header__title{
 	margin: 0 !important;
     font-size: initial !important;
 }
 
-.THIS .tracker-list .slds-media__body .slds-page-header__title .triggerLink{
+.THIS .help-support .slds-media__body .slds-page-header__title .triggerLink{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: 1px solid rgb(212, 212, 212);
+    border: 1px solid rgb(223, 234, 240);
     padding: 0 20px;
     width: 268px;
     height: 3rem;
+    font-size:14px;
+    background: #fff;
 }
 
-.THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
+/*
+.THIS .help-support .slds-main-content .triggerLinkTextAndIconWrapper {
 	line-height: 32px;
 }
+*/
 
-.THIS .tracker-list .slds-main-content .downIcon{
+.THIS .help-support .slds-main-content .downIcon{
 	line-height: 44px;
     display: block;
     margin: 0;
@@ -160,49 +230,51 @@
     box-shadow: none;
 }
 
-.THIS .tracker-list .slds-main-content .keyboardMode--trigger{
+.THIS .help-support .slds-main-content .keyboardMode--trigger{
 	display:none;
 }
 
 /*
-.THIS .tracker-list .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
+.THIS .help-support .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
     background: #ffffff;
     padding: 20px;
     border-radius: 6px;
 }
 */
 
-.THIS .tracker-list .test-listViewSettingsMenu,
-.THIS .tracker-list .forceRefreshButton{
+.THIS .help-support .test-listViewSettingsMenu,
+.THIS .help-support .forceRefreshButton{
     display:none
 }
 
-.THIS .tracker-list .forceListViewManagerHeader{
+/*
+.THIS .help-support .forceListViewManagerHeader{
 	margin-top: -10px;
 }
+*/
 
-.THIS .tracker-list .forceListViewManagerHeader .slds-shrink{
+.THIS .help-support .forceListViewManagerHeader .slds-shrink{
 	margin-right: 15px;
 }
 
-.THIS .tracker-list .forceListViewManagerHeader .slds-col:last-child{
+.THIS .help-support .forceListViewManagerHeader .slds-col:last-child{
 	display:none;
 }
 
 
-.THIS .tracker-list .search-in-list,
-.THIS .tracker-list .slds-align-bottom .slds-m-left_xx-small{
+.THIS .help-support .search-in-list,
+.THIS .help-support .slds-align-bottom .slds-m-left_xx-small{
     margin: 0;
     border-radius: 6px;
     overflow: visible;
     width: auto;
 }
 
-.THIS .tracker-list .slds-align-bottom .slds-m-left_xx-small .slds-button-group{
+.THIS .help-support .slds-align-bottom .slds-m-left_xx-small .slds-button-group{
     margin-left: 0;
 }
 
-.THIS .tracker-list .search-in-list .slds-input{
+.THIS .help-support .search-in-list .slds-input{
     width: auto;
     border-radius: 0;
 	padding: 0;
@@ -215,12 +287,12 @@
     -webkit-box-sizing: border-box;
 }
 
-.THIS .tracker-list .search-in-list .slds-input__icon-group{
+.THIS .help-support .search-in-list .slds-input__icon-group{
 	right: 10px;
 }
 
 
-.THIS .tracker-list .search-in-list button[data-element-id="searchClear"]{
+.THIS .help-support .search-in-list button[data-element-id="searchClear"]{
 	background: none;
     border: none;
     padding: 0;
@@ -229,72 +301,85 @@
     height: 0.875rem !important;
 }
 
-.THIS .tracker-list .search-in-list .slds-input-has-icon .slds-input__icon:not(button) {
+.THIS .help-support .search-in-list .slds-input-has-icon .slds-input__icon:not(button) {
     left: 20px;
 }
 
-.THIS .tracker-list .listDisplays {
+.THIS .help-support .listDisplays {
     /* height:initial; */
     /* min-height: auto !important; */
 }
 
-.THIS .tracker-list .listDisplays .listViewContainer{
+.THIS .help-support .listDisplays .listViewContainer{
     height:initial;
     min-height: auto !important;
 }
 
-.THIS .tracker-list .listDisplays .listViewContainer .listViewContent{
+.THIS .help-support .listDisplays .listViewContainer .listViewContent{
     min-height: auto;
 }
 
 /*
-.THIS .tracker-list .forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
+.THIS .help-support .forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
     min-height: auto;
 }
 */
 
-.THIS .tracker-list .scroller-wrapper {
+.THIS .help-support .scroller-wrapper {
     background: #fff;
     height: auto !important;
 }
 
-.THIS .tracker-list .listViewContainer .listViewContent .emptyContent {
+.THIS .help-support .listViewContainer .listViewContent .emptyContent {
     position: relative;
     background: #fff;
     left: initial;
     transform: initial;
 }
 
-.THIS .tracker-list .listViewContainer .listViewContent .emptyContent .emptyContentInner p{
+.THIS .help-support .listViewContainer .listViewContent .emptyContent .emptyContentInner p{
  	padding: 20px;
     margin: 0;
 }
 
-.THIS .tracker-list .slds-table--header-fixed {
+
+.THIS .help-support .tracker-table {
+    background: #f0f0f0;
+}
+
+.THIS .help-support .tracker-table .comm-layout-column{
+    padding-top: 0;
+}
+
+.THIS .help-support .tracker-table .comm-layout-column .test-listViewManager{
+    padding: 20px;
+}
+
+.THIS .help-support .slds-table--header-fixed {
     width: 100% !important;
     /*height: 100px;*/
 }
 
-.THIS .tracker-list .slds-resizable__divider::after {
+.THIS .help-support .slds-resizable__divider::after {
     opacity: inherit;
     background-color: #d4d4d4;
 }
 
 
 /*
-.THIS .tracker-list th.errorColumnHeader,
-.THIS .tracker-list th.actionColumnHeader,
-.THIS .tracker-list .slds-table tbody tr td:first-child,
-.THIS .tracker-list .slds-table tbody tr td:last-child{
+.THIS .help-support th.errorColumnHeader,
+.THIS .help-support th.actionColumnHeader,
+.THIS .help-support .slds-table tbody tr td:first-child,
+.THIS .help-support .slds-table tbody tr td:last-child{
     display: none;
 }
 */
 
-.THIS .tracker-list .slds-table tbody tr:nth-child(even) {
+.THIS .help-support .slds-table tbody tr:nth-child(even) {
     background: #fafaf9 !important;
 }
 
-.THIS .tracker-list .cellContainer:nth-last-child(4) .outputLookupLink {
+.THIS .help-support .cellContainer:nth-last-child(4) .outputLookupLink {
     cursor: default;
     pointer-events: none;
     text-decoration: none;
@@ -302,130 +387,133 @@
     border-bottom: none;
 }
 
-.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
-.THIS .tracker-list .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus) {
+.THIS .help-support .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
+.THIS .help-support .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
+.THIS .help-support .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
+.THIS .help-support .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus), 
+.THIS .help-support .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-has-focus), 
+.THIS .help-support .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-has-focus), 
+.THIS .help-support .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-has-focus), 
+.THIS .help-support .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-has-focus) {
     box-shadow: none;
     background: none;
 }
 
 
-.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:hover, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus:hover, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-no-cell-focus .slds-has-focus.slds-is-resizable:hover 
-.THIS .tracker-list .slds-th__action, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:hover, 
-.THIS .tracker-list .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus:hover {
+.THIS .help-support .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action, 
+.THIS .help-support .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus, 
+.THIS .help-support .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:hover, 
+.THIS .help-support .forceListViewManagerGrid .slds-has-focus.slds-is-resizable .slds-th__action:focus:hover, 
+.THIS .help-support .forceListViewManagerGrid .slds-no-cell-focus .slds-has-focus.slds-is-resizable:hover 
+.THIS .help-support .slds-th__action, 
+.THIS .help-support .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus, 
+.THIS .help-support .forceListViewManagerGrid .slds-is-resizable .slds-th__action:hover, 
+.THIS .help-support .forceListViewManagerGrid .slds-is-resizable .slds-th__action:focus:hover {
 	background: #32363f;
 }
 
-.THIS .tracker-list .slds-table tbody tr th,
-.THIS .tracker-list .slds-table tbody tr td
+.THIS .help-support .slds-table tbody tr th,
+.THIS .help-support .slds-table tbody tr td
 {
     border-right: 1px solid #D4D4D4;
 }
 
-.THIS .tracker-list .slds-table tbody tr th,
-.THIS .tracker-list .slds-table tbody tr td
+.THIS .help-support .slds-table tbody tr th,
+.THIS .help-support .slds-table tbody tr td
 {
     border-right: 1px solid #D4D4D4;
 }
 
 
-.THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2),
-.THIS .tracker-list .slds-table tbody tr td:nth-last-child(2)
+.THIS .help-support .slds-table--header-fixed thead th:nth-last-child(2),
+.THIS .help-support .slds-table tbody tr td:nth-last-child(2)
 {
     border-right: none;
 }
 
 /*
-.THIS .tracker-list .slds-table tbody {
+.THIS .help-support .slds-table tbody {
     font-family: Roboto,"Helvetica Neue",sans-serif;
 }
 */
 
-.THIS .tracker-list .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
+.THIS .help-support .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
     display:none;
 }
 
-.THIS .tracker-list th.sortable a.toggle::after {
+.THIS .help-support th.sortable a.toggle::after {
     display:none;
 }
 
-.THIS .tracker-list .slds-table .slds-cell-edit:first-child,
-.THIS .tracker-list .slds-table .slds-cell-edit:last-child{
+.THIS .help-support .slds-table .slds-cell-edit:first-child,
+.THIS .help-support .slds-table .slds-cell-edit:last-child{
     display:none;
 }
 
 /*
-.THIS .tracker-list .slds-table th:nth-child(2) {
+.THIS .help-support .slds-table th:nth-child(2) {
     width:auto !important;
 }
 
-.THIS .tracker-list .slds-table th:nth-child(2) .slds-cell-fixed{
+.THIS .help-support .slds-table th:nth-child(2) .slds-cell-fixed{
     min-width:170px;
 }
 */
 
-.THIS .tracker-list .slds-table--header-fixed thead th  {
+.THIS .help-support .slds-table--header-fixed thead th  {
     border-right: 1px solid #D4D4D4;
     width: 100% !important;
 }
 
-.THIS .tracker-list .slds-table--header-fixed thead th .slds-cell-fixed{
+.THIS .help-support .slds-table--header-fixed thead th .slds-cell-fixed{
     width: 100% !important;
 	position: relative;
 }
 
-.THIS .tracker-list .slds-table--header-fixed thead th .slds-cell-fixed .slds-resizable{
+.THIS .help-support .slds-table--header-fixed thead th .slds-cell-fixed .slds-resizable{
     display:none;
 }
 
-.THIS .tracker-list .slds-table th:first-child,
-.THIS .tracker-list .slds-table th:last-child{
+.THIS .help-support .slds-table th:first-child,
+.THIS .help-support .slds-table th:last-child{
     display:none;
 }
 
-.THIS .tracker-list .slds-table th:nth-last-child(2) .slds-resizable{
+.THIS .help-support .slds-table th:nth-last-child(2) .slds-resizable{
     display:none;
 }
 
-.THIS .tracker-list .slds-table th span.slds-truncate {
+.THIS .help-support .slds-table th span.slds-truncate {
     font-weight:normal !important;
 }
 
+.THIS .help-support .footer-top {
+    padding-bottom: 40px;
+}
         
 @media (max-width: 991px) {
-	.THIS .tracker-list {
+	.THIS .help-support {
      	padding-bottom:0 !important;
      }
 
-    .THIS .tracker-list .slds-main-content .ui-widget:first-child {
+    .THIS .help-support .slds-main-content .ui-widget:first-child {
     	display:none;
 	}
-	.THIS .tracker-list .btn_tracker_lg.add_new {
+	.THIS .help-support .btn_tracker_lg.add_new {
         float: none;
     	width: 100%; 
 	}   
     
-	.THIS .tracker-list .stats .container > div{
+	.THIS .help-support .stats .container > div{
     	position: relative;
     	padding-top: 80px;
 	}
     
-    .THIS .tracker-list .stats .container .ui-widget {
+    .THIS .help-support .stats .container .ui-widget {
     	width: 100%;
 	}
     
-    .THIS .tracker-list .stats .container .ui-widget ul {
+    .THIS .help-support .stats .container .ui-widget ul {
     	font-weight: normal;
         margin: 0;
         float: none;
@@ -433,85 +521,85 @@
         line-height: initial !important;
 	}
     
-    .THIS .tracker-list .stats .container .ui-widget ul li {
+    .THIS .help-support .stats .container .ui-widget ul li {
         margin-right: 5px;
 	}
     
-    .THIS .tracker-list .stats .container .ui-widget ul li span {
+    .THIS .help-support .stats .container .ui-widget ul li span {
         margin-left: 5px;
 	}
     
-   	.THIS .tracker-list .stats .container .ui-widget:last-child{
+   	.THIS .help-support .stats .container .ui-widget:last-child{
 		position: absolute;
     	top: 0;
 	}
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceCommunityActionsContainerMobile {
+    .THIS .help-support .forceCommunityRecordListMobile .forceCommunityActionsContainerMobile {
         display:none; 
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bLeft{
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .bLeft{
         display:none; 
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .footer a.link{
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .footer a.link{
     	display:none; 
 	}
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody h2 {
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody h2 {
     	margin:0 !important;
         padding:0 !important;
 	}
-    .THIS .tracker-list .forceCommunityRecordListMobile .listContent,
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .uiMenu{
+    .THIS .help-support .forceCommunityRecordListMobile .listContent,
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .uiMenu{
         font-family: Roboto, "Helvetica Neue", sans-serif
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .listContent ul .uiInfiniteListRow .body {
+    .THIS .help-support .forceCommunityRecordListMobile .listContent ul .uiInfiniteListRow .body {
         border-bottom: none;
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .listContent h2.itemTitle{
+    .THIS .help-support .forceCommunityRecordListMobile .listContent h2.itemTitle{
         margin:0!important;
         color: #0099D8;
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .listContent .itemRows .outputLookupLink{
+    .THIS .help-support .forceCommunityRecordListMobile .listContent .itemRows .outputLookupLink{
         pointer-events:none;
         color: inherit;
         border-bottom:none;
     }
-    .THIS .tracker-list .forceCommunityRecordListMobile .listContent a.listItem,
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:hover,
-    .THIS .tracker-list .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:focus{
+    .THIS .help-support .forceCommunityRecordListMobile .listContent a.listItem,
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:hover,
+    .THIS .help-support .forceCommunityRecordListMobile .forceFilterListDeprecated .bBody .triggerLink:focus{
         text-decoration: none;
         
     }
-    .THIS .tracker-list .slds-main-content .slds-page-header {
+    .THIS .help-support .slds-main-content .slds-page-header {
        padding-top: 1rem; 
     }
-    .THIS .tracker-list .slds-main-content .slds-page-header > .slds-grid{
+    .THIS .help-support .slds-main-content .slds-page-header > .slds-grid{
         float:none !important;
         display: block;
     }
-    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:first-child  {
+    .THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child  {
         float:left;
     }
     /*
-    .THIS .tracker-list .slds-main-content .slds-page-header .slds-grid:last-child  {
+    .THIS .help-support .slds-main-content .slds-page-header .slds-grid:last-child  {
         margin-bottom: 0;
     }
     */
-    .THIS .tracker-list .slds-media__body .slds-page-header__title {
+    .THIS .help-support .slds-media__body .slds-page-header__title {
         font-size: 2.6em !important;
     }
-    .THIS .tracker-list .slds-media__body .slds-page-header__title .triggerLink {
+    .THIS .help-support .slds-media__body .slds-page-header__title .triggerLink {
         width: 100%;
         padding:0;
         border:none;
         font-family: 'HelveticaNeueW01-Thin';
     }
-    .THIS .tracker-list .slds-main-content .triggerLinkTextAndIconWrapper {
+    .THIS .help-support .slds-main-content .triggerLinkTextAndIconWrapper {
         line-height: initial;
     }
-    .THIS .tracker-list .forceListViewManagerHeader .slds-shrink {
+    .THIS .help-support .forceListViewManagerHeader .slds-shrink {
         display:block;
         margin: 15px 0;
     }
-    .THIS .tracker-list .search-in-list .slds-input {
+    .THIS .help-support .search-in-list .slds-input {
         box-sizing: inherit;
         width: 100%;
     }

@@ -1,0 +1,37 @@
+<aura:component implements="forceCommunity:layout" description="Agent details layout" access="global">
+    <aura:attribute name="header" type="Aura.Component[]" required="false"></aura:attribute>
+        
+    
+   	<aura:attribute name="contentTop" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="sidebarTop" type="Aura.Component[]" required="false"></aura:attribute>
+
+   	<div>
+        <div class="article-details">
+            <div class="siteforceSldsOneCol84Layout">
+                <div class="slds-grid slds-wrap header">
+                    <div class="slds-col--padded slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
+                        <div class="container">
+                            {!v.header}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="siteforceSldsOneCol84Layout ">
+                    <div class="slds-main-content">
+                        <div class="slds-grid slds-wrap">
+
+                            <div class="slds-col--padded slds-size--12-of-12 slds-large-size--8-of-12 comm-layout-column">
+                                {!v.contentTop}
+                            </div>
+                            <div class="slds-col--padded slds-size--12-of-12 slds-large-size--4-of-12 comm-layout-column">
+                                {!v.sidebarTop}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

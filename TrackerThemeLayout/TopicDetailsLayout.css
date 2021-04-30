@@ -1,0 +1,12 @@
+/* Page Specific */
+.THIS .topic-detail .slds-main-content{
+	position: relative;
+}
+
+.THIS .topic-detail .header .comm-layout-column{
+	padding: 35px 0 !important;
+}
+
+.THIS .topic-detail .container .forceCommunityRecordDetail .slds-form > .slds-grid{
+	display: initial;
+}
