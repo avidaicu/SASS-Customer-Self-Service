@@ -1,14 +1,28 @@
 /** SASS Customer Self Service styles **/
 
 /* Page Specific */
-.THIS .topic-detail .slds-main-content{
+/*
+.THIS .article-details .slds-main-content{
 	position: relative;
 }
 
-.THIS .topic-detail .header .comm-layout-column{
+.THIS .article-details .header .comm-layout-column{
 	padding: 35px 0 !important;
 }
 
-.THIS .topic-detail .container .forceCommunityRecordDetail .slds-form > .slds-grid{
+.THIS .article-details .container .forceCommunityRecordDetail .slds-form > .slds-grid{
 	display: initial;
+}
+*/
+
+.THIS .article-details .article-column .summary h1{
+	font-size: 36px;
+}
+
+.THIS .article-details .article-column .content .test-id__section{
+	display: none;
+}
+
+.THIS .article-details .article-column .content .test-id__section:nth-child(2){
+	display: block;
 }

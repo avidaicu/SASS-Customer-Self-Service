@@ -9,10 +9,6 @@
 	padding: 35px 0 !important;
 }
 
-.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid{
-	display: initial;
-}
-
 .THIS .tracker-case .container .forceCommunityRecordDetail:last-child .slds-form .slds-grid:last-child {
 }
 
@@ -28,7 +24,7 @@
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:first-child{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child{
@@ -210,24 +206,28 @@
 	display: flex !important;
 }
 
+/*
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
     margin: 0 0 20px 0 !important;
 }
+*/
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem .override--slds-form-element{
     border-bottom: 1px solid rgb(233 234 236);
 }
 
-
+/*
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element_edit{
     padding-bottom: 10px;
     border-bottom: 1px solid #e9eaec;
 }
+*/
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element__label{
     padding: 0;
     line-height: 26px;
     font-size: 24px;
+    color: inherit;
 }
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody{
@@ -294,6 +294,10 @@
     background: #f4f5f5;
     width: 20%;
     margin-top:0;
+}
+
+.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child  .slds-form > .slds-grid{
+	display: initial;
 }
 
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child h3{
@@ -382,7 +386,7 @@ span.forceOutputModStampWithPreview{
     margin: 0 !important;
     border: none;
     padding: 0 !important;
-    padding-top: 25px !important;
+    padding-top: 10px !important;
 }
 
 .THIS .tracker-case .slds-page-header ul.branding-actions li{

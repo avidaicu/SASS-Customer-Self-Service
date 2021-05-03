@@ -47,10 +47,17 @@
 .THIS .tracker .form-element__label{
     font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
 }
+
+.THIS .tracker h1{
+    font-size: 36px;
+    margin:0 !important;
+    font-weight: normal;
+}
   
 .THIS .tracker h2{
     font-size: 36px;
     font-weight: normal;
+    color: rgb(50, 54, 63);
 }
 
 /*
@@ -69,11 +76,6 @@
 
 .THIS .tracker .header p,
 .THIS .tracker .header a{
-    margin:0 !important;
-}
-
-.THIS .tracker .siteforceContentArea h1{
-    font-size: 36px;
     margin:0 !important;
 }
 
