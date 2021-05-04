@@ -39,6 +39,7 @@
     padding: 20px;
     padding-left: 0;
     margin-right: 20px;
+    padding-top: 10px;
 }
 
 .THIS .tracker-form .forceCommunityContactSupportForm .slds-truncate h1 {
@@ -99,7 +100,7 @@
 
 .THIS .tracker-form .slds-section .container{
     padding: 0;
-    width: 35%;
+    width: 50%;
     margin:0;
 }
 
@@ -195,6 +196,17 @@
     color: #32363f;
     border: 2px solid #0099d8;
     background: #fff;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium > .slds-button::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c6";
+    margin-right: 10px;
+}
+
+.THIS .tracker-form .slds-p-horizontal_medium > .slds-button .slds-button__icon{
+    display:none;
 }
 
 .THIS .tracker-form .slds-p-horizontal_medium > .slds-button:hover{
@@ -369,6 +381,54 @@
 .THIS .tracker-form .forceCommunityContactSupportConfirmation .requestSummaryBody {
     width: 10%;            
     padding: 0;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] h2 {
+    font-size: 24px;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li{
+    margin-bottom:0;
+    width: 100%;
+    border-bottom: none;  
+    padding-bottom:10px;
+}
+
+/*
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li:last-child{
+    border-bottom: none;
+}
+           
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li:hover{
+    border-bottom: 1px solid #d4d4d4 !important;
+}
+*/
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicImage{
+    width: 30px;
+    height: 30px;
+    margin-right:10px;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicContent {
+	line-height: 30px;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicContent .topicLabel{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: inherit;
+    color: inherit;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicContent .topicLabel:hover{
+    text-decoration: underline;
 }
             
 @media (max-width: 991px) {

@@ -1,7 +1,8 @@
 <aura:component implements="forceCommunity:layout" description="Agent Portal tracker form layout" access="global">
     <aura:attribute name="header" type="Aura.Component[]" required="false"></aura:attribute>
         
-    <aura:attribute name="contentFullWidth" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="content" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="sidebar" type="Aura.Component[]" required="false"></aura:attribute>
 
    	<div>
         <div class="tracker-form">
@@ -16,16 +17,20 @@
             </div>
         
             <div class="container">
-                <div class="siteforceSldsOneCol84Layout ">
+                <div class="siteforceSldsTwoCol84Layout">
                     <div class="slds-main-content">
-                        <div class="slds-grid slds-wrap">
-                            <div class="slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
-                                {!v.contentFullWidth}
+                        <div class="slds-grid slds-wrap row">
+                            <div class="slds-col--padded col-md-9 comm-layout-column">
+                                {!v.content}
+                            </div>
+                            <div class="slds-col--padded col-md-3 comm-layout-column">
+                                {!v.sidebar}
                             </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>
             </div>
+            
         </div>
     </div>
 </aura:component>

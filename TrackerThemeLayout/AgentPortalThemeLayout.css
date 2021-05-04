@@ -511,6 +511,60 @@
 .THIS .tracker .forceCommunityHomeTabs .uiTabBar{
     display: none;
 }
+                
+.THIS .tracker {
+	padding-bottom: 50px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li{
+    height: inherit;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 0;
+    width: 48%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover{
+    border-bottom: 1px solid #00638c;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:nth-child(2n){
+    margin-right: 0;
+}
+
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a.topicLink:hover{
+    text-decoration:none;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
+	display: block;
+    background: none;
+    position: relative;
+    line-height: 50px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
+    color: rgb(50, 54, 63);
+    overflow: visible;
+    text-align: left;
+    padding: 0;
+    font-size: 18px;
+    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    font-weight: normal;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover .topicLabel:hover{
+   color: #00638c;
+}
 
         
 @media (max-width: 991px) {

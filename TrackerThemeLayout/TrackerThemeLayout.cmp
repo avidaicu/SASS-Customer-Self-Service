@@ -22,7 +22,7 @@
             
                 <div class="container">
                     <div class="siteforceSldsTwoCol84Layout content-top">
-                        <div class="slds-grid slds-wrap">
+                        <div class="slds-grid slds-wrap row">
                             <div class="slds-col--padded col-md-9 comm-layout-column">
                                 {!v.contentTop}
                             </div>
