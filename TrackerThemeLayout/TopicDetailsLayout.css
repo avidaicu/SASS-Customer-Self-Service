@@ -13,3 +13,101 @@
 	display: initial;
 }
 */
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop{
+	background: none;
+    padding: 0;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView{
+	margin: 0;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView h3{
+	display: none;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content{
+	padding: 0;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow{
+	margin: 0;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow .forcePageBlockItemView{
+	margin: 0;
+    padding: 0;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow .forcePageBlockItemView .slds-form-element{
+	border: none;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow .forcePageBlockItemView .slds-form-element .slds-form-element__label{
+	display: none;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow 
+.forcePageBlockItemView .slds-form-element .itemBody .uiOutputText{
+	font-size: 36px;
+    color: rgb(50, 54, 63);
+    display: block;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    margin-top: 15px;
+}
+
+.THIS .topic-details .ui-widget:first-child .forceDetailPanelDesktop article .forcePageBlockSectionView .section__content .forcePageBlockSectionRow:last-child{
+	display: none;
+}
+
+.THIS .topic-details .ui-widget:last-child {
+	padding: 20px;
+    background: #fff;
+}
+
+.THIS .topic-details .ui-widget:last-child h1{
+	margin-bottom: 25px !important;
+}
+
+.THIS .topic-details .ui-widget:last-child h1 label{
+	font-size: inherit;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    font-weight: normal;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li{
+    padding-top: 0; 
+    margin-bottom: 20px;
+
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li a:hover{
+    text-decoration:underline;
+
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li a h2{
+    line-height: 26px;
+    font-size: 24px;
+    color: inherit;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li .article-summary{
+	display:none;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li .footer{
+	font-size: 14px;
+    margin-top: 5px;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li .footer > span{
+	display:none;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li .footer > span.date{
+	display:block;
+}

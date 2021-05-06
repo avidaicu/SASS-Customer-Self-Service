@@ -1,0 +1,585 @@
+.THIS .apd .logo {
+    padding: 28px 0 28px 15px;
+}
+.THIS .apd .sgap-footer {
+    padding: 28px 0;
+}
+.THIS .profileMenuRegion {
+    text-align: right;
+}
+
+.THIS .profile-image {
+    border-radius: 50%;
+    border: 2px solid #f0f0f0;
+    width: 44px;
+}
+
+.THIS .profileMenuRegion a.header-nav-item {
+    margin-left: 20px;
+    color: #32363f;
+}
+
+.THIS .profileMenuRegion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.THIS .sgap-header .profileMenuRegion .change-language .slds-dropdown-trigger {
+    margin: 0;
+}
+
+.THIS .logo {
+    padding-left: 10px;
+}
+
+.THIS .tracker .sgap-content{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.THIS .tracker {
+    font-size: 14px;
+    /* font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif; */
+}
+
+.THIS .tracker .slds-form-element__label,
+.THIS .tracker .form-element__label{
+    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+}
+
+.THIS .tracker h1{
+    font-size: 36px;
+    margin:0 !important;
+    font-weight: normal;
+}
+  
+.THIS .tracker h2{
+    font-size: 36px;
+    font-weight: normal;
+    color: rgb(50, 54, 63);
+}
+
+/*
+.THIS .tracker .tracker-list,
+.THIS .tracker .tracker-form
+{
+    padding-bottom:40px;
+}
+*/
+    
+.THIS .tracker .header{
+    color:#fff;
+    background: #009adb;
+    min-height: 92px;
+}
+
+.THIS .tracker .header p,
+.THIS .tracker .header a{
+    margin:0 !important;
+}
+
+.THIS .tracker .stats{
+    background: #f0f0f0;
+}
+    
+.THIS .tracker .stats .ui-widget{
+    margin:0 !important;
+}
+
+.THIS .tracker .stats .ui-widget:first-child{
+    float:left;
+}
+
+.THIS .tracker .stats .ui-widget:last-child{
+    float:right;
+}
+
+.THIS .tracker .slds-cell-fixed {
+    background: #32363f;
+}
+
+.THIS .tracker .listViewContent {
+    padding-top: 0;
+    background: #32363f;
+    height:auto !important;
+}    
+    
+.THIS .tracker .slds-th__action {
+    padding: 0 25px;
+    height: 3rem;
+}
+    
+.THIS .tracker .slds-table .slds-cell-edit {
+    padding: 0 25px;
+    height: 3rem;
+}
+    
+.THIS .tracker .slds-table .slds-cell-edit.slds-has-focus {
+	box-shadow: none !important;
+    background:none !important;
+}
+    
+.THIS .tracker .slds-th__action {
+    color: #fff !important;
+}
+
+.THIS .tracker .slds-th__action:hover,
+.THIS .tracker .slds-th__action:focus,
+.THIS .tracker .slds-th__action:active,
+.THIS .tracker .slds-cell-fixed:hover,
+.THIS .tracker .slds-cell-fixed:focus,
+.THIS .tracker .slds-cell-fixed:active {
+   background: #32363f !important;
+}
+
+.THIS .tracker .slds-cell-edit:hover,
+.THIS .tracker .slds-cell-edit:focus,
+.THIS .tracker .slds-cell-edit:active{
+    outline: 0 !important;
+}
+ 
+    
+.THIS .tracker .uiInput--select.select[disabled], 
+.THIS .tracker .uiInput--select .select[disabled], 
+.THIS .tracker .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
+	background-color: #EAEAEA;          
+}
+            
+.THIS .tracker .tooltipIcon {
+    color: #009adb;             
+}
+
+.THIS .tracker .toggle{
+    position: relative;
+}
+    
+.THIS .tracker .toggle::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+    
+.THIS .tracker .descending .toggle::before{
+    content: "\f0de";
+    top: 18px;
+}
+    
+.THIS .tracker .btn_tracker_lg.add_new::before {
+    content: " ";
+	background-image: url(/partnerCommunity/resource/1617928612000/SLDSIcons/utility/insert_template.svg);
+    display:block;
+    width:24px;
+    height:24px;
+    margin-right: 3px;
+}
+
+.THIS .tracker .slds-breadcrumb {
+    font-family: var(--lwc-fontFamily,Work Sans) !important;
+}
+    
+.THIS .tracker .slds-breadcrumb,
+.THIS .tracker .slds-breadcrumb li{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:fist-child{
+    margin-right: 10px !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item:first-child > a, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:first-child > a{
+    margin-right: 10px !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before
+    {
+    display:none;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item a:hover{
+	text-decoration: underline !important;
+    color:#fff;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child a{
+    pointer-events: none;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-list__item > a, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item > a{
+    color: #fff;
+}
+
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before{
+    font-size:1.1em;
+    text-align: left !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item::before, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item::before {
+    margin: 0 !important;
+}
+    
+.THIS .tracker .slds-breadcrumb .slds-list__item:last-child a::before{
+	padding: 0;
+    padding-left: 10px;
+}
+        
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item a::after{
+	font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    position: absolute;
+    top: -1px;
+    margin-left: 10px;
+}   
+
+.THIS .tracker .slds-breadcrumb .slds-list__item:last-child > a::after, 
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child > a::after{
+	display:none;
+}
+    
+.THIS .tracker .slds-popover_tooltip .slds-popover__body {
+    background-color: #f4f5f5;
+    color: #333;
+    font-size: initial;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    -webkit-box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%);
+    -moz-box-shadow: 0px 9px 12px -5px rgba(122,122,122,0.31);
+    box-shadow: 0px 9px 12px -5px rgb(122 122 122 / 31%); 
+}
+ 
+.THIS .tracker .slds-nubbin_top-left::before, 
+.THIS .tracker .slds-nubbin--top-left::before, 
+.THIS .tracker .slds-nubbin_top-left-corner::before {
+    background-color: #f4f5f5;
+}
+        
+.THIS .tracker .slds-nubbin_top-left::after, 
+.THIS .tracker .slds-nubbin--top-left::after, 
+.THIS .tracker .slds-nubbin_top-left-corner::after {
+    box-shadow: none;
+    background-color: #f4f5f5;
+}
+    
+        
+        
+        
+ /*    
+.THIS .tracker .slds-nubbin_top-left {
+ 	position: relative;
+}   
+        
+.THIS .tracker .slds-nubbin_top-left:after, 
+.THIS .tracker .slds-nubbin_top-left:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.THIS .tracker .slds-nubbin_top-left:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.THIS .tracker .slds-nubbin_top-left:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}     
+*/
+        
+        
+        
+
+.THIS .tracker button.slds-button {
+    background: #009adb;
+	border: 2px solid #009adb;
+    border-radius: 40px;
+    font-size: 18px;
+    font-family: "HelveticaNeueW01-Thin"!important;
+    border: 2px solid #009adb;
+    padding: 10px 20px;
+    line-height: 30px;
+    color:#fff;
+    height:initial;
+}
+    
+/*        
+.THIS .tracker button.slds-button:hover {
+	background: #003449;
+    border-color: #003449;
+} 
+*/
+        
+.THIS .tracker button.slds-button span{
+	color:#fff;
+}    
+        
+/* Live chat */ 
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton {
+	height: auto;
+    bottom: 0;
+    right: 12px;        
+} 
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton {
+	font-weight:normal;
+    padding: 0 24px;
+    font-size:18px;
+} 
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton button[aria-label="Agent Offline"] {
+	cursor: default;
+}      
+.THIS .tracker h2[embeddedService-chatHeader_chatHeader] {
+	font-size: initial; 
+    font-family: inherit !important;
+}
+        
+.THIS .tracker h2[embeddedService-chatHeader_chatHeader] .announcement{
+	background:#009adb;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer,
+.THIS .embeddedServiceSidebar.modalContainer .slds-style-inputtext,
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton,
+.THIS .embeddedServiceSidebar.modalContainer select{
+    font-family: inherit;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse {
+    background: none;
+    border: none;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse span{
+	color: initial;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarButton.uiButton--inverse span:hover{
+	text-decoration:underline;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer select{
+    height: 44px;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .textarea {
+    font-family:inherit;
+}
+
+.THIS .embeddedServiceSidebar.modalContainer .fieldList{
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField{
+    margin: 0;
+    width: 100%;
+    margin-bottom:8px;
+}
+        
+                
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiInputSelect:after{
+	top: calc(50% + 10px);
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiLabel{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField .uiLabel span:first-child{
+	float: left;
+}
+        
+.THIS .embeddedServiceSidebar.modalContainer .fieldList .embeddedServiceSidebarFormField input,
+.THIS .embeddedServiceSidebar.modalContainer select{
+	margin-top: 8px;
+    border-radius: 0;
+}
+         
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton{
+    background-color: var(--lwc-colorBackgroundButtonBrandHover,#135F90);
+    border: none;
+    padding: 0 24px;
+    font-size: 16px;
+    box-shadow: none;
+    display: flex;
+    font-weight: normal;
+    height: 50px;
+    width: auto;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content{
+	padding: 0;
+    margin: 0;
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content .messageContent,
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton .embeddedServiceIcon{
+    font-size: 1.2em;
+    padding-right: 5px;
+    margin: 0;
+}
+                
+.THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel{
+	font-family: "HelveticaNeueW01-Thin";
+}
+                        
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .embeddedServiceIcon{
+    font-size: 1.2em;
+    padding-right: 5px;
+    margin: 0;
+}
+                
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .embeddedServiceIcon .helpButtonLabel{
+	font-family: "HelveticaNeueW01-Thin"!important;
+}
+                
+.THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
+.messageContent .minimizedText{
+	font-size: 16px;
+}
+                
+.THIS .tracker .searchRegion {
+    width: 20%;
+    margin: 0 auto;
+    display:block;
+}
+                
+.THIS .tracker .sgap-content > .container {
+    position: relative;
+}
+
+.THIS .tracker .searchRegion .ui-widget{
+    position: absolute;
+    top: 22px;
+    right: 10px;
+}  
+
+.THIS .tracker-home .searchRegion .ui-widget{
+    top: 110px;
+    right: initial;
+} 
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper{
+    border-radius: 0;
+    border:none;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper{
+    background: #fff;
+}
+
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper input{
+    height: 3rem;
+    font-size: 16px;
+}
+    
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list {
+    border-radius:0;
+}
+                
+.THIS .tracker .cta {
+    text-align: center;
+}
+                
+.THIS .tracker .cta button a{
+    color: #fff;
+}
+                
+.THIS .tracker .forceCommunityHomeTabs .uiTabBar{
+    display: none;
+}
+                
+.THIS .tracker {
+	padding-bottom: 50px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li{
+    height: inherit;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 0;
+    width: 48%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover{
+    border-bottom: 1px solid #00638c;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:nth-child(2n){
+    margin-right: 0;
+}
+
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a.topicLink:hover{
+    text-decoration:none;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
+	display: block;
+    background: none;
+    position: relative;
+    line-height: 50px;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
+    color: rgb(50, 54, 63);
+    overflow: visible;
+    text-align: left;
+    padding: 0;
+    font-size: 18px;
+    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    font-weight: normal;
+}
+
+.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover .topicLabel:hover{
+   color: #00638c;
+}
+
+        
+@media (max-width: 991px) {
+        .THIS .tracker .slds-section .container,
+        .THIS .tracker .forceCommunityContactSupportForm .slds-truncate span {
+            padding-bottom:0;
+        }
+}
+@media (min-width: 992px) {
+        .THIS .cookie-tracker .cookie-bar .slds-col:first-child {
+            float: left;
+    		width: initial;
+        }
+        .THIS .cookie-tracker .cookie-bar .slds-col:last-of-type {
+        	width: initial;
+    		text-align: left; 		              
+        }          
+}

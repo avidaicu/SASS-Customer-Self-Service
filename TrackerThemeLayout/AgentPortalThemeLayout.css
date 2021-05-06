@@ -473,14 +473,11 @@
 
 .THIS .tracker .searchRegion .ui-widget{
     position: absolute;
-    top: 22px;
+    top: 30px;
     right: 10px;
-}  
-
-.THIS .tracker-home .searchRegion .ui-widget{
-    top: 110px;
-    right: initial;
-} 
+    border: 1px solid rgb(223, 234, 240);
+    border-radius: 0.25rem;
+}                
                 
 .THIS .tracker .searchRegion .ui-widget .contentWrapper{
     border-radius: 0;
@@ -492,12 +489,22 @@
 }
 
 .THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper input{
-    height: 3rem;
-    font-size: 16px;
+    height: 2rem;
+    font-size: 14px;
 }
     
 .THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list {
     border-radius:0;
+}
+                
+.THIS .tracker .tracker-home .searchRegion .ui-widget{
+    top: 110px;
+    right: initial;
+}
+                
+.THIS .tracker .tracker-home .searchRegion .ui-widget .contentWrapper .inputWrapper input{
+    height: 3rem;
+    font-size: 16px;
 }
                 
 .THIS .tracker .cta {
@@ -562,9 +569,11 @@
     font-weight: normal;
 }
 
+/*
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover .topicLabel:hover{
    color: #00638c;
 }
+*/
 
         
 @media (max-width: 991px) {

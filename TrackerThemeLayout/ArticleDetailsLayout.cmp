@@ -2,6 +2,7 @@
     <aura:attribute name="header" type="Aura.Component[]" required="false"></aura:attribute>
    	<aura:attribute name="content" type="Aura.Component[]" required="false"></aura:attribute>
     <aura:attribute name="sidebar" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="footerTop" type="Aura.Component[]" required="false"></aura:attribute>
 
    	<div>
         <div class="article-details">

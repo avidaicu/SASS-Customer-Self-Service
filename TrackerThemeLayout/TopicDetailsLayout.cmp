@@ -3,6 +3,8 @@
     
     <aura:attribute name="content" type="Aura.Component[]" required="false"></aura:attribute>
     <aura:attribute name="sidebar" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="contentFullWidth" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="footerTop" type="Aura.Component[]" required="false"></aura:attribute>
 
    	<div>
         <div class="topic-details">
@@ -11,6 +13,18 @@
                     <div class="slds-col--padded slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
                         <div class="container">
                             {!v.header}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="siteforceSldsOneCol84Layout ">
+                    <div class="slds-main-content">
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
+                                {!v.contentFullWidth}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -30,6 +44,21 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="footer-top">
+                <div class="container">
+                    <div class="siteforceSldsOneCol84Layout ">
+                        <div class="slds-main-content">
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
+                                    {!v.footerTop}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+            
         </div>
     </div>
 </aura:component>

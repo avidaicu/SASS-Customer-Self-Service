@@ -1,0 +1,153 @@
+<aura:component controller="AgentPortalUserInfo" implements="forceCommunity:themeLayout">
+
+    <ltng:require styles="{!join(',',$Resource.SGAgentPortal_v2_1_0_26, $Resource.HelpSupportCss)}"
+                  scripts="{!join(',',$Resource.jquery_3_0_0_min, $Resource.AgentPortalGlobals, $Resource.AgentPortalUtils)}"
+                  afterScriptsLoaded="{!c.onInit}"/>
+    
+    <aura:attribute name="portalPath" type="String"/>
+    <aura:attribute name="hasUserData" type="Boolean" default="false" />
+    <aura:attribute name="userLocale" type="String" default="" />
+    <aura:attribute name="uid" type="String" />
+	<aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="notifications" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="search" type="Aura.Component[]" required="false"></aura:attribute>
+    
+    <aura:attribute name="isLoggedIn" type="Boolean" default="false" />
+    <aura:attribute name="templateText" type="Object"/>
+    <aura:handler name="analyticsEvent" event="c:AgentPortalAnalytics" action="{!c.handleAnalyticsEvent}" includeFacets="true"/>
+    <aura:handler event="forceCommunity:analyticsInteraction" action="{!c.onGAInteraction}"/>
+    <aura:attribute name="languages" type="Object"/>
+    <aura:attribute name="selectedLanguage" type="String" />
+    <!-- Theme attributes -->
+    <aura:attribute name="SGBasicTemplateNoNav" type="Boolean" default="false" />
+    
+    <aura:attribute name="isTracker" type="Boolean" default="false" />
+    <aura:attribute name="isTrackerHome" type="Boolean" default="false" />
+    
+    <aura:attribute name="bodyContainerType" type="String" default="container" />
+    <aura:attribute name="bodyContainerWidth" type="String" default="w-90" />
+    <!-- Set to true within afterRender within renderer -->
+    <aura:attribute name="isDOMReady" type="Boolean" default="false"/>
+    <aura:attribute name="user" type="Object"/>
+    
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <aura:handler event="force:refreshView" action="{!c.onViewRefresh}"/>
+    
+    <!--<aura:handler name="init" action="{!c.onInit}" value="{!this}" />-->
+    
+    <aura:if isTrue="{! v.hasUserData == false}">
+        <lightning:spinner alternativeText="Loading" />
+        <aura:set attribute="else">
+            
+            <!-- AGENT PORTAL HELP AND SUPPORT THEME LAYOUT -->
+            
+            <!-- Content once we have user data -->
+            <div class="agent-portal-wrapper agent-portal-wrapper-help-support">
+               
+                <header class="sgap-header internal">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="{!v.SGBasicTemplateNoNav == true ? 'apd' : ''}">
+                                <div class="logo col-xs-12 col-sm-7">
+                                    <a href="{!v.portalPath}" aria-label="Study Group Agent Portal">
+                                        <img src="https://www.studygroup.com/-/media/agentportal/logos/sg_logo.png" title="Study Group"/>
+                                        <aura:if isTrue="{!v.SGBasicTemplateNoNav == false}">
+                                        	<span>Agent Portal</span>
+                                        </aura:if> 
+                                    </a>
+                                </div>
+                            </div>   
+                                
+                            <aura:if isTrue="{!v.SGBasicTemplateNoNav == false}">
+                                <div class="profileMenuRegion col-xs-12 col-sm-5">
+                                    <!--<aura:if isTrue="{!v.isLoggedIn}">-->
+                                    <aura:if isTrue="{!v.isLoggedIn}">
+                                        <a href="{! v.portalPath + 'profile/' + v.user.Id}" role="button">
+                                        	<img class="profile-image" alt="" src="{!v.user.MediumPhotoUrl }" title="{!v.user.Name }" />
+                                        </a>
+                                        <a href="{! v.portalPath + 'profile/' + v.user.Id}" role="button" class="header-nav-item">
+                                            {!v.userLocale == 'en' ? 'My profile' : '我的资料'}
+                                        </a>
+                                    </aura:if>
+                                    
+                                    <div class="change-language">
+                                            <!--{!v.templateText.changeLanguage}--> <!-- iconName="utility:world" -->
+                                            {!v.selectedLanguage}
+                                            <lightning:buttonMenu aura:id="menu"  alternativeText="Show menu" title="{!v.templateText.changeLanguage}" onselect="{! c.changeLanguage }">
+                                                <aura:iteration items="{!v.languages}" var="language">
+                                                    <lightning:menuItem label="{!language.languageSelectorText}" 
+                                                                        value="{! language.selectorLanguageValue}" 
+                                                                        disabled="{!v.userLocale == language.sitecoreLanguage ? true : false}" />
+                                                </aura:iteration>
+                                            </lightning:buttonMenu>
+                                           
+                                    </div>
+                                    <aura:if isTrue="{!v.isLoggedIn}">
+                                        <a href="{! v.portalPath + 'secur/logout.jsp?retUrl=/'}" role="button" class="header-nav-item">
+                                            {!v.userLocale == 'en' ? 'Logout' : '退出'}
+                                        </a>
+                                    </aura:if>
+    							
+                                    <!--</aura:if>-->
+                                    
+                                    <!-- Handles login URL for us -->
+                                    <aura:if isTrue="{!v.isLoggedIn == false}">
+                                    	{!v.profileMenu}
+                                    </aura:if>
+                                </div>
+                            </aura:if>
+                            
+                        </div>
+                    </div>
+                </header>
+                
+                <aura:if isTrue="{!v.SGBasicTemplateNoNav == false}">
+                    <section class="sgap-navigation">
+                        <div class="navigation container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    {!v.navBar}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aura:if>
+                
+                <section class="mainContentArea" role="main">
+                     <div class="{!v.bodyContainerType == 'container' ? 'container' : 'container-fluid' + ' ' + v.bodyContainerWidth}">
+                        <div class="row">
+                            <div class="{!v.isTracker == true ? 'tracker' : ''}">
+                                <div class="{!v.isTrackerHome == true ? 'tracker-home' : ''}">
+                                    <div class="col-md-12 sgap-content">
+                                        <div class="container">
+                                            <div class="searchRegion">
+                                                <!-- Search Publisher component --> 
+                                                {!v.search}
+                                            </div>
+                                        </div>
+                                        {!v.body}
+                                    </div>
+                                </div> 
+                            </div>
+                         </div>
+                    </div>
+                </section>
+                
+                <!-- Footer -->
+                <aura:if isTrue="{!v.hasUserData == true}">
+                    <div class="{!v.SGBasicTemplateNoNav == true ? 'apd' : ''}">
+                    	<c:AgentPortalCTLFooter displayNavigation="{!v.SGBasicTemplateNoNav == false}" locale="{!v.userLocale}"/>
+                	</div>
+                </aura:if>
+                
+                <c:AgentPortalCookieBar/>
+            </div>
+            
+        </aura:set>
+        
+    </aura:if>
+
+</aura:component>
