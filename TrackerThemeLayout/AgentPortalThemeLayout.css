@@ -574,8 +574,56 @@
    color: #00638c;
 }
 */
+.THIS .tracker .footer-top {
+    padding-bottom: 40px;
+    background:#ffffff;
+}
+                             
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child{
+	background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+                
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child{
+	background: #f4f5f5;
+}
+                
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles h2,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles h2{
+    font-size: 24px;
+    margin-top: 0 !important;
+}
 
-        
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles ul,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles ul li,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li{
+	list-style-type: disc;
+    margin: 0 0 5px 0;
+}
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles ul li a,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li a{
+	color: #0099D8;
+    border: none;
+    padding: 0;
+}
+
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles ul li:hover a,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li:hover a {
+	text-decoration: underline;
+}
+
+.THIS .tracker .slds-main-content .comm-layout-column:last-child .ui-widget .comm-topic-trending-articles ul li a span,
+.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li a span{
+	font-size: 14px;
+}           
+                      
 @media (max-width: 991px) {
         .THIS .tracker .slds-section .container,
         .THIS .tracker .forceCommunityContactSupportForm .slds-truncate span {

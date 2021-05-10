@@ -24,52 +24,6 @@
     margin-top:20px;
 }
 
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child{
-	background: #f4f5f5;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles h2{
-    font-size: 24px;
-    margin-top: 0 !important;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul{
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul{
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li{
-	list-style-type: disc;
-    margin: 0 0 5px 0;
-}
-
-/*
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li:last-child{
-    margin: 0;
-}
-*/
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li a{
-	color: #0099D8;
-    border: none;
-    padding: 0;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li:hover a{
-	text-decoration: underline;
-}
-
-.THIS .help-support .content-top .comm-layout-column:last-child .ui-widget:last-child .comm-topic-trending-articles ul li a span{
-	font-size: 14px;
-}
-
 .THIS .help-support .stats{
     color: #7b7b7b;
     font-family: "HelveticaNeueW01-Thin" !important;
@@ -182,6 +136,7 @@
 .THIS .help-support .slds-media__body .slds-page-header__title .triggerLink{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     border: 1px solid rgb(223, 234, 240);
+    border-radius: .25rem;
     padding: 0 20px;
     width: 268px;
     height: 3rem;
@@ -249,7 +204,7 @@
 
 .THIS .help-support .search-in-list .slds-input{
     width: auto;
-    border-radius: 0;
+    border-radius: .25rem;
 	padding: 0;
     padding-left: 50px;
     padding-right: 20px;
@@ -458,10 +413,6 @@
 
 .THIS .help-support .slds-table th span.slds-truncate {
     font-weight:normal !important;
-}
-
-.THIS .help-support .footer-top {
-    padding-bottom: 40px;
 }
         
 @media (max-width: 991px) {

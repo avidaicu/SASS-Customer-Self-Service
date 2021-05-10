@@ -19,15 +19,13 @@
             <div class="container">
                 <div class="siteforceSldsOneCol84Layout ">
                     <div class="slds-main-content">
-                        <div class="slds-grid slds-wrap">
-
-                            <div class="slds-col--padded slds-size--12-of-12 slds-large-size--8-of-12 comm-layout-column">
+                        <div class="slds-grid slds-wrap row">
+                            <div class="slds-col--padded col-md-9 comm-layout-column">
                                 {!v.content}
                             </div>
-                            <div class="slds-col--padded slds-size--12-of-12 slds-large-size--4-of-12 comm-layout-column">
+                            <div class="slds-col--padded col-md-3 comm-layout-column">
                                 {!v.sidebar}
                             </div>
-                            
                         </div>
                     </div>
                 </div>

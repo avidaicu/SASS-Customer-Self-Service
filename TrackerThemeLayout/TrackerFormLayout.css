@@ -382,20 +382,60 @@
     width: 10%;            
     padding: 0;
 }
-            
+   
+/*            
 .THIS .tracker-form div[data-region-name=sidebar] {
     background: #fff;
     padding: 20px;
     border-radius: 6px;
     margin-top: 20px;
 }
+*/
             
 .THIS .tracker-form div[data-region-name=sidebar] h2 {
     font-size: 24px;
 }
             
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar{
+    display: block;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar ul{
+    border-bottom: none;
+    display: block;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar li{
+    display: none;
+    max-width: inherit;
+    text-align: left;
+    font-size: 24px;
+    text-transform: inherit;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar li a{
+    pointer-events: none;
+    border-bottom: none;
+    padding: 0;
+    font-weight: normal;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    color: inherit;
+    overflow: visible;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar li a span.title{
+	letter-spacing: initial;
+}
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTabBar li:first-child{
+    display: block;
+}
+            
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li{
     margin-bottom:0;
+    margin-top:0;
     width: 100%;
     border-bottom: none;  
     padding-bottom:10px;

@@ -66,6 +66,10 @@
     background: #fff;
 }
 
+.THIS .topic-details div[data-region-name="header"] .ui-widget {
+    background: none;
+}
+
 .THIS .topic-details .ui-widget:last-child h1{
 	margin-bottom: 25px !important;
 }
@@ -110,4 +114,8 @@
 
 .THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li .footer > span.date{
 	display:block;
+}
+
+.THIS .topic-details .footer-top .ui-widget{
+	padding:0;
 }
