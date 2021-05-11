@@ -15,14 +15,91 @@
 }
 */
 
-.THIS .article-details .article-column .summary h1{
+.THIS .article-details div[data-region-name=content] .ui-widget{
+	padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column{
+	padding: 0;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary h1{
 	font-size: 36px;
 }
 
-.THIS .article-details .article-column .content .test-id__section{
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary p.selfServiceArticleHeaderDetail{
+	margin: 0;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail{
+	margin-bottom: 25px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail .timestamp-icon{
+	display: block;
+    float: left;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary .selfServiceArticleHeaderDetail > span{
 	display: none;
 }
 
-.THIS .article-details .article-column .content .test-id__section:nth-child(2){
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary .selfServiceArticleHeaderDetail span.date{
 	display: block;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section{
+	display: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section:nth-child(2){
+	display: block;
+    margin:0;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow{
+    padding: 20px;
+    margin:0;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element{
+    border-bottom: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .test-id__field-label{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child{
+	background: #009adb;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child .test-id__field-label{
+	color: #fff;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:last-child{
+    border: 1px solid rgb(223, 234, 240);   
+    border-top: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .selfServiceArticleTopicList{
+	display: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting {
+	margin-top: 25px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card{
+	border: none;
 }

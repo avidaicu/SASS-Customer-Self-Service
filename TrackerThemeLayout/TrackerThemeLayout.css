@@ -420,9 +420,12 @@
      	padding-bottom:0 !important;
      }
 
+    /*
     .THIS .help-support .slds-main-content .ui-widget:first-child {
     	display:none;
 	}
+    */ 
+    
 	.THIS .help-support .btn_tracker_lg.add_new {
         float: none;
     	width: 100%; 
@@ -506,10 +509,11 @@
     .THIS .help-support .slds-main-content .slds-page-header .slds-grid:last-child  {
         margin-bottom: 0;
     }
-    */
+    
     .THIS .help-support .slds-media__body .slds-page-header__title {
         font-size: 2.6em !important;
     }
+    */
     .THIS .help-support .slds-media__body .slds-page-header__title .triggerLink {
         width: 100%;
         padding:0;
