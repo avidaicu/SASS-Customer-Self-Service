@@ -64,14 +64,18 @@
 .THIS .topic-details .ui-widget:last-child {
 	padding: 20px;
     background: #fff;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .THIS .topic-details div[data-region-name="header"] .ui-widget {
     background: none;
+    padding: 0;
 }
 
 .THIS .topic-details .ui-widget:last-child h1{
 	margin-bottom: 25px !important;
+    font-size:24px;
 }
 
 .THIS .topic-details .ui-widget:last-child h1 label{
@@ -80,10 +84,18 @@
     font-weight: normal;
 }
 
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list{
+    margin: 0;
+}
+
 .THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li{
     padding-top: 0; 
     margin-bottom: 20px;
+}
 
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li:last-child{
+    border-bottom:none;
+    margin:0;
 }
 
 .THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list li a:hover{
@@ -116,6 +128,14 @@
 	display:block;
 }
 
-.THIS .topic-details .footer-top .ui-widget{
-	padding:0;
+.THIS .topic-details .slds-main-content .ui-widget:last-child button.loadmore {
+	width: 100%;
+    border-radius: 0;
+    background: rgba(153,153,153,0.25);
+    color: #0099D8;
+    text-decoration: none;
+    border:none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

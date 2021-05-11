@@ -16,13 +16,12 @@
 */
 
 .THIS .article-details div[data-region-name=content] .ui-widget{
-	padding: 20px;
     background: #fff;
-    border-radius: 8px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column{
 	padding: 0;
+    background: rgb(240, 240, 240);
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary h1{
@@ -34,7 +33,7 @@
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail{
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail .timestamp-icon{
@@ -68,6 +67,10 @@
     border-bottom: none;
 }
 
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element .itemBody{
+    padding: 0;
+}
+
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .test-id__field-label{
     font-weight: normal;
     font-size: 24px;
@@ -88,8 +91,7 @@
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:last-child{
-    border: 1px solid rgb(223, 234, 240);   
-    border-top: none;
+    background: #fff;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .selfServiceArticleTopicList{

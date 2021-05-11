@@ -533,10 +533,6 @@
     margin-bottom: 20px;
 }
 
-.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover{
-    border-bottom: 1px solid #00638c;
-}
-
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:nth-child(2n){
     margin-right: 0;
 }
@@ -578,6 +574,15 @@
 .THIS .tracker .footer-top {
     padding-bottom: 40px;
     background:#ffffff;
+    margin-top: 40px;
+}
+                
+.THIS .tracker .footer-top .slds-main-content .comm-layout-column{
+    padding: 0;
+}
+
+.THIS .tracker .footer-top .slds-main-content .ui-widget{
+	padding:0;
 }
 
 .THIS .tracker div[data-region-name=sidebar] .ui-widget,
@@ -619,6 +624,10 @@
 	color: #0099D8;
     border: none;
     padding: 0;
+}
+                
+.THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul li a:hover{
+	text-decoration: underline;
 }
 
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .comm-topic-trending-articles ul li:hover a,
