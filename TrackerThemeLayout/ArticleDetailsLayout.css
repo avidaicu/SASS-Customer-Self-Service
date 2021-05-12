@@ -26,19 +26,21 @@
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary h1{
 	font-size: 36px;
+    margin-top: 15px !important;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary p.selfServiceArticleHeaderDetail{
-	margin: 0;
+	display: none;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail{
 	margin-bottom: 15px;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary div.selfServiceArticleHeaderDetail .timestamp-icon{
-	display: block;
-    float: left;
+	display: none;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .summary .selfServiceArticleHeaderDetail > span{
@@ -67,13 +69,20 @@
     border-bottom: none;
 }
 
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element__label {
+    margin-bottom: 15px;
+}
+
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element .itemBody{
     padding: 0;
+    padding-left: 26px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .test-id__field-label{
     font-weight: normal;
     font-size: 24px;
+    display: block;
+    line-height: 21px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child{
@@ -86,8 +95,26 @@
     border-top-right-radius: 8px;    
 }
 
-.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child .test-id__field-label{
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child .test-id__field-label,
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child .slds-rich-text-editor__output{
 	color: #fff;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .test-id__field-label::before {
+    content: '';
+    display: block;
+	width: 21px;
+    height: 21px;
+    float: left;
+    margin-right: 5px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:first-child .test-id__field-label::before {
+    background-image: url(/partnerCommunity/resource/1617928612000/SLDSIcons/utility/question_feed.svg);
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:last-child .test-id__field-label::before {
+    background-image: url(/partnerCommunity/resource/1617928612000/SLDSIcons/utility/answer.svg);
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow:last-child{
@@ -99,9 +126,55 @@
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .voting {
-	margin-top: 25px;
+	margin: 0;
+    padding: 20px;
+    overflow: hidden;
 }
 
-.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card{
-	border: none;
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card {
+	border-top: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div {
+	padding: 0;
+    float: right;
+    width: 270px;
+    margin-top: 20px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-media__body{
+	font-size: 14px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:first-child{
+    margin: 0;
+    float: left;
+    margin-right: 15px;
+    line-height: 32px
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child{
+    float: none;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child .slds-clearfix{
+    margin: 0;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child .slds-clearfix button{
+    border: 1px solid rgb(223, 234, 240);
+    font-size: inherit;
+    padding: 0;
+    color: rgb(107, 109, 112);
+    background: initial;
+    border-radius: inherit;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child .slds-clearfix div[aria-live=assertive]{
+    line-height: 32px;
+    padding-top: 0;
+}
+
+.THIS .article-details .footer-top {
+    display:none;
 }

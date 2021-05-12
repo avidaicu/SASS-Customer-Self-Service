@@ -61,16 +61,11 @@
 	display: none;
 }
 
-.THIS .topic-details .ui-widget:last-child {
+.THIS .topic-details .slds-main-content div[data-region-name=content] .ui-widget:last-child {
 	padding: 20px;
     background: #fff;
     position: relative;
     padding-bottom: 50px;
-}
-
-.THIS .topic-details div[data-region-name="header"] .ui-widget {
-    background: none;
-    padding: 0;
 }
 
 .THIS .topic-details .ui-widget:last-child h1{
@@ -139,3 +134,21 @@
     bottom: 0;
     left: 0;
 }
+
+.THIS .topic-details div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul {
+	margin:0;
+}
+
+.THIS .topic-details div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul li:last-child{
+	border-bottom:none;
+}
+
+.THIS .topic-details div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul li a {
+	padding:12px 0;
+}
+
+
+
+
+
+

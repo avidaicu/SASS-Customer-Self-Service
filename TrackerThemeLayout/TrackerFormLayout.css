@@ -13,22 +13,6 @@
     margin: 0 !important;
 }
 
-.THIS .tracker-form .header .comm-layout-column{
-	padding: 35px 0 !important;
-}
-
-/*
-.THIS .tracker-form .header h1{
-    font-size: 3em;
-}
-
-.THIS .tracker-form .slds-truncate {
-    text-align: left;
-    padding-bottom: 20px;
-}
-*/
-
-
 .THIS .tracker-form .forceCommunityContactSupportForm {
     padding-bottom: 20px;
 }
@@ -73,7 +57,6 @@
     padding-top: 64px;
     margin-top: -80px;
     margin-bottom:0;
-    padding-bottom: 40px;
 }
 
 
@@ -434,31 +417,33 @@
 }
             
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li{
-    margin-bottom:0;
-    margin-top:0;
     width: 100%;
-    border-bottom: none;  
-    padding-bottom:10px;
+    margin: 0;
+    padding: 0;
 }
-
-/*
+            
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li:last-child{
-    border-bottom: none;
+	border-bottom:none;
 }
-           
-.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li:hover{
-    border-bottom: 1px solid #d4d4d4 !important;
+            
+.THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li a{
+	padding: 12px 0;
 }
-*/
             
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicImage{
-    width: 30px;
+	width: 30px;
     height: 30px;
-    margin-right:10px;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    float: left;
 }
             
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicContent {
-	line-height: 30px;
+	line-height: initial;
+    padding-left: 42px;
 }
             
 .THIS .tracker-form div[data-region-name=sidebar] .forceCommunityHomeTabs .uiTab ul.topicList li .topicContent .topicLabel{

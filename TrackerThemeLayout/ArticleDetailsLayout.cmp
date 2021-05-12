@@ -34,11 +34,9 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="siteforceSldsOneCol84Layout ">
-                        <div class="slds-main-content">
-                            <div class="slds-grid slds-wrap">
-                                <div class="slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
-                                    {!v.footerTop}
-                                </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size--12-of-12 slds-large-size--12-of-12 comm-layout-column">
+                                {!v.footerTop}
                             </div>
                         </div>
                     </div>
