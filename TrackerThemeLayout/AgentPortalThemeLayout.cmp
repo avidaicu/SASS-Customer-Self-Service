@@ -3,9 +3,16 @@
     <ltng:require styles='{!$Resource.SGAgentPortal_v2_1_0_26}'
                   scripts="{!join(',',$Resource.jquery_3_0_0_min, $Resource.AgentPortalGlobals, $Resource.AgentPortalUtils)}"
                   afterScriptsLoaded="{!c.onInit}"/>
+
+    <aura:if isTrue="{! v.helpSupport == true}">
+        <ltng:require styles="{!join(',',$Resource.SGAgentPortal_v2_1_0_26, $Resource.HelpSupportCss)}"
+                      scripts="{!join(',',$Resource.jquery_3_0_0_min, $Resource.AgentPortalGlobals, $Resource.AgentPortalUtils)}"
+                      afterScriptsLoaded="{!c.onInit}"/>
+    </aura:if>
     
     <aura:attribute name="portalPath" type="String"/>
     <aura:attribute name="hasUserData" type="Boolean" default="false" />
+    <aura:attribute name="helpSupport" type="Boolean" default="false" />
     <aura:attribute name="userLocale" type="String" default="" />
     <aura:attribute name="uid" type="String" />
 	<aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>

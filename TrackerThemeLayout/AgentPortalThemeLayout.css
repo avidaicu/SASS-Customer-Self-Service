@@ -314,23 +314,20 @@
 
 .THIS .tracker button.slds-button {
     background: #009adb;
-	border: 2px solid #009adb;
     border-radius: 40px;
     font-size: 18px;
     font-family: "HelveticaNeueW01-Thin"!important;
-    border: 2px solid #009adb;
     padding: 10px 20px;
     line-height: 30px;
     color:#fff;
     height:initial;
 }
     
-/*        
+       
 .THIS .tracker button.slds-button:hover {
-	background: #003449;
-    border-color: #003449;
+    text-decoration:underline;
 } 
-*/
+
         
 .THIS .tracker button.slds-button span{
 	color:#fff;
@@ -445,7 +442,7 @@
 }
                 
 .THIS .tracker .embeddedServiceHelpButton.forceCommunityEmbeddedServiceHelpButton .flatButton .helpButtonLabel{
-	font-family: "HelveticaNeueW01-Thin";
+	font-size: 16px;
 }
                         
 .THIS .embeddedServiceSidebar.modalContainer .embeddedServiceSidebarMinimizedDefaultUI.helpButton .content 
@@ -491,6 +488,10 @@
 .THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper{
     background: #fff;
 }
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .forceSearchInputDesktopPillWrapper{
+   margin:0;
+}
 
 .THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper input{
     height: 2rem;
@@ -498,17 +499,52 @@
 }
     
 .THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list {
-    border-radius:0;
+    border-radius:8px;
+    padding: 0;
 }
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listHeader{
+    font-size: 14px;
+    padding: 8px 14px;
+    background: #f0f0f0;   
+    margin-bottom: 0;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listContent ul li{
+    border-bottom: 1px solid rgb(223, 234, 240);
+    padding: 8px 14px;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listContent ul li:last-child{
+    border-bottom: none;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listContent ul li a .slds-icon_container{
+    display: none;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listContent ul li:hover{
+    background: #fff;
+}
+                
+.THIS .tracker .searchRegion .ui-widget .contentWrapper .inputWrapper .list .listContent ul li a:hover{
+    text-decoration: underline;
+}
+
                 
 .THIS .tracker .tracker-home .searchRegion .ui-widget{
     top: 110px;
     right: initial;
+    border:none;
 }
                 
 .THIS .tracker .tracker-home .searchRegion .ui-widget .contentWrapper .inputWrapper input{
     height: 3rem;
     font-size: 16px;
+}
+                
+.THIS .tracker .tracker-home .searchRegion .ui-widget .contentWrapper {
+	border-radius: 8px;
 }
                 
 .THIS .tracker .cta {
@@ -517,6 +553,8 @@
                 
 .THIS .tracker .cta button a{
     color: #fff;
+    -webkit-transition: .4s;
+    transition: all .4s
 }
                 
 .THIS .tracker .forceCommunityHomeTabs .uiTabBar{
@@ -530,7 +568,7 @@
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li{
     height: inherit;
     border-bottom: 1px solid rgb(223, 234, 240);
-    padding-bottom: 0;
+    padding-bottom: 10px;
     width: 48%;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -542,21 +580,21 @@
 
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a.topicLink:hover{
-    text-decoration:none;
+    text-decoration:underline;
+    color: rgb(50, 54, 63);                
 }
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
 	display: block;
     background: none;
     position: relative;
-    line-height: 40px;
 }
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
@@ -564,9 +602,9 @@
     overflow: visible;
     text-align: left;
     padding: 0;
-    font-size: 18px;
-    font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    font-size: 16px;
     font-weight: normal;
+    line-height:30px;
 }
 
 /*
@@ -614,12 +652,15 @@
     background: #0099d8;
     border: 2px solid #0099d8;
     padding: 4px 8px;
-    border-radius: 5px;                
+    border-radius: 5px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-                
+
+              
 .THIS .tracker div[data-region-name=sidebar] button.slds-button:hover{
     text-decoration:underline               
 }
+
                 
 .THIS .tracker .footer-top {
     padding: 20px 0;

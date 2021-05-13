@@ -79,7 +79,11 @@
     font-weight: normal;
 }
 
-.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList ul.article-list{
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList .article-list .emptyListContent .empty{
+    padding: 0;
+}
+
+.THIS .topic-details .ui-widget:last-child .topicRelatedArticleList .listContent{
     margin: 0;
 }
 
@@ -146,9 +150,3 @@
 .THIS .topic-details div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul li a {
 	padding:12px 0;
 }
-
-
-
-
-
-

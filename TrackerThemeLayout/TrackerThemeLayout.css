@@ -241,17 +241,18 @@
 .THIS .help-support .listDisplays .listViewContainer{
     height:initial;
     min-height: auto !important;
+    position:relative!important;
 }
 
 .THIS .help-support .listDisplays .listViewContainer .listViewContent{
     min-height: auto;
 }
 
-/*
+
 .THIS .help-support .forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
     min-height: auto;
+    height:initial !important;
 }
-*/
 
 .THIS .help-support .scroller-wrapper {
     background: #fff;

@@ -1,0 +1,183 @@
+.comm-panels-container .uiModal--medium .modal-container {
+	font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-header{
+	padding: 0 20px;
+    border: none;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-header h2.title{
+	font-weight: normal;
+    font-size: 28px;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    padding: 20px;
+    padding: 5px 20px 15px 20px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 0;
+}
+    
+.comm-panels-container .uiModal--medium .modal-container .modal-body .groupDependentFieldEnabled{
+	padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .forcePageError{
+	padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .forcePageError .errorsList{
+	font-size: initial;
+    	padding: 20px;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body h3{
+	margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+        
+.comm-panels-container .uiModal--medium .modal-container .modal-body h3 span{
+	padding: 0;
+    display:none;
+}
+    
+.comm-panels-container .uiModal--medium .modal-container .modal-body h3::after{
+	content: 'Please add comment below.';
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content{
+	padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow{
+	margin: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow:last-child,
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow:nth-last-child(2){
+	display:none;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit{
+	padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element{
+	padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element label{
+	font-size: initial;
+    display: block;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content .forcePageBlockSectionRow .forcePageBlockItemEdit .slds-form-element .textarea{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-height: 150px;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-body .test-id__section-content 
+.forcePageBlockSectionRow .form-element__help{
+	font-size: initial;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-footer {
+	border: none;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-footer .slds-button{
+	border: 2px solid #0099d8;
+    margin: 0;
+    padding: 0;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-footer .slds-button span{
+	padding: 4px 22px;
+   	border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-footer .uiButton--brand{
+	background: #0099d8;
+    margin-left: 0.5rem;
+    border: none;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-footer .uiButton--brand span{
+   	color: #fff;
+    background: #0099d8;
+   	border: 2px solid #0099d8;
+}
+
+/* 'File Upload' modal */
+.comm-panels-container .uiModal--fullBleed .modal-container,
+.comm-panels-container .uiModal .modal-container{
+    width: 300px;
+}
+
+.comm-panels-container .uiModal--fullBleed .modal-container .modal-header,
+.comm-panels-container .uiModal .modal-container .modal-header{
+   	border-bottom: none;
+    padding: 0;     
+}
+    
+.comm-panels-container .uiModal--fullBleed .modal-body .container,
+.comm-panels-container .uiModal .modal-body .container{
+   	padding: 0;
+    display: block;
+}
+    
+.comm-panels-container .uiModal--fullBleed .modal-body .container .leftPanel,
+.comm-panels-container .uiModal .modal-body .container .leftPanel{
+	float: none;
+    width: 100%;
+}
+    
+.comm-panels-container .uiModal--fullBleed .modal-body .container .leftPanel .left,
+.comm-panels-container .uiModal .modal-body .container .leftPanel .left{
+    padding: 20px;
+}
+
+.comm-panels-container .uiModal--fullBleed .modal-body .container .leftPanel .left .attachButton,
+.comm-panels-container .uiModal .modal-body .container .leftPanel .left .attachButton{
+    color: #fff;
+    background: #0099d8;
+    border: 2px solid #0099d8;
+    padding: 4px 22px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+    
+.comm-panels-container .uiModal--fullBleed .modal-body .container .leftPanel .left .attachButton:hover,
+.comm-panels-container .uiModal .modal-body .container .leftPanel .left .attachButton:hover{
+    text-decoration: underline;
+}
+    
+.comm-panels-container .uiModal--fullBleed .modal-container .modal-header h2,
+.comm-panels-container .uiModal .modal-container .modal-header h2,
+.comm-panels-container .uiModal--fullBleed .modal-container .modal-footer,
+.comm-panels-container .uiModal .modal-container .modal-footer,
+.comm-panels-container .uiModal--fullBleed .modal-body .container .rightPanel,
+.comm-panels-container .uiModal .modal-body .container .rightPanel,
+.comm-panels-container .uiModal--fullBleed .modal-body .container .leftPanel .right,
+.comm-panels-container .uiModal .modal-body .container .leftPanel .right{
+    display: none;
+}
+
+.comm-panels-container .uiModal--medium .modal-container .modal-header h2,
+.comm-panels-container .uiModal--medium .modal-container .modal-footer{
+    display: block;
+}
+
+.comm-panels-container .uiModal--medium .modal-container{
+    width: initial;
+}
+
+/* 'Image Preview' modal */
+.comm-panels-container .uiModal--modalPreview .modal-container{
+    width: 100%;
+}
