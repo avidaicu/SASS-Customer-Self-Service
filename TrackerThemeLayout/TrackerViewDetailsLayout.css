@@ -77,6 +77,21 @@
     color: #00638c;
 }
 
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li a::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c6";
+    margin-right: 5px;
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li a::after{
+    content: "Upload Files";
+}
+
+.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .actionsContainer ul.branding-actions li a div{
+    display: none;
+}
+
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2{
     padding: 0;
@@ -93,22 +108,9 @@
 	border:none;
 }
 
-/*
-.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-truncate{
-    color: #5A5A5A;
-}
-*/
-
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header h2 a .slds-shrink-none{
 	display: none;
 }
-
-/*
-.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-no-flex,
-.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-page-header .slds-avatar{
-	display: none;
-}
-*/
 
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix thead th:nth-child(2),
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop .useHeaderBarFix thead th:nth-child(3),
@@ -166,15 +168,6 @@
 	overflow: initial;
 }
 
-/*
-.THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
-.forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle{
-	font-family: Roboto,"Helvetica Neue",sans-serif;
-    font-size: 18px;
-    line-height: 1.6em;
-}
-*/
-
 .THIS .tracker-case .slds-main-content .ui-widget:last-child .forceRelatedListSingleContainer .forceRelatedListCardDesktop 
 .forceContentVirtualRelatedListStencil .slds-show_inline-block.slds-truncate .itemTitle:hover{
 	text-decoration: underline;
@@ -202,22 +195,9 @@
 	display: flex !important;
 }
 
-/*
-.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem{
-    margin: 0 0 20px 0 !important;
-}
-*/
-
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .forcePageBlockItem .override--slds-form-element{
     border-bottom: 1px solid rgb(233 234 236);
 }
-
-/*
-.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element_edit{
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e9eaec;
-}
-*/
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .slds-form-element__label{
     padding: 0;
@@ -237,12 +217,6 @@
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static .uiOutputTextArea{
 	text-transform: capitalize;
 }
-
-/*
-.THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .itemBody .slds-form-element__static .uiOutputTextArea{
-    line-height: 1.6em;
-}
-*/
 
 .THIS .tracker-case .container .forceCommunityRecordDetail .slds-form > .slds-grid .blank-item{
 	display: none;
@@ -320,13 +294,6 @@ span.forceOutputModStampWithPreview{
 	display: initial;
 }
 
-/*
-.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .test-id__section-content .forcePageBlockSectionRow:last-child,
-.THIS .tracker-case .forcePageBlock .forcePageBlockSection:nth-last-child(2) .test-id__section-content .forcePageBlockSectionRow:last-child{
-	display:none;
-}
-*/
-
 .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid{
 	padding: 0;
     margin: 5px 0 !important;
@@ -366,17 +333,6 @@ span.forceOutputModStampWithPreview{
     	text-decoration:none;
 }
 
-/*
-.THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child .slds-form .slds-grid:last-child{
-	display: none;
-}
-
-
-.THIS .tracker-case .test-id__section-content .forcePageBlockSectionRow:last-child{
-	display:none !important;
-}
-*/
-
 .THIS .tracker-case .slds-page-header {
     height: auto !important;
     margin: 0 !important;
@@ -388,13 +344,6 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .slds-page-header ul.branding-actions li{
     border: none;
 }
-
-/*
-.THIS .tracker-case .slds-page-header ul.branding-actions li a{
-	padding: 8px 20px;
-    border-radius: 40px;
-}
-*/
 
 .THIS .tracker-case .slds-page-header ul.branding-actions li a:hover{
 	background:none;
@@ -436,13 +385,6 @@ span.forceOutputModStampWithPreview{
     vertical-align: bottom;
 }
 
-/*
-.THIS .tracker-case .slds-page-header ul.slds-form li:first-child {
-    display: none;
-}
-
-*/
-
 .THIS .tracker-case .slds-page-header ul.slds-form li:nth-last-child(2),
 .THIS .tracker-case .slds-page-header ul.slds-form li:last-child{
 	display:none;
@@ -463,12 +405,6 @@ span.forceOutputModStampWithPreview{
     font-size: 14px;        
 }
 
-/*
-.THIS .tracker-case .slds-page-header ul.slds-form li .uiOutputText {
-    font-size: 3em;
-}
-*/
-
 .THIS .tracker-case .activity {
     background: #ffffff;
     padding-bottom:40px;
@@ -486,90 +422,6 @@ span.forceOutputModStampWithPreview{
  .THIS .tracker-case .activity .ui-widget h2 .slds-shrink-none{
     display:none;
 }
-
-/*
-.THIS .tracker-case .activity .feedActions {
-    display: flow-root;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-.THIS .tracker-case .activity .feedActions .feeds-sorter{
-    float: right;
-    font-size: 0.9em;
-}
-
-.THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger{
-   	background: #fafaf9;
-    padding: 20px;
-}
-
-.THIS .tracker-case .activity .feedActions .feeds-sorter .feeds-sorter-trigger input{
-    cursor: pointer;
-}
-
-.THIS .tracker-case .activity .feedActions .feeds-sorter label{
-   display: none;
-}
-
-.THIS .tracker-case .activity .feedActions .right-actions{
-   display: none;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem {
-    color: #fff;
-    background: #009adb;
-    padding: 20px;
-}
-        
-.THIS .tracker-case .activity .cuf-feedItem .cuf-body,
-.THIS .tracker-case .activity .cuf-feedItem .forceChatterFeedAuxBody{
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-}
-
-
-.THIS .tracker-case .activity .forceChatterStyle,
-.THIS .tracker-case .activity .slds-text-body--small{
-   	font-size: initial;  
-}
-
-.THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble{
-	font-size: 1.3em;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem .cuf-feedItemHeader .cuf-preamble p{
-	margin-bottom:0;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem a,
-.THIS .tracker-case .activity .cuf-feedItem span.uiOutputText {
-    color: #fff;
-    border:none;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem .entityLinkHover{
-    border:none;
-}
-
-
-.THIS .tracker-case .activity .cuf-feedItem .forceChatterFeedAuxBody{
-    margin-bottom:0;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem .cuf-media-right{
-    display:none;
-}
-
-.THIS .tracker-case .activity .cuf-feedItem .slds-post__footer{
-    display:none;
-}
-
-        
-.THIS .tracker-case .activity .cuf-feedItem .slds-post__footer{
-    display:none;
-}
-*/     
                 
 .THIS .tracker-case .activity .forceRelatedListSingleContainer{
     padding: 0;
@@ -622,12 +474,6 @@ span.forceOutputModStampWithPreview{
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-media__figure{
 	display:none;
 }
-
-/*
-.THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListCardDesktop .slds-no-flex{
-	display: none;
-}
-*/
 
 .THIS .tracker-case .activity .forceRelatedListSingleContainer .forceRelatedListPreview .listViewContent {
 	margin-top: 10px;
@@ -724,19 +570,6 @@ span.forceOutputModStampWithPreview{
     padding: 0;
     margin-top: 20px;
 }
-
-        /*
-.THIS .tracker-case .activity .postButtonContainer button {
-	border-radius: 40px;
-    font-size: 1.1em;
-    font-family: "HelveticaNeueW01-Thin"!important;
-    background: #00597c;
-    border: 2px solid #00597c;
-    padding: 10px 20px;
-    margin: 0;
-    line-height: 30px;
-}
-        */
 
 @media (max-width: 991px) {
     .THIS .tracker-case .forcePageBlock .forcePageBlockSection:last-child {

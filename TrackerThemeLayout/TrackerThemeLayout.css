@@ -63,26 +63,6 @@
     display:none;
 }
 
-/*
-.THIS .help-support .btn_tracker_lg {
-    padding: 12px 24px;
-    border-radius: 40px;
-    font-size: 1.1em;
-}
-
-
-.THIS .help-support .btn_tracker_lg.add_new {
-    background: #00597c;
-	border: 2px solid #00597c;
-}
-
-
-.THIS .help-support .btn_tracker_lg.add_new:hover {
-	background: #003449;
-    border-color: #003449;
-}
-*/
-
 .THIS .help-support .btn_tracker_lg.add_new a{
     color: inherit;
 }
@@ -90,14 +70,6 @@
 .THIS .help-support .btn_tracker_lg.add_new a:hover{
     text-decoration: none;
 }
-
-/*
-.THIS .help-support .content-top .comm-layout-column,
-.THIS .help-support .content .comm-layout-column,
-.THIS .help-support .content-bottom .comm-layout-column{
-    padding: 0 !important;
-}
-*/
 
 .THIS .help-support .slds-main-content {
     background: none;
@@ -114,11 +86,6 @@
     padding-bottom: 0;
 }
 
-.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child{
-    display: block;
-    float: right;
-}
-
 .THIS .help-support .slds-main-content .slds-page-header .slds-grid .slds-text-body--small{
     margin:0;
     font-size: 14px;
@@ -128,58 +95,59 @@
     display:none;
 }
 
-.THIS .help-support .slds-media__body .slds-page-header__title{
-	margin: 0 !important;
-    font-size: initial !important;
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child{
+    display: block;
+    float: right;
 }
 
-.THIS .help-support .slds-media__body .slds-page-header__title .triggerLink{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child h1 .slds-page-header__title:hover,
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .triggerLink:hover{
+    border-bottom: none;
+}
+
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .triggerLink:hover,
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .triggerLink:visited,
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .triggerLink:active,
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .triggerLinkFocused{
+    border-bottom: 1px solid #fff;
+}
+
+.THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child .slds-page-header__title .triggerLinkText{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0 20px;
+    width: 248px;
+    font-size: 14px;
+    background: #fff;
+    line-height: 46px;
+}
+
+.THIS .help-support .slds-main-content .triggerLinkTextAndIconWrapper {
+	padding: 0;
     border: 1px solid rgb(223, 234, 240);
     border-radius: .25rem;
-    padding: 0 20px;
-    width: 268px;
-    height: 3rem;
-    font-size:14px;
-    background: #fff;
 }
 
-/*
-.THIS .help-support .slds-main-content .triggerLinkTextAndIconWrapper {
-	line-height: 32px;
-}
-*/
-
-.THIS .help-support .slds-main-content .downIcon{
+.THIS .help-support .slds-main-content .triggerLinkTextAndIconWrapper .slds-page-header__name-switcher button{
 	line-height: 44px;
     display: block;
     margin: 0;
     right: 15px;
     box-shadow: none;
+    background: inherit;
+    border: none;
+    font-size: inherit;
+    padding: 0;
+    color: inherit;
 }
 
 .THIS .help-support .slds-main-content .keyboardMode--trigger{
 	display:none;
 }
 
-/*
-.THIS .help-support .slds-main-content .comm-layout-column > .siteforceDesignTimeRegion .ui-widget:last-child{
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 6px;
-}
-*/
-
 .THIS .help-support .test-listViewSettingsMenu,
 .THIS .help-support .forceRefreshButton{
     display:none
 }
-
-/*
-.THIS .help-support .forceListViewManagerHeader{
-	margin-top: -10px;
-}
-*/
 
 .THIS .help-support .forceListViewManagerHeader .slds-shrink{
 	margin-right: 15px;
@@ -213,6 +181,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    border: 1px solid rgb(223, 234, 240);
 }
 
 .THIS .help-support .search-in-list .slds-input__icon-group{
@@ -231,11 +200,6 @@
 
 .THIS .help-support .search-in-list .slds-input-has-icon .slds-input__icon:not(button) {
     left: 20px;
-}
-
-.THIS .help-support .listDisplays {
-    /* height:initial; */
-    /* min-height: auto !important; */
 }
 
 .THIS .help-support .listDisplays .listViewContainer{
@@ -294,16 +258,6 @@
     background-color: #d4d4d4;
 }
 
-
-/*
-.THIS .help-support th.errorColumnHeader,
-.THIS .help-support th.actionColumnHeader,
-.THIS .help-support .slds-table tbody tr td:first-child,
-.THIS .help-support .slds-table tbody tr td:last-child{
-    display: none;
-}
-*/
-
 .THIS .help-support .slds-table tbody tr:nth-child(even) {
     background: #fafaf9 !important;
 }
@@ -360,12 +314,6 @@
     border-right: none;
 }
 
-/*
-.THIS .help-support .slds-table tbody {
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-}
-*/
-
 .THIS .help-support .slds-table--header-fixed thead th:nth-last-child(2) .slds-resizable__divider {
     display:none;
 }
@@ -378,16 +326,6 @@
 .THIS .help-support .slds-table .slds-cell-edit:last-child{
     display:none;
 }
-
-/*
-.THIS .help-support .slds-table th:nth-child(2) {
-    width:auto !important;
-}
-
-.THIS .help-support .slds-table th:nth-child(2) .slds-cell-fixed{
-    min-width:170px;
-}
-*/
 
 .THIS .help-support .slds-table--header-fixed thead th  {
     border-right: 1px solid #D4D4D4;
@@ -420,12 +358,10 @@
 	.THIS .help-support {
      	padding-bottom:0 !important;
      }
-
-    /*
-    .THIS .help-support .slds-main-content .ui-widget:first-child {
-    	display:none;
-	}
-    */ 
+    
+    .THIS .help-support .header .comm-layout-column {
+        padding-bottom: 50px;
+    }
     
 	.THIS .help-support .btn_tracker_lg.add_new {
         float: none;
@@ -434,7 +370,7 @@
     
 	.THIS .help-support .stats .container > div{
     	position: relative;
-    	padding-top: 80px;
+    	padding-top: 60px;
 	}
     
     .THIS .help-support .stats .container .ui-widget {
@@ -446,7 +382,8 @@
         margin: 0;
         float: none;
         justify-content: center;
-        line-height: initial !important;
+        line-height: 54px !important;
+        background: rgba(153,153,153,0.25);
 	}
     
     .THIS .help-support .stats .container .ui-widget ul li {
@@ -506,15 +443,6 @@
     .THIS .help-support .slds-main-content .slds-page-header .slds-grid:first-child  {
         float:left;
     }
-    /*
-    .THIS .help-support .slds-main-content .slds-page-header .slds-grid:last-child  {
-        margin-bottom: 0;
-    }
-    
-    .THIS .help-support .slds-media__body .slds-page-header__title {
-        font-size: 2.6em !important;
-    }
-    */
     .THIS .help-support .slds-media__body .slds-page-header__title .triggerLink {
         width: 100%;
         padding:0;

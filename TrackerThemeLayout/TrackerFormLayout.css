@@ -1,11 +1,5 @@
 /** SASS Customer Self Service styles **/
 
-/*
-.THIS .tracker-form{
-	background: #ffffff;
-}
-*/
-
 /* Page Specific */
 .THIS .tracker-form h2{
     font-size: 2.3em;
@@ -59,23 +53,9 @@
     margin-bottom:0;
 }
 
-
-
 .THIS .tracker-form .forceQuickActionLayout .forceRecordLayout {
     padding-top: 20px;
 }
-
-/*
-.THIS .tracker-form .slds-form .mdp {
-	background-color: #fafaf9;
-}
-
-
-.THIS .tracker-form .slds-form .mdp {
-	background: #fafaf9;
-    padding: 20px;
-}
-*/
 
 .THIS .tracker-form .slds-section .slds-hint-parent {
     padding:0
@@ -264,15 +244,7 @@
 .THIS .tracker-form .uiInput--input.input:visited{
     box-shadow: none;
 }
-
-            /*
-.THIS .tracker-form .uiInput--select.select, 
-.THIS .tracker-form .uiInput--select .select, 
-.THIS .tracker-form .uiInput--select .uiPopupTrigger a {
-    padding-left: 15px;
-}
-  */           
-
+            
 .THIS .tracker-form .uiInput--select.select[disabled], 
 .THIS .tracker-form .uiInput--select .select[disabled], 
 .THIS .tracker-form .uiInput--select .uiPopupTrigger a[aria-disabled="true"] {
@@ -284,18 +256,6 @@
     background: #fafaf9;
     opacity: 0.5;
 }
-
-/*
-.THIS .tracker-form .uiInputSelect>.uiMenu, 
-.THIS .tracker-form .uiInputSelect.uiMenu,
-.THIS .tracker-form .uiInput--input .input{
-    margin-top:10px;
-}
-            
-.THIS .tracker-form .uiInputSelect .disabled{
-    margin-top:20px;
-}
-*/
 
 .THIS .tracker-form .case-description{
     min-height: 160px;
@@ -365,15 +325,6 @@
     width: 10%;            
     padding: 0;
 }
-   
-/*            
-.THIS .tracker-form div[data-region-name=sidebar] {
-    background: #fff;
-    padding: 20px;
-    border-radius: 6px;
-    margin-top: 20px;
-}
-*/
             
 .THIS .tracker-form div[data-region-name=sidebar] h2 {
     font-size: 24px;

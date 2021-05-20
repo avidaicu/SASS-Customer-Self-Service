@@ -40,7 +40,6 @@
 
 .THIS .tracker {
     font-size: 14px;
-    /* font-family: HelveticaNeueW01-45Ligh,Arial,Helvetica,sans-serif; */
 }
 
 .THIS .tracker .slds-form-element__label,
@@ -61,14 +60,6 @@
     font-weight: normal;
     color: rgb(50, 54, 63);
 }
-
-/*
-.THIS .tracker .tracker-list,
-.THIS .tracker .tracker-form
-{
-    padding-bottom:40px;
-}
-*/
     
 .THIS .tracker .header{
     color:#fff;
@@ -274,44 +265,7 @@
     box-shadow: none;
     background-color: #f4f5f5;
 }
-    
         
-        
-        
- /*    
-.THIS .tracker .slds-nubbin_top-left {
- 	position: relative;
-}   
-        
-.THIS .tracker .slds-nubbin_top-left:after, 
-.THIS .tracker .slds-nubbin_top-left:before {
-	bottom: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.THIS .tracker .slds-nubbin_top-left:after {
-	border-color: rgba(136, 183, 213, 0);
-	border-bottom-color: #88b7d5;
-	border-width: 30px;
-	margin-left: -30px;
-}
-.THIS .tracker .slds-nubbin_top-left:before {
-	border-color: rgba(194, 225, 245, 0);
-	border-bottom-color: #c2e1f5;
-	border-width: 36px;
-	margin-left: -36px;
-}     
-*/
-        
-        
-        
-
 .THIS .tracker button.slds-button {
     background: #009adb;
     border-radius: 40px;
@@ -321,11 +275,13 @@
     line-height: 30px;
     color:#fff;
     height:initial;
+    border:none;
 }
     
        
 .THIS .tracker button.slds-button:hover {
     text-decoration:underline;
+    border:none;
 } 
 
         
@@ -590,6 +546,10 @@
     float: left;
     margin-right: 10px;
 }
+                
+.THIS .tracker-home .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
+    margin-right: 15px;
+}
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent{
 	display: block;
@@ -607,12 +567,6 @@
     line-height:30px;
 }
 
-/*
-.THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li:hover .topicLabel:hover{
-   color: #00638c;
-}
-*/
-
 .THIS .tracker div[data-region-name=sidebarTop] .ui-widget:first-child,
 .THIS .tracker div[data-region-name=sidebar] .ui-widget:first-child{
 	margin-top: 14px;
@@ -628,12 +582,6 @@
 .THIS .tracker-home div[data-region-name=sidebarTop] .ui-widget:last-child{
 	background: #f0f0f0;
 }
-               
-/*               
-.THIS .tracker .content-top .comm-layout-column:last-child .ui-widget:last-child{
-	background: #f4f5f5;
-}
-*/
                 
 .THIS .tracker div[data-region-name=sidebar] .ui-widget h2,
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics .topicListHeader .uiOutputText,
@@ -653,7 +601,7 @@
     border: 2px solid #0099d8;
     padding: 4px 8px;
     border-radius: 5px; 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important
 }
 
               
@@ -710,12 +658,76 @@
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .comm-topic-trending-articles ul li a span,
 .THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul li a span{
 	font-size: 14px;
-}           
-                      
+}   
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarHeader h2{
+	color: #fff;
+    margin-bottom: 0 !important;
+}
+
+.THIS .tracker .embeddedServiceSidebar .sidebarHeader .slds-icon{
+	fill: #fff;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .headerAnnouncement .announcement{
+	color: #fff;
+    text-transform: uppercase;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody .endChatContainer,
+.THIS .tracker .embeddedServiceLiveAgentStateChat .endChatContainer{
+	padding-bottom: 0;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody .chatSessionStartTime{
+	margin-top: 20px;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody ul.messageWrapper > li{
+	margin-top: 0;
+    margin-bottom: 20px;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody ul.messageWrapper li.embeddedServiceLiveAgentStateChatMessage .embeddedServiceLiveAgentStateChatAvatar,
+.THIS .tracker .embeddedServiceLiveAgentStateChatAvatar.isCommunitiesContext {
+	background-color: initial;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody ul.messageWrapper li.embeddedServiceLiveAgentStateChatMenuMessage {
+	margin-bottom: 0;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody ul.messageWrapper li.embeddedServiceLiveAgentStateChatMenuMessage .chatContent {
+	padding: 20px 0;
+    padding-top:0;
+}
+                
+.THIS .tracker .embeddedServiceSidebar .sidebarBody ul.messageWrapper li.embeddedServiceLiveAgentStateChatMenuMessage .chatContent .embeddedServiceLiveAgentStateChatRichItem{
+	font-family: inherit;
+}
+
+@media (max-width: 546px) {
+       .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li {
+        	width:100%;                
+       	}
+}
 @media (max-width: 991px) {
         .THIS .tracker .slds-section .container,
         .THIS .tracker .forceCommunityContactSupportForm .slds-truncate span {
             padding-bottom:0;
+        }
+        .THIS .tracker .searchRegion {
+        	width: 100%;
+    		padding: 20px 0;               
+        }
+        .THIS .tracker .searchRegion .ui-widget {
+          	position: relative; 
+            top:0 !important;
+            right: 0;
+        }
+        .THIS .tracker .searchRegion .ui-widget .slds-global-header__item{
+          	padding: 20px;
+    		background: rgba(153,153,153,0.25);
         }
 }
 @media (min-width: 992px) {

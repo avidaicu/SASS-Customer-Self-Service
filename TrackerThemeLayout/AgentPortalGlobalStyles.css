@@ -64,6 +64,17 @@
     border-top: 13px solid #f4f5f5 !important;
     z-index: 9990;
 }
+
+/*
+.uiTooltipAdvanced .pointer::before {    
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100px 0 100px;
+border-color: #007bff transparent transparent transparent;
+    content:'';
+}
+*/
     
 .slds-popover--tooltip .slds-popover__body {
     background-color: #f4f5f5;
@@ -77,7 +88,7 @@
 
 /* Tracker 'list view' dropdown */   
 .siteforcePanelsContainer .listViewPickerPanel {
-    margin-left: 20px;  
+    margin-left: 20px;    
     border: 1px solid rgb(223, 234, 240);
 }    
 
@@ -86,9 +97,17 @@
 }    
     
 .siteforcePanelsContainer .uiPanel .container {
-  	width: 268px;
-    padding: 0;      
+  	width: 266px;
+    padding: 0; 
+    box-shadow: 7px 7px 13px -9px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 7px 7px 13px -9px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 7px 7px 13px -9px rgba(0,0,0,0.75);
 }
+    
+.siteforcePanelsContainer .uiPanel .container .list{
+  	margin: 0;
+}
+
 
 .siteforcePanelsContainer .uiPanel .container ul li{
     border-bottom: 1px solid #efefef;
@@ -171,7 +190,6 @@
     }
 }
  
-
 .branding-actions  li.uiMenuItem:not(:first-child) {
   display: none;
 }  
