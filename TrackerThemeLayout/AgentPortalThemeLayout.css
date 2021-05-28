@@ -78,6 +78,10 @@
 .THIS .tracker .stats{
     background: #f0f0f0;
 }
+
+.THIS .tracker .ui-widget{
+    border-radius: 6px;
+}
     
 .THIS .tracker .stats .ui-widget{
     margin:0 !important;
@@ -205,8 +209,12 @@
     color:#fff;
 }
     
+.THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child{
+    margin-left: 0.5rem !important;
+}
 .THIS .tracker .slds-breadcrumb .slds-breadcrumb__item:last-child a{
-    pointer-events: none;
+    padding-left: 0;
+    pointer-events:none;
 }
 
 .THIS .tracker .slds-breadcrumb .slds-list__item > a, 
@@ -537,7 +545,7 @@
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a.topicLink:hover{
     text-decoration:underline;
-    color: rgb(50, 54, 63);                
+    color: #0099D8;                
 }
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicImage{
@@ -558,11 +566,11 @@
 }
 
 .THIS .tracker .forceCommunityHomeTabs .uiTab ul.topicList li a .topicContent .topicLabel{
-    color: rgb(50, 54, 63);
+    color: inherit;
     overflow: visible;
     text-align: left;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height:30px;
 }
@@ -608,7 +616,6 @@
 .THIS .tracker div[data-region-name=sidebar] button.slds-button:hover{
     text-decoration:underline               
 }
-
                 
 .THIS .tracker .footer-top {
     padding: 20px 0;
@@ -630,13 +637,19 @@
 .THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul{
     padding-left: 20px;
     margin-bottom: 0;
+    list-style-type: disc;
 }
 
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .comm-topic-trending-articles ul li,
 .THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul li{
-	list-style-type: disc;
     margin: 0 0 5px 0;
 }
+                
+.THIS .tracker div[data-region-name=sidebar] .ui-widget .comm-topic-trending-articles ul li .comm-topic-trending-articles__item,
+.THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul li .comm-topic-trending-articles__item{
+    display: block;
+}
+                
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .comm-topic-trending-articles ul li a,
 .THIS .tracker div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul li a,
 .THIS .tracker div[data-region-name=sidebarTop] .ui-widget .comm-topic-trending-articles ul li a{

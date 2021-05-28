@@ -3,15 +3,30 @@
     <!-- Case record ID -->
     <aura:attribute name="recordId" type="String" />
     
-    <!-- Case number -->
-    <aura:attribute name="caseNumber" type="String" />
+    <!-- The type of breadcrumb -->
+    <aura:attribute name="type" type="String" default="case" />
+    
+    <!-- Value of first level -->
+    <aura:attribute name="firstLevelPage" type="String" />
+    <aura:attribute name="firstLevelPageUrl" type="String" />
+    
+    <!-- Value of second level -->
+    <aura:attribute name="secondLevelPage" type="String" />
     
     <!-- Init hanlder for the component -->
-	<aura:handler name="init" value="{!this}" action="{!c.getCaseNumberId}"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     <lightning:breadcrumbs>
+        <!-- Help and support home -->
         <lightning:breadcrumb label="Help and Support" href="/partnerCommunity/s/case/Case/Default"/>
-        <lightning:breadcrumb label="{!v.caseNumber}"/>
+		
+        <!-- First level -->
+        <lightning:breadcrumb label="{!v.firstLevelPage}"/>
+        
+        <!-- Conditional second level, e.g. article page -->
+        <aura:if isTrue="{!v.secondLevelPage}">
+        	<lightning:breadcrumb label="{!v.secondLevelPage}"/>
+        </aura:if>
     </lightning:breadcrumbs>
     
 </aura:component>

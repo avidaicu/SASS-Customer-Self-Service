@@ -1,14 +1,12 @@
 <aura:component controller="AgentPortalUserInfo" implements="forceCommunity:themeLayout">
 
+    <aura:if isTrue="{!v.helpSupport == true}">
+        <ltng:require styles="{!$Resource.HelpSupportCss}"/>
+    </aura:if>
+    
     <ltng:require styles='{!$Resource.SGAgentPortal_v2_1_0_26}'
                   scripts="{!join(',',$Resource.jquery_3_0_0_min, $Resource.AgentPortalGlobals, $Resource.AgentPortalUtils)}"
                   afterScriptsLoaded="{!c.onInit}"/>
-
-    <aura:if isTrue="{! v.helpSupport == true}">
-        <ltng:require styles="{!join(',',$Resource.SGAgentPortal_v2_1_0_26, $Resource.HelpSupportCss)}"
-                      scripts="{!join(',',$Resource.jquery_3_0_0_min, $Resource.AgentPortalGlobals, $Resource.AgentPortalUtils)}"
-                      afterScriptsLoaded="{!c.onInit}"/>
-    </aura:if>
     
     <aura:attribute name="portalPath" type="String"/>
     <aura:attribute name="hasUserData" type="Boolean" default="false" />
@@ -19,7 +17,6 @@
     <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
     <aura:attribute name="notifications" type="Aura.Component[]" required="false"/>
     <aura:attribute name="search" type="Aura.Component[]" required="false"></aura:attribute>
-    
     <aura:attribute name="isLoggedIn" type="Boolean" default="false" />
     <aura:attribute name="templateText" type="Object"/>
     <aura:handler name="analyticsEvent" event="c:AgentPortalAnalytics" action="{!c.handleAnalyticsEvent}" includeFacets="true"/>
@@ -27,11 +24,10 @@
     <aura:attribute name="languages" type="Object"/>
     <aura:attribute name="selectedLanguage" type="String" />
     <!-- Theme attributes -->
-    <aura:attribute name="SGBasicTemplateNoNav" type="Boolean" default="false" />
-    
     <aura:attribute name="isTracker" type="Boolean" default="false" />
     <aura:attribute name="isTrackerHome" type="Boolean" default="false" />
-    
+    <aura:attribute name="isCookieTracker" type="Boolean" default="false" />
+    <aura:attribute name="SGBasicTemplateNoNav" type="Boolean" default="false" />
     <aura:attribute name="bodyContainerType" type="String" default="container" />
     <aura:attribute name="bodyContainerWidth" type="String" default="w-90" />
     <!-- Set to true within afterRender within renderer -->
@@ -57,7 +53,7 @@
                             
                             <div class="{!v.SGBasicTemplateNoNav == true ? 'apd' : ''}">
                                 <div class="logo col-xs-12 col-sm-7">
-                                    <a href="{!v.portalPath}" aria-label="Study Group Agent Portal">
+                                    <a href="{!v.portalPath + 's/'}" aria-label="Study Group Agent Portal">
                                         <img src="https://www.studygroup.com/-/media/agentportal/logos/sg_logo.png" title="Study Group"/>
                                         <aura:if isTrue="{!v.SGBasicTemplateNoNav == false}">
                                         	<span>Agent Portal</span>
@@ -70,10 +66,10 @@
                                 <div class="profileMenuRegion col-xs-12 col-sm-5">
                                     <!--<aura:if isTrue="{!v.isLoggedIn}">-->
                                     <aura:if isTrue="{!v.isLoggedIn}">
-                                        <a href="{! v.portalPath + 'profile/' + v.user.Id}" role="button">
+                                        <a href="{! v.portalPath + 's/profile/' + v.user.Id}" role="button">
                                         	<img class="profile-image" alt="" src="{!v.user.MediumPhotoUrl }" title="{!v.user.Name }" />
                                         </a>
-                                        <a href="{! v.portalPath + 'profile/' + v.user.Id}" role="button" class="header-nav-item">
+                                        <a href="{! v.portalPath + 's/profile/' + v.user.Id}" role="button" class="header-nav-item">
                                             {!v.userLocale == 'en' ? 'My profile' : '我的资料'}
                                         </a>
                                     </aura:if>
@@ -120,7 +116,7 @@
                         </div>
                     </section>
                 </aura:if>
-                
+                        
                 <section class="mainContentArea" role="main">
                      <div class="{!v.bodyContainerType == 'container' ? 'container' : 'container-fluid' + ' ' + v.bodyContainerWidth}">
                         <div class="row">
@@ -148,7 +144,9 @@
                 	</div>
                 </aura:if>
                 
-                <c:AgentPortalCookieBar/>
+                <div class="{!v.isCookieTracker == true ? 'cookie-tracker' : ''}">
+                	<c:AgentPortalCookieBar/>
+                </div>
             </div>
             
         </aura:set>

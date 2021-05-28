@@ -1,0 +1,155 @@
+/** SASS Customer Self Service styles **/
+
+/* Page Specific */
+.THIS .global-search .slds-main-content .ui-widget:first-child{
+	margin-bottom: 0;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:first-child h2{
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child{
+	background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right{
+	padding-right: 20px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right h1{
+	display:none;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right ul li {
+	border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(223, 234, 240));
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right ul li a{
+	color: #0099D8;
+    border:none;
+}
+                       
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right ul li a:hover{
+	background-color: #fff;
+    box-shadow:none;
+    text-decoration: underline;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right ul li.slds-is-active a:hover{
+	background-color: inherit;
+    text-decoration: inherit;
+    box-shadow:inset 0.25rem 0 0 var(--lwc-brandPrimary,rgb(17, 151, 212));
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right .navExpandToggle{
+	padding: 0;
+    float: right;
+    width: initial;
+    color: #009adb;
+    background: initial;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    border:none;
+    box-shadow:none;
+}
+            
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right .filterSeparator,
+.THIS .global-search .slds-main-content .ui-widget:last-child .slds-border_right .forceSearchResultsFilters{
+	display: none;
+}
+            
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper{
+    margin-left:20px;
+}
+                    
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .resultsItem{
+    margin-bottom: 20px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header{
+	padding: 0;
+    border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(223, 234, 240));
+    margin-bottom: 10px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header h2{
+	margin: 0!important;
+    font-size: 24px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header h2 a,
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header h2 > div{
+	font-size: inherit;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header .searchResultsSummary{
+	font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .slds-page-header .sortingInfo{
+	display: none;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent > ul > li{
+	padding: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent > ul > li .slds-tile{
+	max-width: initial;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent > ul > li p.slds-truncate{
+	padding: 0;
+    margin-bottom: 5px;
+    overflow:visible;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent > ul > li p.slds-truncate a.itemTitle{
+	font-size: 24px;
+    font-weight: normal;
+    font-family: "HelveticaNeueW01-Thin" !important;
+    display: block;
+    overflow: visible;
+    border:none;
+}
+
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent > ul > li p.slds-truncate a.itemTitle:hover{
+	text-decoration: underline;
+}
+                    
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table {
+    border:none;
+}
+                    
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table thead,
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table tbody td:last-child,
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper .listContent ul li .resultBody{
+	display: none;
+}
+                    
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table tbody td{
+	padding: 0;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    border-top:none;
+    overflow: visible;
+}
+  
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table tbody td:hover{
+	background: none;
+    border-top:none;
+    box-shadow:none;
+}
+                    
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table th,
+.THIS .global-search .slds-main-content .ui-widget:last-child .resultsWrapper table td{
+	padding: 0;
+}

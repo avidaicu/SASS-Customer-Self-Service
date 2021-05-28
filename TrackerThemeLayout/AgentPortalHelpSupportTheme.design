@@ -1,7 +1,0 @@
-<design:component label="Agent Portal Help And Support">
-	<design:attribute name="SGBasicTemplateNoNav" label="Study Group Basic Template" description="Simplified template layout used for guest APD news users" default="false" />
-    <design:attribute name="isTracker" label="Is Tracker?" description="Used to trigger specific styles around the tracker" default="false" />
-    <design:attribute name="isTrackerHome" label="Is Tracker Home?" description="Used to trigger specific styles around the tracker home page" default="false" />
-	<design:attribute name="bodyContainerType" label="Body container type" description="Bootstrap container type, either container or fluid container" datasource="container, fluid" default="container" />
-	<design:attribute name="bodyContainerWidth" label="Body fluid container width" description="Percentage based width to apply to the fluid container" datasource="w-100,w-90,w-80,w-60,w-50" default="w-90" />
-</design:component>

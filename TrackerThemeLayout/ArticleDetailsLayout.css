@@ -15,6 +15,10 @@
 }
 */
 
+.THIS .article-details .slds-main-content {
+	margin-bottom: 25px;
+}
+
 .THIS .article-details div[data-region-name=content] .ui-widget{
     background: #fff;
 }
@@ -51,9 +55,11 @@
 	display: block;
 }
 
+/*
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section{
 	display: none;
 }
+*/
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section:nth-child(2){
 	display: block;
@@ -70,12 +76,24 @@
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element__label {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element .itemBody{
     padding: 0;
     padding-left: 26px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .slds-form-element .itemBody .uiOutputRichText{
+	line-height: 22px;
+    font-size: 14px;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section 
+.forcePageBlockSectionRow .slds-form-element .itemBody .uiOutputRichText ol,
+.THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section 
+.forcePageBlockSectionRow .slds-form-element .itemBody .uiOutputRichText ul{
+	margin-bottom:0;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .article-column .content .test-id__section .forcePageBlockSectionRow .test-id__field-label{
@@ -129,6 +147,7 @@
 	margin: 0;
     padding: 20px;
     overflow: hidden;
+    padding-top: 10px;
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card {
@@ -168,6 +187,10 @@
     color: rgb(107, 109, 112);
     background: initial;
     border-radius: inherit;
+}
+
+.THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child .slds-clearfix button .slds-button__icon{
+    fill: rgb(107, 109, 112);
 }
 
 .THIS .article-details div[data-region-name=content] .ui-widget .voting .slds-card > div .slds-card__body:last-child .slds-clearfix div[aria-live=assertive]{

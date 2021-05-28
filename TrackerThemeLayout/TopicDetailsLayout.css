@@ -150,3 +150,14 @@
 .THIS .topic-details div[data-region-name=sidebar] .ui-widget .forceCommunityRelatedTopics ul li a {
 	padding:12px 0;
 }
+
+.THIS .topic-details div[data-region-name=sidebar] .ui-widget div.slds-text-heading_medium{
+    font-size: 24px;
+    margin-top: 0;
+    font-family: HelveticaNeueW01-Thin;
+    font-weight: normal;
+    color: rgb(50, 54, 63);
+    display: block;
+    margin-bottom: 25px;
+    padding: 0;              
+}
